@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-26T12:22:49.693820+00:00",
+  "task": {
+    "file": "task.md",
+    "sha256": "bcec95a05060da7f6ca5a8b189e56eaf13ab59078381a582a434f160a8fbccd2",
+    "object": "Exact native verification of all six benchmark comparison theorems",
+    "deliverables": [
+      "Complete Lean repository source archive",
+      "All six theorem proofs and their conjunction",
+      "Earlier completed operator theorems",
+      "Build, axiom and semantic-review evidence",
+      "Saved public proof-submission statuses"
+    ]
+  },
+  "mathematical_context": {
+    "assumptions": [
+      "Exact domains and assumptions are specified by Definitions/Def_BenchmarkRelations.lean",
+      "Every delivered project declaration passed the audit allowing only propext, Classical.choice and Quot.sound"
+    ],
+    "domain": "Countable Borel equivalence relations; real sequence relations; probability measures on Cantor space; bounded operators and all unitary representations on complex lp(N,2); compact solenoid groups",
+    "precision": {
+      "mode": "exact",
+      "working_digits": null,
+      "target_tolerance": "Not applicable: native proof checking"
+    }
+  },
+  "implementation_discovery": {
+    "mathematica": {
+      "candidate_implementations": [
+        "Symbolic or numerical operator calculations"
+      ],
+      "existence_evidence": "A CAS calculation cannot certify these quantified Borel-reducibility proofs",
+      "local_availability": "not-applicable",
+      "availability_evidence": "Native Lean kernel verification is the requested backend"
+    },
+    "sagemath": {
+      "candidate_implementations": [
+        "Exact algebra and mathematical experiments"
+      ],
+      "existence_evidence": "Exact experiments do not establish the requested infinite-dimensional and measure-theoretic theorems",
+      "local_availability": "not-applicable",
+      "availability_evidence": "Native Lean kernel verification is required"
+    },
+    "python": {
+      "candidate_implementations": [
+        "subprocess proof replay",
+        "hashlib SHA-256 integrity checks",
+        "zipfile source-only packaging"
+      ],
+      "existence_evidence": "Standard-library scripts executed during delivery",
+      "local_availability": "available",
+      "availability_evidence": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+    }
+  },
+  "decision": {
+    "selected_backend": "other",
+    "backend_version": "Lean (version 4.30.0, x86_64-w64-windows-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+    "selection_reason": "The user requested Lean proofs; native Lean checking verifies the exact theorem statements",
+    "fallback_reason": "not-required; pinned Lean and Mathlib were available"
+  },
+  "execution": {
+    "status": "complete",
+    "interface": "Native Lean CLI, strict autoImplicit=false; isolated source replay",
+    "command_or_input": "lake build; lake env lean -DautoImplicit=false tools/AxiomAudit.lean",
+    "code_artifact": "MainTheorems.lean",
+    "actual_local_method": "Dependency-ordered isolated incremental native replay using only pinned Mathlib and hash-validated project objects; all changed closures rebuilt, followed by an all-project-declaration axiom audit. Separately, an actual full-snapshot Lake build used pinned local dependency artifacts, bounded project-module invocations, a successful final default build, and a fresh Lake-environment axiom audit."
+  },
+  "artifacts": [
+    {
+      "role": "code",
+      "path": "MainTheorems.lean",
+      "sha256": "94c49e04511220e9630d02ed18c11fe4338d6bc614bdca8b4ea993ebf6ae70d0"
+    },
+    {
+      "role": "code",
+      "path": "tools/AxiomAudit.lean",
+      "sha256": "0ed5b64573d25497b543740110c8a741764117e9c570846c55273431be82926e"
+    },
+    {
+      "role": "result",
+      "path": "verification/package-build.json",
+      "sha256": "82bd23b91f52d663109f8926b95c5afa8cd837aa117fad46d419e114b1a5d522"
+    },
+    {
+      "role": "result",
+      "path": "verification/lake-build/report.json",
+      "sha256": "526f7c2d8257819ffc92e5b807a3fc275040ca29263440360ba5a5ee0d351319"
+    },
+    {
+      "role": "evidence",
+      "path": "source-manifest.json",
+      "sha256": "fa521ec45797dddd8f5b383c4ff1278586c0f98728e5cbcc17ad581b4d6799e9"
+    },
+    {
+      "role": "evidence",
+      "path": "proof-submissions.json",
+      "sha256": "4fdc666941342471a0e1cfeb7e4f68d2e293283e1994cfddeb0f9ffd659fae78"
+    }
+  ],
+  "result": {
+    "status": "complete",
+    "summary": "All six exact main theorem statements and their conjunction are formally verified; all delivered source declarations passed the full standard-axiom audit. Platform statuses are separately recorded.",
+    "result_artifact": "verification/package-build.json"
+  },
+  "verification": {
+    "methods": [
+      "Native Lean4.30 kernel checks",
+      "Pinned-Mathlib isolated incremental source replay",
+      "All-project-declaration axiom audit",
+      "SHA-256 integrity checks",
+      "Independent bounded semantic reviews and native exact-target checks",
+      "Actual Lake full-snapshot build, final default target and Lake-environment axiom audit"
+    ],
+    "evidence_level": "formal-verification",
+    "residual_or_error": "Not applicable: exact proof checking",
+    "limitations": [
+      "Formal verification concerns the recorded exact Lean statements.",
+      "Independent semantic review is bounded, not exhaustive peer review.",
+      "A new build needs the pinned Lean and Mathlib dependencies.",
+      "Platform acceptance and moderation are recorded separately in proof-submissions.json."
+    ]
+  },
+  "task_status": "complete: all six local mathematical formalizations and source package"
+}

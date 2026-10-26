@@ -1,0 +1,2078 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{maintheorem}[theorem]{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\N}{\mathbb N}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\T}{\mathbb T}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Prob}{\mathcal P}
+\newcommand{\ME}{\mathrel{\equiv_m}}
+\newcommand{\leB}{\mathrel{\leq_B}}
+\newcommand{\nleB}{\mathrel{\nleq_B}}
+\newcommand{\Hel}{\operatorname{Hel}}
+\newcommand{\Aff}{\operatorname{Aff}}
+\newcommand{\E}{\mathbb E}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\supp}{\operatorname{supp}}
+
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\QI}{\operatorname{QI}}
+\newcommand{\UE}{\mathrel{\simeq_u}}
+\newcommand{\Rep}{\operatorname{Rep}}
+
+%\renewcommand{\themaintheorem}{\Alph{maintheorem}}
+\title{On the Borel complexity of measure equivalence}
+\author{Ruijun Wang}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that for $1\leq p\leq\infty$, $\ell_p\leq_B{\equiv_m}$ iff and only if $p\leq2$, and $c_0\nleq_B{\equiv_m}$. These answer two questions in Gao's monograph. We also prove that unitary equivalence of all bounded linear operators is not Borel reducible to $\equiv_m$. This answers a question of Ding and Gao. Equivalently, unitary equivalence of arbitrary representations of $F_\infty$ is strictly more complicated than that of arbitrary representations of $\mathbb Z$. This answers a question of Thomas.
+\end{abstract}
+\tableofcontents
+
+\section{Introduction}
+A classification problem consists of a collection of mathematical objects
+and a notion of when two objects should count as equivalent. In invariant descriptive set theory, the comparison uses a \emph{Borel reduction} between two equivalence relations. Let $E$ and $F$ be equivalence relations on $X$ and $Y$ respectively, a \emph{Borel reduction} from $E$ to $F$, denoted by $E\leq_B F$,  is a Borel function $f:X\to Y$ such that $$xEy\Longleftrightarrow f(x)Ff(y).$$ We say that $E$ is Borel reducible to $F$. $E<_B F$ means $E\leq_B F$ and $F\nleq_B E$.
+
+The theory studying equivalence relations by Borel reductions developed
+in the late twentieth century. We refer readers for Gao's monograph \emph{Invariant Descriptive Set Theory} \cite{Gao} for this framework and its principal examples. In this paper, we follow its notation, unless otherwise stated.
+
+We use $\ell_p$ and $c_0$ for the sequence
+spaces and for their coset equivalence relations on $\R^\N$; the context
+distinguishes these uses. For $1\leq p<\infty$,
+\[
+ x\mathrel{\ell_p}y
+ \quad\Longleftrightarrow\quad
+ \sum_{n\in\N}|x_n-y_n|^p<\infty,
+ \qquad
+ x\mathrel{c_0}y
+ \quad\Longleftrightarrow\quad x_n-y_n\longrightarrow0,
+\]
+and
+\[
+ x\mathrel{\ell_\infty}y
+ \quad\Longleftrightarrow\quad
+ \sup_{n\in\N}|x_n-y_n|<\infty.
+\]
+Here $\N=\{0,1,2,\ldots\}$ and the parameter space $\R^\N$ has its
+product topology. The norm topology will instead be used on the acting
+subgroups. For probability measures, $\mu\ME\nu$ means that $\mu$ and
+$\nu$ have the same Borel null sets. We take $\equiv_m$ on
+$\Prob(2^\N)$; its Borel-reducibility degree is unchanged on any other
+uncountable standard Borel sample space.
+
+For the operator problems, fix a separable infinite-dimensional complex
+Hilbert space $\mathcal H$. Write $\simeq_u$ for unitary equivalence on
+$B(\mathcal H)$. In Thomas's notation, $\approx^+_\Gamma$ is unitary
+equivalence on $\Rep(\Gamma,\mathcal H)$, the space of \emph{all} unitary
+representations of a countable group $\Gamma$. The superscript here is
+Thomas's notation for arbitrary representations, \emph{not} a jump operation.
+
+The four main theorems are as follows.
+
+\begin{maintheorem}\label{main:lp}
+For $1\leq p\leq\infty$,
+\[
+ \ell_p\leB{\equiv_m}\quad\Longleftrightarrow\quad p\leq2.
+\]
+For $1\leq p\leq2$, the reduction may be chosen continuous into
+$\Prob(2^\N)$ with its weak topology.
+\end{maintheorem}
+
+\begin{maintheorem}\label{main:c0}
+\[
+ c_0\nleB{\equiv_m}.
+\]
+\end{maintheorem}
+
+These answer two question in Gao's monograph, see \cite[Section 15.2]{Gao}.
+
+\begin{maintheorem}[Bounded linear operators]\label{main:operators}
+On a fixed separable infinite-dimensional complex Hilbert space,
+\[
+ {\equiv_m}<_B{\simeq_u}.
+\]
+In particular, unitary equivalence of all bounded linear operators is
+not Borel reducible to measure equivalence.
+\end{maintheorem}
+
+This answers a question of Ding and Gao \cite{DG14}.
+
+\begin{maintheorem}[Arbitrary unitary representations]\label{main:thomas}
+\[
+ {\approx^+_{\mathbb Z}}\sim_B{\equiv_m}
+ <_B{\approx^+_{F_\infty}}\sim_B{\simeq_u}.
+\]
+\end{maintheorem}
+
+This answers \cite[Question~8.2]{Thomas15} negatively.
+
+This paper is a collaboration with artificial intelligence. The AI model is gpt 6. The AI proves the main theorems under human suggestions and writes the main body of early drafts. The author writes the abstract and induction and improves readability. The author has reviewed all AI-generated content.
+
+\section{Preliminaries}\label{sec:prelim}
+\subsection{Polish spaces and Borel reductions}
+A topological space is \emph{Polish} if its topology is induced by a
+complete separable metric. The Borel sets form the smallest
+$\sigma$-algebra containing the open sets. A \emph{standard Borel space}
+is a measurable space isomorphic to a Polish space with its Borel
+$\sigma$-algebra. A map between such spaces is Borel if the inverse image
+of each Borel set is Borel.
+
+Let $E$ and $F$ be equivalence relations on standard Borel spaces $X$ and
+$Y$. A \emph{Borel reduction} of $E$ to $F$ is a Borel map $f:X\to Y$
+such that
+\[
+ \forall x,x'\in X,\qquad
+ x\,E\,x' \quad\Longleftrightarrow\quad f(x)\,F\,f(x').
+\]
+We write $E\leB F$ when such a map exists. Thus a reduction must both
+preserve and reflect equivalence, for every pair of inputs. Reductions
+compose. We write $E\sim_B F$ if reductions exist in both directions, and
+$E<_B F$ if $E\leB F$ but $F\nleB E$.
+
+For a standard Borel space $Y$, $\Prob(Y)$ is equipped with the
+$\sigma$-algebra generated by the evaluations
+$\mu\mapsto\mu(A)$ for Borel $A\subseteq Y$. If $Y$ is Polish, this is
+the Borel structure of the topology of weak convergence of probabilities.
+A Borel isomorphism $j:Y\to Y'$ induces a Borel map
+$j_*:\Prob(Y)\to\Prob(Y')$ and preserves mutual absolute continuity.
+Any two uncountable standard Borel spaces are Borel isomorphic
+\cite[Corollary 1.4.3]{Gao}.
+
+A set is $F_\sigma$ if it is a countable union of closed sets, and is
+$\Pi^0_3$ if it is a countable intersection of $F_\sigma$ sets. These
+descriptions refer to a specified topology.
+
+\begin{lemma}\label{lem:ME-borel}
+On a compact metrizable space $Y$, absolute continuity and mutual
+absolute continuity are $\Pi^0_3$ relations on $\Prob(Y)$.
+\end{lemma}
+\begin{proof}
+Choose a countable uniformly dense subset $\mathcal C$ of
+$C(Y,[0,1])$. We claim that
+\begin{equation}\label{eq:ac-test}
+ \mu\ll\nu
+ \quad\Longleftrightarrow\quad
+ \forall k\ge1\ \exists m\ge1\ \forall f\in\mathcal C,\qquad
+ \int f\,d\mu\le m\int f\,d\nu+\frac1k.
+\end{equation}
+If $\mu=r\nu$, choose $m$ so that
+$\int(r-m)_+\,d\nu\le1/k$. This proves the forward implication.
+
+Conversely, uniform density extends the inequality for fixed $k,m$ to
+every continuous $[0,1]$-valued function. Regularity of finite Borel
+measures on a compact metric space permits approximation of indicators
+in $L^1(\mu+\nu)$ by such functions. Consequently
+$\mu(A)\le m\nu(A)+1/k$ for every Borel set $A$. If $\nu(A)=0$, this
+gives $\mu(A)\le1/k$ for every $k$, and hence $\mu(A)=0$.
+
+For fixed $k,m$, the condition on the right of \eqref{eq:ac-test} is
+closed in $\Prob(Y)^2$, because integration of a continuous function is
+continuous for weak convergence. This proves the assertion for $\ll$.
+Intersecting it with the same condition with the measures interchanged
+proves the assertion for $\ME$.
+\end{proof}
+
+\subsection{Polish groups and uniqueness of the subgroup topology}
+A \emph{Polish group} is a topological group whose topology is Polish.
+A metric $d$ on an abelian group is \emph{translation invariant} if
+$d(x+a,y+a)=d(x,y)$ for all $x,y,a$.
+
+We use two basic results from descriptive set theory:
+\begin{enumerate}
+\item An injective Borel map between Polish spaces sends Borel sets to
+Borel sets (the Lusin--Souslin theorem).
+\item Every Borel homomorphism between Polish groups is continuous.
+\end{enumerate}
+They appear as Theorems 1.3.1 and 2.3.3 of \cite{Gao}. The second follows
+from the Baire category theorem, by the following argument.
+
+A set is \emph{meager} if it is a countable union of nowhere dense sets.
+A set has the \emph{Baire property} if it differs from an open set by a
+meager set. Every Borel set has this property. The Baire category theorem
+says that a nonempty open subset of a Polish space is not meager.
+
+First, let $A$ be a nonmeager set with the Baire property in a Polish
+group $G$. Choose a nonempty open $U$ such that $A$ is comeager in $U$,
+meaning that $U\setminus A$ is meager. Fix $a\in U$ and an identity
+neighborhood $O$ with $Oa\subseteq U$. For $g\in O$, the open set
+$U\cap gU$ contains $ga$ and is therefore nonempty. Both $A$ and $gA$
+are comeager there, so the Baire theorem gives $A\cap gA\ne\varnothing$.
+Thus $g\in AA^{-1}$, and $O\subseteq AA^{-1}$. This is the form of
+Pettis's theorem that we need.
+
+Now let $f:G\to L$ be a Borel homomorphism between Polish groups. Given
+an identity neighborhood $V$ in $L$, choose an open symmetric identity
+neighborhood $W$ with $W^2\subseteq V$. Second countability supplies a
+countable cover of $f(G)$ by translates $f(g_j)W$. Hence
+$G=\bigcup_j g_j A$, where $A=f^{-1}(W)$. The set $A$ is Borel and
+nonmeager, since otherwise that cover would make $G$ meager in itself.
+Pettis's theorem gives an identity neighborhood $O\subseteq AA^{-1}$,
+and $f(O)\subseteq W^2\subseteq V$. This proves continuity at the
+identity and therefore everywhere.
+
+\begin{lemma}\label{lem:unique-topology}
+Suppose a subgroup $H$ of a Polish group $K$ is equipped with two Polish
+group topologies, and both inclusion maps into $K$ are continuous.
+Then the two topologies on $H$ coincide.
+\end{lemma}
+\begin{proof}
+By Lusin--Souslin, each inclusion identifies the Borel structure on $H$
+with the Borel structure inherited from $K$. The identity homomorphisms
+between the two Polish versions of $H$ are therefore Borel. Automatic
+continuity makes each identity continuous.
+\end{proof}
+A subgroup admitting such a topology is often called \emph{Polishable}.
+We will specify the complete metrics explicitly, rather than assuming
+that the topology inherited from the ambient group is Polish.
+
+\subsection{Circle-valued sequence groups}
+Write
+\[
+ \T=\R/\Z,\qquad
+ |t|_{\T}=\min_{a\in\Z}|\widetilde t-a|,
+\]
+where $\widetilde t$ is any real representative of $t$.
+Let $K=\T^\N$ with its compact product topology. Define
+\begin{align*}
+ H_p&=\left\{h\in K:\sum_n|h_n|_\T^p<\infty\right\},
+ &d_p(h,k)&=\left(\sum_n|h_n-k_n|_\T^p\right)^{1/p},\\
+ H_0&=\{h\in K:|h_n|_\T\to0\},
+ &d_0(h,k)&=\sup_n|h_n-k_n|_\T.
+\end{align*}
+For a subgroup $H\le K$, its coset relation is
+\[
+ x\mathrel{K/H}y\quad\Longleftrightarrow\quad x-y\in H.
+\]
+
+\begin{lemma}\label{lem:Polish-H}
+For $1\le p<\infty$, $(H_p,d_p)$ and $(H_0,d_0)$ are Polish groups,
+and their inclusions into $K$ are continuous.
+\end{lemma}
+\begin{proof}
+The triangle inequality on the circle, followed by Minkowski's inequality,
+gives the triangle inequality for $d_p$. If $(h^j)$ is $d_p$-Cauchy, it
+converges coordinatewise in $K$ to some $h$. Fatou's lemma shows that,
+for every sufficiently large $j$, $d_p(h^j,h)$ is small. Applying the
+triangle inequality with one fixed $h^j\in H_p$ puts $h$ in $H_p$.
+Thus the metric is complete.
+
+A $d_0$-Cauchy sequence has a uniform coordinatewise limit. A uniform
+limit of null sequences is null, so $d_0$ is complete as well. In both
+cases finite-support sequences with rational circle coordinates form a
+countable dense set. Addition and inversion are continuous because the
+metrics are invariant, and each coordinate map is continuous.
+\end{proof}
+
+\begin{lemma}\label{lem:compact-replacement}
+There are continuous reductions $K/H_p\leB \ell_p$ and
+$K/H_0\leB c_0$.
+\end{lemma}
+\begin{proof}
+Use the map $b:K\to\R^\N$ that lists the two coordinates
+$\cos(2\pi x_n),\sin(2\pi x_n)$ for each $n$. For $s,t\in\T$,
+\[
+ \left\|(\cos2\pi s,\sin2\pi s)
+       -(\cos2\pi t,\sin2\pi t)\right\|_2
+ =2\sin\bigl(\pi|s-t|_\T\bigr).
+\]
+Since $0\le|s-t|_\T\le1/2$,
+\[
+ 4|s-t|_\T\le2\sin\bigl(\pi|s-t|_\T\bigr)
+             \le2\pi|s-t|_\T.
+\]
+The equivalence of the Euclidean norm and the $p$-norm on $\R^2$
+gives the summability assertion. The same inequalities give the
+null-sequence assertion.
+\end{proof}
+
+\subsection{Probability kernels and distances between measures}
+Every compact metrizable group has a normalized Haar measure: a Borel
+probability invariant under group translations. On $K=\T^\N$, this
+probability $\lambda$ is simply the product of normalized Lebesgue
+probabilities on the circle. It is invariant under
+each translation: first check this on sets restricting finitely many
+coordinates, and then use uniqueness of measures on the generated
+$\sigma$-algebra.
+
+A Borel map $x\mapsto\mu_x$ from a standard Borel space $X$ into
+$\Prob(Y)$ is a \emph{probability kernel}. For a probability $\lambda$
+on $X$ it defines a joint probability by
+\[
+ M(A)=\int_X \mu_x(A_x)\,d\lambda(x),\qquad
+ A_x=\{y:(x,y)\in A\},
+\]
+for Borel $A\subseteq X\times Y$. Measurability of the integrand and
+countable additivity follow by the monotone-class theorem and monotone
+convergence. We abbreviate this construction as
+$M(dx,dy)=\lambda(dx)\mu_x(dy)$.
+
+If $P\ll M$ are finite measures, the Radon--Nikodym theorem supplies a
+nonnegative measurable density $r=dP/dM$ satisfying
+$P(A)=\int_A r\,dM$. The density is determined only up to an $M$-null
+set. We will use its square root as an element of the Hilbert space
+$L^2(M)$; for a probability $P$, this element has norm one.
+
+For probabilities $P,Q$, choose a finite measure $R$ dominating both
+(for example $P+Q$), and define their Hellinger distance by
+\[
+ \Hel(P,Q)^2
+ =\int\left(\sqrt{\frac{dP}{dR}}
+             -\sqrt{\frac{dQ}{dR}}\right)^2\,dR.
+\]
+This expression is independent of $R$. Indeed, for another reference $R'$
+put $S=R+R'$. Writing $u=dR/dS$, the Radon--Nikodym chain rule gives
+$dP/dS=(dP/dR)u$ and $dQ/dS=(dQ/dR)u$, almost everywhere for $S$.
+The squared-root expression with reference $S$ is therefore $u$ times
+the expression with reference $R$; integration gives the same value.
+The same argument applies to $R'$. A common Borel bijection of the sample space preserves the
+distance, by pushing forward $R$ as well. When both measures are dominated
+by one fixed $M$, it is their square-root-density distance in $L^2(M)$.
+
+We will use the elementary inequalities
+\[
+ \|u^2-v^2\|_{L^1(M)}
+ \le \|u-v\|_{L^2(M)}\bigl(\|u\|_{L^2(M)}+\|v\|_{L^2(M)}\bigr),
+ \qquad u,v\ge0,
+\]
+and $|\sqrt{s}-\sqrt{t}|^2\le|s-t|$ for $s,t\ge0$.
+They connect square-root convergence with convergence of densities in
+$L^1$. In particular, square-root convergence implies convergence in
+total variation of the associated measures.
+
+\subsection{Nonsingular actions and conditional measures}
+Suppose a group acts on a standard Borel space $Z$ by Borel bijections.
+For a probability $\mu$ and a group element $g$, its pushforward is
+$g_*\mu(B)=\mu(g^{-1}B)$. The subgroup
+\[
+ \QI(\mu)=\{g:g_*\mu\ME\mu\}
+\]
+is the \emph{quasi-invariance subgroup}. The action is \emph{nonsingular}
+if every group element belongs to this subgroup. It is \emph{ergodic}
+if every Borel set invariant modulo null sets has measure zero or has
+null complement. These definitions also apply to sigma-finite measures.
+
+A \emph{disintegration} of $\mu$ over a Borel map $q:Z\to Y$ to a
+standard Borel space is a probability kernel $y\mapsto\nu_y$ such that,
+writing $\eta=q_*\mu$, one has
+\[
+ \mu(B)=\int_Y\nu_y(B)\,d\eta(y),\qquad
+ \nu_y(q^{-1}\{y\})=1\quad\text{for almost every }y.
+\]
+It describes conditional probabilities on the fibers of $q$. The
+countable-group ergodic-decomposition theorem used later supplies such
+a quotient with ergodic nonsingular conditional measures.
+
+\subsection{Operators and representations}
+The standard Borel structure on $B(\mathcal H)$ is generated by the
+matrix coefficients relative to a fixed orthonormal basis. On each
+norm-bounded ball it agrees with the Borel structures of the usual
+strong and weak operator topologies. For $S,T\in B(\mathcal H)$,
+\[
+ S\UE T\quad\Longleftrightarrow\quad
+ S=UTU^*\text{ for some unitary }U.
+\]
+For a countable discrete group $\Gamma$, $\Rep(\Gamma,\mathcal H)$
+is the space of homomorphisms into the unitary group, with pointwise
+strong convergence. A unitary equivalence of representations uses the
+same unitary for every group element. A unital representation of a
+unital $C^*$-algebra is a unital $*$-homomorphism into $B(\mathcal H)$;
+its unitary equivalences are defined in the same way.
+
+The operator-algebra facts used later concern semifinite factors.
+A \emph{von Neumann algebra} is a unital $*$-algebra of operators
+closed in the weak operator topology. Its \emph{commutant} consists
+of the operators commuting with all its elements; a \emph{factor}
+has only scalar central elements. A faithful normal semifinite trace
+$\tau$ assigns a possibly infinite size to positive operators and
+determines the Hilbert space $L^2(M,\tau)$ by completing the
+square-integrable elements in the norm $\tau(x^*x)^{1/2}$.
+Left and right multiplication commute on this space.
+For projections $p,q$ of finite trace in a semifinite factor,
+the left modules $L^2(M,\tau)p$ and $L^2(M,\tau)q$ are unitarily
+equivalent exactly when $\tau(p)=\tau(q)$. The later construction
+explains this fact in terms of partial isometries. The crossed-product
+and trace facts used there are stated explicitly, with references.
+
+A semifinite factor of type $\mathrm{II}$ has no nonzero minimal
+projections. It is of type $\mathrm{II}_1$ when its trace is finite on
+the identity and of type $\mathrm{II}_\infty$ when that trace is infinite.
+Two representations $\pi,\rho$ of $A$ are \emph{quasi-equivalent} if
+there is a normal $*$-isomorphism
+$\Phi:\pi(A)''\to\rho(A)''$ with $\Phi(\pi(a))=\rho(a)$ for every
+$a\in A$. Unitary equivalence implies quasi-equivalence, but the
+converse can fail because the representation's multiplicity, or more
+generally its module dimension, is additional data.
+
+
+A normal representation is one preserving bounded increasing suprema
+of positive operators. We use that continuous functions on a compact
+metrizable space generate its Borel sigma-algebra; consequently their
+multiplication operators generate the full diagonal von Neumann algebra
+for any sigma-finite Borel measure. Further crossed-product facts will
+be stated at their point of use.
+
+\section{The classical positive direction}
+We give an explicit reduction for $1\le p\le2$. This construction is
+independent of the obstruction proved later.
+
+\subsection{A one-coordinate Hilbert embedding}
+Fix $0<p<2$ and put
+\[
+ C_p=\int_{\R}(1-\cos u)|u|^{-1-p}\,du.
+\]
+The constant is positive and finite: near zero the integrand is bounded
+by a constant times $|u|^{1-p}$, and at infinity it is bounded by
+$2|u|^{-1-p}$. Consider the real Hilbert space
+\[
+ V_p=L^2\bigl(\R,|u|^{-1-p}\,du;\R^2\bigr)
+\]
+and the map
+\[
+ J_p(a)(u)=\frac{(\cos(au)-1,\sin(au))}{\sqrt{2C_p}}.
+\]
+The weighted measure is $\sigma$-finite, and this $L^2$ space is
+separable. The squared chord identity and a change of variables give
+\begin{equation}\label{eq:snowflake}
+ \|J_p(a)-J_p(b)\|_{V_p}^2
+ =\frac1{C_p}\int_\R(1-\cos((a-b)u))|u|^{-1-p}\,du
+ =|a-b|^p.
+\end{equation}
+In particular $J_p$ is continuous. Choose a countable orthonormal basis
+$(e_j)$ of $V_p$ and define
+\[
+ \theta_p(x)_{(n,j)}=\langle J_p(x_n),e_j\rangle.
+\]
+A fixed enumeration of $\N^2$ identifies this with a map
+$\theta_p:\R^\N\to\R^\N$. Each coordinate is continuous for the
+product topology. Parseval's identity and the nonnegativity of the terms
+give
+\begin{equation}\label{eq:theta}
+ \sum_{n,j}|\theta_p(x)_{(n,j)}-\theta_p(y)_{(n,j)}|^2
+ =\sum_n|x_n-y_n|^p,
+\end{equation}
+including the possibility that both sides are infinite. Thus
+$\theta_p$ reduces $\ell_p$ to $\ell_2$. For $p=2$, take $\theta_2=\id$;
+the integral defining $C_p$ is not used at this endpoint.
+
+\subsection{Gaussian products}
+For $a\in\R^\N$, let
+\[
+ \gamma_a=\bigotimes_{n=0}^{\infty}N(a_n,1),
+\]
+where $N(t,1)$ is the normal probability with mean $t$ and variance one.
+The following is the special case of Kakutani's theorem that we need.
+We include a proof to make the reduction explicit.
+
+\begin{lemma}\label{lem:Gaussian}
+For $a,b\in\R^\N$, the measures $\gamma_a$ and $\gamma_b$ are
+equivalent if $a-b\in\ell_2$, and mutually singular otherwise.
+\end{lemma}
+\begin{proof}
+Write $P=\gamma_a$, $Q=\gamma_b$, $d_n=a_n-b_n$, and
+$V_N=\sum_{n<N}d_n^2$. The finite-coordinate likelihood ratio is
+\[
+ L_N(z)=\exp\left(\sum_{n<N}d_n(z_n-b_n)-\frac{V_N}{2}\right).
+\]
+It is a function on the whole product, but depends only on its first
+$N$ coordinates. Under $Q$ the variables $z_n-b_n$ are independent
+standard normal variables. The identity
+$\E\exp(tZ)=\exp(t^2/2)$ gives
+\[
+ \E_Q L_N=1,\qquad \E_Q\sqrt{L_N}=e^{-V_N/8}.
+\]
+Set $u_N=\sqrt{L_N}\in L^2(Q)$. For $N\ge M$, independence of the
+first $M$ coordinates from the remaining block yields
+\[
+ \langle u_N,u_M\rangle_{L^2(Q)}=e^{-(V_N-V_M)/8},
+ \qquad
+ \|u_N-u_M\|_2^2=2\bigl(1-e^{-(V_N-V_M)/8}\bigr).
+\]
+If $\sum_n d_n^2<\infty$, the sequence $(u_N)$ is therefore Cauchy
+in $L^2(Q)$. Its limit $u$ is nonnegative and has norm one.
+The density-square inequality from Section~\ref{sec:prelim} gives
+$L_N\to u^2$ in $L^1(Q)$. If $A$ depends on the first $k$ coordinates,
+then $\int_A L_N\,dQ=P(A)$ for all $N\ge k$. Passing to the limit and
+using uniqueness of probabilities on the generating cylinder
+$\pi$-system gives $P=u^2Q$, and hence $P\ll Q$. Interchanging $a$
+and $b$ proves $Q\ll P$.
+
+If $V_N\to\infty$, let $A_N=\{L_N\ge1\}$. On $A_N$ we have
+$1\le\sqrt{L_N}$, and on its complement $L_N\le\sqrt{L_N}$. Thus
+\[
+ Q(A_N)+P(A_N^c)\le \E_Q\sqrt{L_N}=e^{-V_N/8}.
+\]
+Choose increasing $N_k$ so that $e^{-V_{N_k}/8}\le2^{-k}$.
+Then $\sum_k Q(A_{N_k})$ and $\sum_k P(A_{N_k}^c)$ are finite.
+The elementary Borel--Cantelli implication says that events whose
+probabilities have a finite sum occur only finitely often almost surely;
+it follows directly by bounding each tail union by the corresponding
+tail sum. Therefore the Borel set
+$A=\bigcup_r\bigcap_{k\ge r}A_{N_k}$ satisfies $P(A)=1$ and $Q(A)=0$.
+This proves mutual singularity.
+\end{proof}
+
+\begin{proposition}\label{prop:positive}
+For $1\le p\le2$, $\ell_p\leB\ME$. In fact there is a continuous
+reduction into $\Prob(2^\N)$ with its weak topology.
+\end{proposition}
+\begin{proof}
+Enumerate the rationals as $(q_j)$ and encode a real sequence by its
+rational cuts:
+\[
+ c:\R^\N\longrightarrow2^{\N\times\N},\qquad
+ c(z)_{(n,j)}=\mathbf1_{\{q_j<z_n\}}.
+\]
+This is a Borel injection. By Lusin--Souslin, it is a Borel isomorphism
+onto its Borel image, so pushforward by $c$ preserves and reflects mutual
+absolute continuity. A fixed coordinate enumeration identifies the
+target with $2^\N$.
+
+We claim that $a\mapsto c_*\gamma_a$ is weakly continuous. Suppose
+$a^k\to a$ coordinatewise, and realize the samples as $a^k+Z$ and $a+Z$
+using one sequence $Z$ of independent standard normal variables.
+With probability one, $a_n+Z_n\ne q_j$ for every $n,j$, since each of
+these countably many equalities has probability zero. For every such
+sample, each bit of $c(a^k+Z)$ is eventually equal to the corresponding
+bit of $c(a+Z)$. Thus the encoded sequences converge in the product
+Cantor topology. Dominated convergence, applied to continuous functions
+on Cantor space, proves weak convergence of their laws.
+
+By \eqref{eq:theta} and Lemma~\ref{lem:Gaussian}, the continuous map
+\[
+ x\longmapsto c_*\gamma_{\theta_p(x)}
+\]
+is the required reduction.
+\end{proof}
+The individual Gaussian means may be arbitrary real sequences; only
+their difference is required to be in $\ell_2$. In the singular case of
+Lemma~\ref{lem:Gaussian}, the subsequence $(N_k)$ may depend on the fixed
+pair $(a,b)$. It is not part of the definition of the reduction map.
+
+\section{From a Borel reduction to a quasi-invariance subgroup}
+The next step is where the definability of a hypothetical reduction meets
+the topology of the acting group. It is essential to retain the parameter
+as a coordinate of the constructed probability space.
+
+\begin{lemma}[Equivalence of kernels]\label{lem:fibers}
+Let $X,Y$ be standard Borel spaces, let $\lambda\in\Prob(X)$, and let
+$x\mapsto\mu_x$, $x\mapsto\nu_x$ be probability kernels. For the joint
+probabilities
+\[
+ M(dx,dy)=\lambda(dx)\mu_x(dy),\qquad
+ N(dx,dy)=\lambda(dx)\nu_x(dy),
+\]
+one has
+\[
+ N\ll M\quad\Longleftrightarrow\quad
+ \nu_x\ll\mu_x\ \text{for $\lambda$-almost every $x$}.
+\]
+Consequently $N\ME M$ if and only if
+$\nu_x\ME\mu_x$ for $\lambda$-almost every $x$.
+\end{lemma}
+\begin{proof}
+Suppose first that the stated fiberwise absolute continuity holds. If
+$M(A)=0$, nonnegativity gives $\mu_x(A_x)=0$ for almost every $x$.
+Hence $\nu_x(A_x)=0$ almost everywhere, and integration gives $N(A)=0$.
+
+Conversely, suppose $N\ll M$, and choose a nonnegative Borel version
+$r(x,y)$ of $dN/dM$. Let $\mathcal A$ be a countable generating
+$\pi$-system of Borel subsets of $Y$ that contains $Y$. Such a system
+exists because a standard Borel space has a countable generating algebra.
+For every Borel $B\in\mathcal A$ and every Borel $A\subseteq X$,
+\[
+ \int_A\nu_x(B)\,d\lambda(x)
+ =\int_A\left(\int_B r(x,y)\,d\mu_x(y)\right)d\lambda(x).
+\]
+Uniqueness of integrable densities on $X$ says that the two integrands
+agree almost everywhere. Intersect these conull sets for the countably
+many $B\in\mathcal A$. For each $x$ in the resulting conull set,
+the measure $r(x,\cdot)\mu_x$ has total mass one, by the equality for
+$B=Y$, and agrees with $\nu_x$ on $\mathcal A$. Uniqueness of finite
+measures on a generating $\pi$-system gives
+$\nu_x=r(x,\cdot)\mu_x$, and therefore $\nu_x\ll\mu_x$.
+Applying the assertion in both directions proves the last statement.
+\end{proof}
+
+\begin{proposition}[Compact averaging]\label{prop:averaging}
+Let $K$ be a compact metrizable abelian group and $H\leq K$ a subgroup.
+If $K/H\leB\ME$, then there is a
+probability $M$ on the compact metrizable space $Z=K\times2^\N$ such
+that, with
+\[
+ T_g(x,y)=(x+g,y),\qquad M_g=(T_g)_*M,
+\]
+one has
+\begin{equation}\label{eq:quasi-group}
+ M_g\ME M\quad\Longleftrightarrow\quad g\in H.
+\end{equation}
+Moreover, $g\mapsto M_g$ is weakly continuous on $K$.
+\end{proposition}
+\begin{proof}
+Let $x\mapsto\mu_x$ be the assumed Borel reduction, and let $\lambda$
+be Haar probability on $K$. Define
+\[
+ M(dx,dy)=\lambda(dx)\mu_x(dy).
+\]
+Translation invariance of $\lambda$ gives
+\[
+ M_g(dx,dy)=\lambda(dx)\mu_{x-g}(dy).
+\]
+For each fixed $g$, the reduction property says that
+$\mu_{x-g}\ME\mu_x$ holds for every $x$ if $g\in H$, and for no $x$
+if $g\notin H$. Lemma~\ref{lem:fibers} therefore proves
+\eqref{eq:quasi-group}.
+
+If $g_j\to g$ in $K$, then $F(T_{g_j}z)\to F(T_gz)$ for every
+$F\in C(Z)$ and every $z\in Z$. Dominated convergence gives
+\[
+ \int F\,dM_{g_j}=\int F(T_{g_j}z)\,dM(z)
+ \longrightarrow\int F(T_gz)\,dM(z)=\int F\,dM_g.
+\]
+This is weak convergence. Both spaces are metrizable, so the sequential
+statement proves continuity.
+\end{proof}
+
+The subgroup described by \eqref{eq:quasi-group} is the
+\emph{quasi-invariance subgroup} of $M$ for these translations. The
+proof does not require a conull set that works simultaneously for all
+$g$. It also does not require a measurable choice of sets witnessing
+inequivalence of pairs of fiber measures. Finally, weak continuity of
+the orbit map comes from the continuous translations of one fixed
+measure, although the original kernel need only be Borel.
+\section{Recovering a compatible Hilbert-space metric}
+We now recover a metric on the quasi-invariance subgroup. The square-root
+density alone need not distinguish two group elements, so we include a
+coordinate that remembers the element of the compact group.
+
+\begin{proposition}\label{prop:Hilbert-metric}
+Let $H\le K=\T^\N$ carry a Polish group topology whose inclusion into
+$K$ is continuous. Suppose a probability $M$ on $Z=K\times2^\N$
+satisfies \eqref{eq:quasi-group}. There is an injective map $\Psi$ from
+$H$ into a separable real Hilbert space such that
+\[
+ D(h,k)=\|\Psi(h)-\Psi(k)\|
+\]
+is a complete translation-invariant metric inducing the given topology
+on $H$.
+\end{proposition}
+\begin{proof}
+For $h\in H$, let
+\[
+ a_h=\sqrt{\frac{dM_h}{dM}}\in L^2(M).
+\]
+This denotes an equivalence class of functions; no simultaneous
+pointwise choice of densities is required. Every $a_h$ is nonnegative
+and has norm one. Define
+\[
+ q(g)=\bigl(2^{-n}\cos(2\pi g_n),
+             2^{-n}\sin(2\pi g_n)\bigr)_{n\ge0}\in\ell_2(\N;\R^2).
+\]
+Uniform convergence of the squared tails shows that $q$ is continuous.
+It is injective, and compactness of $K$ makes it a homeomorphism onto
+its compact image. Its induced distance is invariant under translations.
+Set
+\[
+ \Psi(h)=(q(h),a_h),\qquad
+ D(h,k)^2=\|q(h)-q(k)\|_2^2+\|a_h-a_k\|_{L^2(M)}^2.
+\]
+The first component makes $D$ a metric. The second is
+$\Hel(M_h,M_k)$, and a common translation of both measures preserves
+Hellinger distance. Thus $D$ is translation invariant. Since $H$ is
+abelian, this also gives
+\begin{equation}\label{eq:inverse-isometry}
+ D(-h,-k)=D(h,k).
+\end{equation}
+
+We prove completeness carefully. Let $(h_j)$ be $D$-Cauchy. The compact
+image $q(K)$ is closed in its Hilbert space, so there is $g\in K$ with
+$q(h_j)\to q(g)$, and hence $h_j\to g$ in $K$. There is also
+$a\in L^2(M)$ with $a_{h_j}\to a$. The nonnegative cone is closed
+in $L^2(M)$, and the norm is continuous, so $a\ge0$ and $\|a\|_2=1$.
+The density-square inequality gives
+\[
+ \left\|\frac{dM_{h_j}}{dM}-a^2\right\|_{L^1(M)}\longrightarrow0.
+\]
+Thus $M_{h_j}\to a^2M$ in total variation, and in particular weakly.
+The continuous orbit map also gives $M_{h_j}\to M_g$ weakly. Uniqueness
+of the weak limit implies
+\begin{equation}\label{eq:forward-density}
+ M_g=a^2M\ll M.
+\end{equation}
+
+One-sided absolute continuity is not yet enough to put $g$ in $H$.
+By \eqref{eq:inverse-isometry}, $(-h_j)$ is also $D$-Cauchy, and it
+converges to $-g$ in $K$. Repeating the argument gives $M_{-g}\ll M$.
+Push this last inclusion forward by $T_g$:
+\[
+ M=(T_g)_*M_{-g}\ll (T_g)_*M=M_g.
+\]
+Together with \eqref{eq:forward-density}, this gives $M_g\ME M$,
+so $g\in H$. Uniqueness of the nonnegative square root of the density
+then gives $a=a_g$. Consequently $D(h_j,g)\to0$, proving completeness.
+
+The Hilbert space used here is separable: $L^2(M)$ is separable for a
+finite Borel measure on a compact metrizable space, as follows by
+approximating measurable functions using a countable generating algebra.
+Every subspace of a separable metric space is separable. Hence $(H,D)$
+is a complete separable metric space. Translation invariance and the
+triangle inequality give
+\[
+ D(h+k,h'+k')\le D(h,h')+D(k,k'),
+\]
+and \eqref{eq:inverse-isometry} gives continuity of inversion. Thus
+$(H,D)$ is a Polish group. Its inclusion into $K$ is continuous, because
+convergence in $D$ implies convergence of $q(h)$.
+
+Both this topology and the given topology on $H$ are Polish group
+topologies with continuous inclusions into $K$. Lemma~\ref{lem:unique-topology}
+therefore identifies them. The map $\Psi$ is an isometry for $D$ and
+hence a topological embedding for the original topology, as required.
+\end{proof}
+
+Combining Propositions~\ref{prop:averaging} and
+\ref{prop:Hilbert-metric}, any Borel reduction of $K/H$ to mutual absolute
+continuity forces $H$ to admit a compatible invariant Hilbert-space
+distance. The next section gives a finite-dimensional test for this
+conclusion.
+\section{An elementary Hilbert-space inequality on finite tori}
+For an integer $m\ge2$, let $G=(\Z/m\Z)^n$, and let $e_j$ denote its
+$j$th coordinate vector. Expectations over $x\in G$ and
+$\varepsilon\in\{-1,0,1\}^n$ below are uniform averages. Each sign
+vector is mapped into $G$ by reducing its coordinates modulo $m$;
+the averaging still counts all $3^n$ sign vectors, even if some have
+the same image.
+
+\begin{lemma}\label{lem:torus-inequality}
+Let $m\ge2$ and $n\le m^2$. For any real Hilbert space $V$, any map
+$F:G\to V$, and any $a_1,\ldots,a_n\in\Z/m\Z$,
+\begin{equation}\label{eq:torus}
+ \sum_{j=1}^n\E_x\|F(x+a_je_j)-F(x)\|^2
+ \le4m^2\E_{x,\varepsilon}\|F(x+\varepsilon)-F(x)\|^2.
+\end{equation}
+In particular, if $m$ is even, every $a_j$ may be chosen to be $m/2$.
+\end{lemma}
+\begin{proof}
+The range of $F$ lies in a finite-dimensional real subspace. Choosing
+an orthonormal basis in that subspace reduces the claim, by summing
+coordinatewise, to a scalar-valued function. We may use complex-valued
+functions, since the inequality for real functions is then a special case.
+
+The characters of $G$ are
+\[
+ \chi_k(x)=\exp\left(\frac{2\pi i}{m}\sum_{j=1}^nk_jx_j\right),
+ \qquad k\in G.
+\]
+They form an orthonormal basis for scalar functions under uniform
+averaging. This follows by multiplying the one-coordinate identity
+\[
+ \frac1m\sum_{x=0}^{m-1}\exp(2\pi i kx/m)
+ =\begin{cases}1,&k=0\pmod m,\\0,&k\ne0\pmod m,\end{cases}
+\]
+which is a finite geometric sum. For
+$\widehat F(k)=\E_xF(x)\overline{\chi_k(x)}$, Parseval's identity gives
+\[
+ \E_x|F(x+v)-F(x)|^2
+ =\sum_{k\in G}|\widehat F(k)|^2|\chi_k(v)-1|^2.
+\]
+It therefore suffices to compare the two multipliers for each $k$.
+
+Let $r=|\{j:k_j\ne0\}|$. For any choice of the axis shifts,
+\begin{equation}\label{eq:long-multiplier}
+ \sum_{j=1}^n|\chi_k(a_je_j)-1|^2\le4r.
+\end{equation}
+The short-step multiplier is
+\begin{equation}\label{eq:short-multiplier}
+ \E_\varepsilon|\chi_k(\varepsilon)-1|^2
+ =2\left(1-\prod_{j=1}^n q_j\right),\qquad
+ q_j=\frac{1+2\cos(2\pi k_j/m)}3.
+\end{equation}
+Indeed, the signs are independent, each one-coordinate expectation of
+the character is the real number $q_j$, and $|z-1|^2=2-2\Re z$ for
+$|z|=1$.
+
+If $k_j=0$, then $q_j=1$. If $k_j\ne0$, choose its representative
+in $\{1,\ldots,m-1\}$ and put
+$s=\min(k_j,m-k_j)$. Then $1\le s\le m/2$. Concavity of sine on
+$[0,\pi/2]$ gives $\sin(\pi s/m)\ge2s/m\ge2/m$.
+If $q_j\ge0$, we obtain
+\[
+ 1-|q_j|=1-q_j=\frac43\sin^2(\pi k_j/m)
+ \ge\frac{16}{3m^2}\ge\frac1{m^2}.
+\]
+If $q_j<0$, then $|q_j|\le1/3\le1-1/m^2$. In either case,
+\[
+ |q_j|\le1-\frac1{m^2}\qquad(k_j\ne0).
+\]
+It follows that
+\[
+ 1-\prod_jq_j\ge1-\prod_j|q_j|
+ \ge1-(1-m^{-2})^r.
+\]
+For completeness, if $u=m^{-2}$ and $0\le r\le m^2$, then
+\[
+ (1-u)^{-r}\ge(1+u)^r\ge1+ru,
+\]
+so
+\[
+ 1-(1-u)^r\ge\frac{ru}{1+ru}\ge\frac{ru}{2}
+ =\frac{r}{2m^2}.
+\]
+The case $r=0$ is included. Thus the multiplier in
+\eqref{eq:short-multiplier} is at least $r/m^2$. Multiplication by
+$4m^2$ dominates \eqref{eq:long-multiplier}, proving the result.
+\end{proof}
+
+This estimate is a Hilbert-space instance of metric cotype; compare
+\cite[Proposition 3.1]{MN}. The proof above supplies the precise scaling
+and constant used here. In particular the dimension may be $n=m^2$.
+
+\begin{proposition}\label{prop:lp-obstruction}
+If $2<p<\infty$, the Polish group $(H_p,d_p)$ admits no topological embedding
+$\Psi$ into a real Hilbert space whose induced distance
+$D(h,k)=\|\Psi(h)-\Psi(k)\|$ is translation invariant.
+\end{proposition}
+\begin{proof}
+Suppose such a map exists. Continuity of its inverse at $\Psi(0)$
+supplies $c>0$ such that
+\begin{equation}\label{eq:long-threshold}
+ d_p(h,0)\ge\frac14\quad\Longrightarrow\quad D(h,0)\ge c.
+\end{equation}
+Continuity of $\Psi$ at zero then supplies $\delta>0$ such that
+\begin{equation}\label{eq:short-threshold}
+ d_p(h,0)<\delta\quad\Longrightarrow\quad D(h,0)<\frac c3.
+\end{equation}
+Both constants are fixed before choosing a dimension.
+
+Because $2/p-1<0$, choose an even integer $m\ge2$ so large that
+$m^{2/p-1}<\delta$, and put $n=m^2$. Embed $G=(\Z/m\Z)^n$ in $H_p$
+by
+\[
+ \iota(x)_j=\begin{cases}x_j/m\pmod1,&1\le j\le n,\\0,&j=0\text{ or }j>n.
+ \end{cases}
+\]
+The formula is independent of the integer representatives of $x_j$,
+and defines a group homomorphism. Let $F=\Psi\circ\iota$.
+An axis half-turn satisfies
+\[
+ d_p\bigl(\iota((m/2)e_j),0\bigr)=\frac12.
+\]
+Translation invariance and \eqref{eq:long-threshold} therefore give
+$\|F(x+(m/2)e_j)-F(x)\|\ge c$ for every $x,j$. Every short sign
+increment satisfies
+\[
+ d_p\bigl(\iota(\varepsilon),0\bigr)
+ \le\frac{n^{1/p}}m=m^{2/p-1}<\delta.
+\]
+Thus \eqref{eq:short-threshold} and translation invariance give
+$\|F(x+\varepsilon)-F(x)\|<c/3$ for every $x,\varepsilon$.
+Applying Lemma~\ref{lem:torus-inequality} yields
+\[
+ m^2c^2=nc^2
+ \le\sum_{j=1}^n\E_x\|F(x+(m/2)e_j)-F(x)\|^2
+ \le4m^2\E_{x,\varepsilon}\|F(x+\varepsilon)-F(x)\|^2
+ \le\frac49m^2c^2,
+\]
+a contradiction.
+\end{proof}
+
+The endpoint $p=2$ is excluded precisely because the short-step bound
+in this scaling is then $m^{2/p-1}=1$, which does not approach zero.
+No rate of continuity of the hypothetical embedding is assumed.
+
+\begin{theorem}\label{thm:lp}
+For $1\le p\leq\infty$,
+\[
+ \ell_p\leB\ME\quad\Longleftrightarrow\quad p\le2.
+\]
+\end{theorem}
+\begin{proof}
+Proposition~\ref{prop:positive} proves the forward construction for
+$1\le p\le2$. If $2<p<\infty$ and $\ell_p\leB\ME$, composition with
+Lemma~\ref{lem:compact-replacement} gives $K/H_p\leB\ME$.
+Propositions~\ref{prop:averaging} and \ref{prop:Hilbert-metric} then
+produce an invariant Hilbert-space metric compatible with $d_p$.
+This contradicts Proposition~\ref{prop:lp-obstruction}.
+
+For the endpoint $p=\infty$, we give a continuous reduction
+$\ell_3\leB\ell_\infty$. Enumerate all pairs $(n,q)$ with $n\geq1$
+and $q\in\Q^n$, and define
+\[
+ F(x)_{(n,q)}
+   =\|(x_0,\ldots,x_{n-1})-q\|_3-\|q\|_3.
+\]
+Every coordinate is continuous. The triangle inequality and approximation
+of $(x_0,\ldots,x_{n-1})$ by rational vectors give
+\[
+ \sup_{q\in\Q^n}|F(x)_{(n,q)}-F(y)_{(n,q)}|
+    =\left(\sum_{i<n}|x_i-y_i|^3\right)^{1/3}.
+\]
+Taking the supremum over $n$ shows that $F(x)-F(y)$ is bounded exactly
+when $x-y\in\ell_3$. The already proved nonreduction
+$\ell_3\nleB{\equiv_m}$ therefore implies
+$\ell_\infty\nleB{\equiv_m}$. This proves Theorem~\ref{main:lp}
+in its full stated range.
+\end{proof}
+
+\section{The null-sequence relation}
+\begin{proposition}\label{prop:c0-obstruction}
+The Polish group $(H_0,d_0)$ admits no topological embedding into a real
+Hilbert space for which the induced distance is translation invariant.
+\end{proposition}
+\begin{proof}
+Suppose $\Psi$ were such an embedding, and write
+$D(h,k)=\|\Psi(h)-\Psi(k)\|$. As in the proof of
+Proposition~\ref{prop:lp-obstruction}, choose $c>0$ and then $\delta>0$
+such that
+\[
+ d_0(h,0)\ge\tfrac14\ \Longrightarrow\ D(h,0)\ge c,
+ \qquad
+ d_0(h,0)<\delta\ \Longrightarrow\ D(h,0)<c/3.
+\]
+Choose an even integer $m\ge2$ with $1/m<\delta$, set $n=m^2$, and
+use the same finite-support grid $\iota:(\Z/m\Z)^n\to H_0$.
+Every axis half-turn has $d_0$-distance $1/2$ from zero, whereas every
+short sign increment has distance at most $1/m$. Translation invariance
+gives the long- and short-step estimates at every point of the grid.
+Lemma~\ref{lem:torus-inequality}, applied to $F=\Psi\circ\iota$, gives
+\[
+ m^2c^2\le 4m^2(c/3)^2,
+\]
+which is impossible.
+\end{proof}
+
+\begin{theorem}\label{thm:c0}
+\[
+ c_0\nleB\ME.
+\]
+\end{theorem}
+\begin{proof}
+A proposed reduction, composed with the continuous map in
+Lemma~\ref{lem:compact-replacement}, would reduce $K/H_0$ to $\ME$.
+Compact averaging and Proposition~\ref{prop:Hilbert-metric} would then
+give the embedding excluded by Proposition~\ref{prop:c0-obstruction}.
+This also proves Theorem~\ref{main:c0}.
+\end{proof}
+
+The short-step estimate for $H_0$ is independent of the dimension:
+$d_0(\iota(\varepsilon),0)\le1/m$. This is the precise geometric reason
+that the same finite-torus argument applies to null sequences. No
+comparison of $c_0$ with an $\ell_p$ relation is used.
+
+\section{The compact group and its two subgroups}\label{sec:groups}
+For the rest of the proof, $K$ denotes the following compact group,
+rather than the product of circles used for the sequence-space obstruction.
+Let
+\[
+ L=\widehat{\Q_{\mathrm{discrete}}}
+   =\{\chi\in\T^\Q:\chi(r+s)=\chi(r)+\chi(s)\},
+ \qquad K=L^\N.
+\]
+Thus $L$ is a closed subgroup of a countable product of circles and is
+compact metrizable. As before, $\T=\R/\Z$ is written additively. Thus a character here
+is a homomorphism into the additive circle. Define
+\[
+ \iota(t)(r)=rt+\Z,\qquad
+ j:\R^\N\longrightarrow K,\quad j(x)_n=\iota(x_n).
+\]
+The map $j$ is a continuous injective homomorphism. Injectivity follows
+because $rt\in\Z$ for every rational $r$ forces $t=0$. Its image is
+Borel and $j$ has a Borel inverse on that image. No claim that it is
+a topological embedding is needed.
+
+Put
+\begin{gather*}
+ B_0=\left\{h\in\ell_1(\R):\sum_n h_n=0\right\},
+ \qquad H=j(B_0),\qquad G=j(\ell_1(\R)),\\
+ D=j\left(\left\{d\in\Q^{(\N)}:\sum_n d_n=0\right\}\right).
+\end{gather*}
+Here $\Q^{(\N)}$ denotes the finitely supported rational sequences.
+Both $G$ and $H$ are Borel: their Banach-space domains map continuously
+and injectively into $K$. Give $H$ the Polish group topology transported
+from the $\ell_1$ norm on the closed Banach subspace $B_0$.
+Its inclusion in $K$ is continuous and $D$ is countable and dense for
+this finer topology. Density follows by finite truncation, correcting
+the truncated sum in one coordinate, and rational approximation with
+one final rational correction.
+
+Index coordinates by $\N=\{0,1,2,\ldots\}$. For $a\in\R$ and $n\ge1$,
+set
+\begin{equation}\label{eq:vn}
+ v_n(a)=j(ae_0-ae_n),\qquad g(a)=j(ae_0).
+\end{equation}
+The facts used throughout the proof are
+\begin{equation}\label{eq:group-facts}
+ v_n(a)\in H,\quad \|v_n(a)\|_H=2|a|,\quad
+ v_n(a)\longrightarrow g(a)\text{ in }K,\quad
+ mg(a/m)=g(a).
+\end{equation}
+Moreover $G=H+g(\R)$ and $g(1)\notin H$.
+
+\section{A rigidity property of quasi-invariance groups}
+\label{sec:measure-obstruction}
+
+Throughout this section, $K$, $j$, $H$, $G$, and $D$ are as defined
+above. Thus
+\[
+ B_0=\left\{h\in\ell_1(\R):\sum_{n=0}^{\infty}h_n=0\right\},
+ \qquad H=j(B_0),\qquad G=j(\ell_1(\R)),
+\]
+and $D$ is the image under $j$ of the finitely supported rational
+sequences of sum zero. We give $B_0$ its $\ell_1$ norm and identify $H$
+with $B_0$ when discussing this finer Polish group topology. In
+particular, $D$ is dense in $H$ for this topology. Recall also that
+\[
+ v_n(a)=j(a(e_0-e_n))\longrightarrow g(a)=j(ae_0)
+ \quad\text{in }K\qquad(n\longrightarrow\infty),
+\]
+where $n\geq1$ and the $B_0$ norm of $a(e_0-e_n)$ is $2|a|$.
+
+If $K$ acts continuously on a compact metrizable space $Z$ and
+$\mu\in\Prob(Z)$, write
+\[
+ k\mu=(z\mapsto k\cdot z)_*\mu,
+ \qquad
+ \QI(\mu)=\{k\in K:k\mu\text{ is equivalent to }\mu\}.
+\]
+The quasi-invariance group is a subgroup of $K$. No singularity
+assumption is imposed on translates outside this subgroup.
+
+\begin{theorem}\label{thm:rigidity}
+For every continuous action of $K$ on a compact metrizable space $Z$
+and every $\mu\in\Prob(Z)$,
+\[
+ H\subseteq\QI(\mu)\quad\Longrightarrow\quad G\subseteq\QI(\mu).
+\]
+\end{theorem}
+
+We first establish the measure-theoretic ingredients of the proof.
+
+\subsection{Affinity and conditional measures}
+
+For two probability measures $\rho,\sigma$ on a standard Borel space,
+their Hellinger affinity is
+\[
+ \Aff(\rho,\sigma)
+ =\int\sqrt{\frac{d\rho}{d\lambda}
+                  \frac{d\sigma}{d\lambda}}\,d\lambda,
+\]
+where $\lambda$ is any finite measure dominating both. The expression
+is independent of $\lambda$, takes values in $[0,1]$, and is zero
+exactly when $\rho$ and $\sigma$ are mutually singular. With the
+normalization of Hellinger distance used above,
+$\Hel(\rho,\sigma)^2=2-2\Aff(\rho,\sigma)$.
+
+\begin{lemma}\label{lem:affinity-usc}
+If $Z$ is compact metrizable, then
+\begin{equation}\label{eq:affinity-variational}
+ \Aff(\rho,\sigma)
+ =\inf_{\substack{f\in C(Z)\\ f>0}}
+       \frac12\left(\int f\,d\rho+\int f^{-1}\,d\sigma\right).
+\end{equation}
+Consequently affinity is jointly upper semicontinuous, and hence
+Borel, on $\Prob(Z)^2$ with its weak topology.
+\end{lemma}
+
+\begin{proof}
+Set $\lambda=\rho+\sigma$, $p=d\rho/d\lambda$, and
+$q=d\sigma/d\lambda$, choosing Borel versions with $p,q\geq0$ and
+$p+q=1$ almost everywhere. The arithmetic--geometric mean inequality
+gives
+\[
+ \sqrt{pq}\leq\frac12(fp+f^{-1}q)
+\]
+for every positive measurable $f$. This proves one inequality in
+\eqref{eq:affinity-variational}.
+
+For $0<\delta\leq1$, let
+\[
+ f_\delta=\sqrt{\frac{q+\delta}{p+\delta}}.
+\]
+Its values lie in a compact interval $[c_\delta,C_\delta]\subset(0,\infty)$.
+Moreover,
+\[
+ \frac12(pf_\delta+qf_\delta^{-1})\longrightarrow\sqrt{pq}
+ \quad\text{almost everywhere as }\delta\downarrow0.
+\]
+Both summands are bounded by $\sqrt2$: for example,
+$pf_\delta\leq\sqrt{p(q+\delta)}\leq\sqrt2$.
+Dominated convergence therefore applies. For each fixed $\delta$,
+regularity of the finite Borel measure $\lambda$ gives continuous
+functions converging to $f_\delta$ in $L^1(\lambda)$. Clipping these
+functions to $[c_\delta,C_\delta]$ preserves continuity and convergence.
+Inversion is Lipschitz on this interval, so their reciprocals also
+converge in $L^1(\lambda)$. Thus the infimum over positive continuous
+functions is at most
+$\frac12\int(pf_\delta+qf_\delta^{-1})\,d\lambda$.
+Letting $\delta\downarrow0$ proves the formula. Each expression in its
+infimum is weakly continuous in $(\rho,\sigma)$, proving upper
+semicontinuity.
+\end{proof}
+
+\begin{lemma}\label{lem:affinity-disintegration}
+Let $q:Z\to Y$ be a Borel map between standard Borel spaces. Suppose
+$\rho,\sigma\in\Prob(Z)$ have the same marginal $\eta$ under $q$, and
+write their disintegrations as
+\[
+ \rho=\int_Y\rho_y\,d\eta(y),\qquad
+ \sigma=\int_Y\sigma_y\,d\eta(y),
+\]
+where the conditional probabilities are concentrated on $q^{-1}\{y\}$
+for almost every $y$. Then
+\begin{equation}\label{eq:conditional-affinity}
+ \Aff(\rho,\sigma)
+   =\int_Y\Aff(\rho_y,\sigma_y)\,d\eta(y).
+\end{equation}
+Furthermore, $\rho$ and $\sigma$ are equivalent if and only if
+$\rho_y$ and $\sigma_y$ are equivalent for $\eta$-almost every $y$.
+\end{lemma}
+
+\begin{proof}
+Let $\lambda=(\rho+\sigma)/2$ and
+$\lambda_y=(\rho_y+\sigma_y)/2$. These are a measure and its
+disintegration over $q$, with marginal $\eta$. Put
+$r=d\rho/d\lambda$ and $s=d\sigma/d\lambda$.
+For almost every $y$, the restrictions of $r$ and $s$ are respectively
+the densities of $\rho_y$ and $\sigma_y$ relative to $\lambda_y$.
+Here is the usual uniqueness argument: for every Borel $C\subseteq Y$
+and every member $B$ of a countable generating algebra on $Z$,
+\[
+ \int_C\int_B r\,d\lambda_y\,d\eta(y)
+ =\rho(B\cap q^{-1}(C))
+ =\int_C\rho_y(B)\,d\eta(y).
+\]
+Include $B=Z$, discard one null set for the countable algebra, and
+use uniqueness of finite measures to obtain the assertion for all
+Borel $B$. The same argument applies to $s$.
+Fubini's theorem applied to $\sqrt{rs}$ now proves
+\eqref{eq:conditional-affinity}.
+
+For the last assertion, $\rho\ll\sigma$ is equivalent to
+$\lambda(\{r>0,\ s=0\})=0$. Disintegrating this nonnegative quantity
+shows that it is equivalent to $\rho_y\ll\sigma_y$ almost everywhere.
+Apply the same argument in the other direction.
+\end{proof}
+
+\begin{lemma}\label{lem:ergodic-dichotomy}
+Two ergodic quasi-invariant probability measures for the same Borel
+action of a countable group are either equivalent or mutually singular.
+They need not have the same Radon--Nikodym cocycle.
+\end{lemma}
+
+\begin{proof}
+Let the measures be $\rho,\sigma$ and set
+$\lambda=(\rho+\sigma)/2$. This measure is also quasi-invariant.
+Let $A$ and $B$ be the positive-density sets of $\rho$ and $\sigma$
+relative to $\lambda$. Both are invariant modulo $\lambda$: a group
+element sends the essential support of either measure to the
+essential support of its translate, which has the same measure class.
+
+If $\lambda(A\cap B)=0$, the measures are singular. Otherwise both
+$\rho(A\cap B)$ and $\sigma(A\cap B)$ are positive. Ergodicity of
+$\rho$ applied to $B$ gives $\rho(B)=1$, and ergodicity of $\sigma$
+applied to $A$ gives $\sigma(A)=1$. Hence $A=B$ modulo $\lambda$,
+and the two measures are equivalent.
+\end{proof}
+
+\subsection{Continuity and the invariant quotient}
+
+\begin{lemma}\label{lem:koopman-continuity}
+Suppose $H\subseteq\QI(\mu)$. The nonsingular Koopman representation
+of $B_0$ on $L^2(Z,\mu)$,
+\[
+ (U_h\xi)(z)
+   =\sqrt{r_h(z)}\,\xi(j(-h)\cdot z),
+ \qquad r_h=\frac{d(j(h)\mu)}{d\mu},
+\]
+is strongly continuous for the $\ell_1$ topology on $B_0$.
+In particular,
+\[
+ \Aff(\mu,j(h)\mu)=\langle 1,U_h1\rangle\longrightarrow1
+ \quad\text{as }\|h\|_1\longrightarrow0.
+\]
+\end{lemma}
+
+\begin{proof}
+We first verify measurability; this is necessary because a Borel scalar
+positive definite function alone need not be continuous. Choose
+increasing finite Borel partitions $\mathcal P_n$ whose union generates
+the Borel sigma-algebra of $Z$. The functions
+\[
+ r_{h,n}(z)=
+ \sum_{\substack{A\in\mathcal P_n\\\mu(A)>0}}
+       \frac{(j(h)\mu)(A)}{\mu(A)}\,1_A(z)
+\]
+are jointly Borel in $(h,z)$. Indeed,
+$(j(h)\mu)(A)=\int 1_A(j(h)\cdot z)\,d\mu(z)$ is Borel in $h$.
+For each fixed $h$, these functions are the conditional expectations
+of $d(j(h)\mu)/d\mu$. Martingale convergence therefore gives a jointly
+Borel version of $r_h$: take their finite positive limit where it
+exists, and assign the value one elsewhere. For each $h$, the
+exceptional set has $\mu$-measure zero.
+
+The change-of-variables formula and the Radon--Nikodym chain rule show
+that the displayed operators form a unitary representation. Its matrix
+coefficients between bounded Borel functions are Borel functions of
+$h$, by joint measurability and integration. Such functions contain a
+countable dense subset of $L^2(Z,\mu)$. Since this Hilbert space is
+separable, its unitary group with the strong operator topology is
+Polish, and these matrix coefficients show that $h\mapsto U_h$ is a
+Borel homomorphism into that group.
+
+Automatic continuity of Borel homomorphisms between Polish groups,
+proved in Section~\ref{sec:prelim}, applies to $h\mapsto U_h$.
+The final identity follows directly from the definition of affinity.
+\end{proof}
+
+\begin{lemma}\label{lem:fixed-quotient}
+Assume $H\subseteq\QI(\mu)$. There are a standard Borel space $Y$, a
+Borel map $q:Z\to Y$, a probability $\eta=q_*\mu$, and a measurable
+family $(\nu_y)_{y\in Y}$ such that
+\[
+ \mu=\int_Y\nu_y\,d\eta(y),
+\]
+almost every $\nu_y$ is $D$-ergodic and $D$-quasi-invariant and is
+concentrated on $q^{-1}\{y\}$, and, for each fixed $h\in H$,
+\begin{equation}\label{eq:quotient-fixed}
+ q(h\cdot z)=q(z)\quad\text{for }\mu\text{-almost every }z.
+\end{equation}
+For each such $h$,
+\begin{equation}\label{eq:translate-disintegration}
+ \Aff(\mu,h\mu)
+   =\int_Y\Aff(\nu_y,h\nu_y)\,d\eta(y).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The nonsingular ergodic decomposition theorem for a countable group
+provides a countably generated invariant quotient with the asserted
+conditional measures; see \cite[Theorem~1.5]{GS}, particularly its
+invariance, conditional-expectation, and fiber-concentration assertions.
+Thus $q$ is $D$-invariant modulo $\mu$ and can be taken to generate
+the invariant sigma-algebra modulo null sets. We use the disintegration
+over this quotient, not merely a barycentric representation by ergodic
+measures.
+
+To prove \eqref{eq:quotient-fixed}, let $f$ be any bounded
+$D$-invariant measurable function,
+and let $M_f$ be multiplication by $f$ on $L^2(Z,\mu)$. The Koopman
+formula gives
+\[
+ U_hM_fU_h^*=M_{f\circ(j(-h)\cdot)}\qquad(h\in B_0).
+\]
+In particular, $M_f$ commutes with $U_d$ for every $d\in D$, using
+the identification of $D$ with its preimage in $B_0$. By density of
+$D$ and Lemma~\ref{lem:koopman-continuity}, it commutes with every
+$U_h$, $h\in B_0$. Hence $f$ is invariant modulo $\mu$ under every
+element of $H$.
+
+Apply this to the indicators of the inverse images under $q$ of a
+countable family of Borel subsets separating points of $Y$. For each
+fixed $h$, intersecting the corresponding countably many conull sets
+gives \eqref{eq:quotient-fixed}. There is no assertion of a common
+conull set for all $h$.
+
+Fix $h\in H$. Disintegrating the null exceptional set in
+\eqref{eq:quotient-fixed} shows
+that $h\nu_y$ is concentrated on $q^{-1}\{y\}$ for almost every $y$.
+Consequently
+\[
+ h\mu=\int_Y h\nu_y\,d\eta(y)
+\]
+is the disintegration of $h\mu$ over the same quotient, with the same
+base probability $\eta$. Lemma~\ref{lem:affinity-disintegration} gives
+\eqref{eq:translate-disintegration}.
+\end{proof}
+
+\subsection{The roots argument}
+
+\begin{proof}[Proof of Theorem~\ref{thm:rigidity}]
+Assume $H\subseteq\QI(\mu)$ and fix the disintegration in
+Lemma~\ref{lem:fixed-quotient}. For $s\geq0$, put
+\[
+ \varepsilon(s)=
+ \sup_{\substack{h\in B_0\\\|h\|_1\leq2s}}
+       \bigl(1-\Aff(\mu,j(h)\mu)\bigr).
+\]
+Then $0\leq\varepsilon(s)\leq1$, and
+$\varepsilon(s)\to0$ as $s\downarrow0$ by
+Lemma~\ref{lem:koopman-continuity}.
+
+Fix $a\in\R$. Since $\|a(e_0-e_n)\|_1=2|a|$,
+\eqref{eq:translate-disintegration} gives
+\begin{equation}\label{eq:uniform-affinity-bound}
+ \int_Y\Aff(\nu_y,v_n(a)\nu_y)\,d\eta(y)
+ =\Aff(\mu,v_n(a)\mu)\geq1-\varepsilon(|a|).
+\end{equation}
+For every fixed probability $\nu_y$, continuity of the $K$ action and
+compactness of $Z$ imply weak convergence
+$v_n(a)\nu_y\to g(a)\nu_y$. Lemma~\ref{lem:affinity-usc} therefore
+gives
+\[
+ \Aff(\nu_y,g(a)\nu_y)
+ \geq\limsup_n\Aff(\nu_y,v_n(a)\nu_y).
+\]
+All these quantities lie in $[0,1]$. The reverse Fatou inequality,
+together with \eqref{eq:uniform-affinity-bound}, yields
+\begin{equation}\label{eq:limit-affinity-bound}
+ \int_Y\Aff(\nu_y,g(a)\nu_y)\,d\eta(y)
+ \geq1-\varepsilon(|a|).
+\end{equation}
+
+Restrict to a fixed conull Borel subset $Y_0\subseteq Y$ on which
+$\nu_y$ is $D$-ergodic and $D$-quasi-invariant. Since $K$ is abelian,
+$g(a)$ commutes with $D$, so $g(a)\nu_y$ has these two properties as
+well. Lemma~\ref{lem:ergodic-dichotomy} shows that these two measures
+are equivalent or singular. Thus the Borel set
+\[
+ B_a=\{y\in Y_0:g(a)\notin\QI(\nu_y)\}
+     =\{y\in Y_0:\Aff(\nu_y,g(a)\nu_y)=0\}
+\]
+satisfies, by \eqref{eq:limit-affinity-bound},
+\[
+ \eta(B_a)\leq\varepsilon(|a|).
+\]
+For every positive integer $m$, the identity $m g(a/m)=g(a)$ and the
+subgroup property of $\QI(\nu_y)$ imply
+$B_a\subseteq B_{a/m}$. Hence
+\[
+ \eta(B_a)\leq\varepsilon(|a|/m)\longrightarrow0.
+\]
+Only countably many roots are used for this fixed $a$. Any exceptional
+sets arising in \eqref{eq:translate-disintegration} can likewise be
+discarded simultaneously for the
+countable family $v_n(a/m)$. No choice of a conull set uniform in all
+real $a$ is required.
+
+It follows that $g(a)\nu_y$ and $\nu_y$ are equivalent for almost
+every $y$. Integrating their null sets in both directions gives
+$g(a)\mu\sim\mu$. Since $a$ was arbitrary, every $g(a)$ belongs to
+$\QI(\mu)$. Finally, for $h\in\ell_1(\R)$, set
+$a=\sum_nh_n$. The decomposition
+\[
+ h=(h-ae_0)+ae_0,
+ \qquad h-ae_0\in B_0,
+\]
+and the subgroup property give $j(h)\in\QI(\mu)$. This proves
+$G\subseteq\QI(\mu)$.
+\end{proof}
+
+\section{The compact coset relation does not reduce to measure equivalence}
+\label{sec:coset-nonreduction}
+
+Let $K/H$ be the coset equivalence relation on $K$:
+\[
+ x\mathrel{K/H}y\quad\Longleftrightarrow\quad x-y\in H.
+\]
+We take $\ME$ on $\Prob(2^{\N})$, where it denotes mutual absolute
+continuity. This is the usual standard Borel model of measure
+equivalence; changing the underlying uncountable standard Borel space
+does not change its Borel isomorphism type.
+
+\begin{theorem}\label{thm:nonreduction}
+The relation $K/H$ is not Borel reducible to $\ME$:
+\[
+ K/H\nleB\ME.
+\]
+\end{theorem}
+
+\begin{proof}
+If $K/H\leB{\equiv_m}$, Proposition~\ref{prop:averaging} supplies a
+probability $M$ on $K\times2^\N$ whose exact quasi-invariance group
+for first-coordinate translation is $H$. Theorem~\ref{thm:rigidity}
+would then give $G\subseteq H$. This is impossible because
+$j(e_0)\in G\setminus H$.
+\end{proof}
+
+\begin{remark}
+The compact-averaging argument uses only nonequivalence of the reduction
+kernel values $\mu_{x-k}$ and $\mu_x$ when $k\notin H$. It does not
+assume, or infer, that those measures
+are mutually singular. The ergodic dichotomy is used earlier, only
+for the conditional ergodic measures in the proof of rigidity.
+\end{remark}
+\section{A restricted-product measure and an ergodic action}
+\label{sec:restricted-product}
+
+We construct a semifinite measure whose translation modulus records the
+sum of an absolutely summable sequence. Throughout this section, sequences
+are indexed by $\N=\{0,1,\ldots\}$.
+Set
+\[
+ I=[-\log 2,0],\qquad dm(t)=e^{-t}\,dt,\qquad \rho=m\mathbin{\upharpoonright}I.
+\]
+Thus $\rho$ is a probability measure, with density between $1$ and $2$ on
+$I$. Put $S=I^{\N}$ and, for $N\geq0$, let
+\[
+ X_N=\R^{\{0,\ldots,N-1\}}\times I^{\{N,N+1,\ldots\}},
+ \qquad X=\bigcup_{N\geq0}X_N.
+\]
+Regard
+\[
+ \sigma_N=m^{\otimes N}\otimes\rho^{\otimes\{N,N+1,\ldots\}}
+\]
+as a measure on $\R^{\N}$ carried by $X_N$. Since
+$\sigma_{N+1}\mathbin{\upharpoonright}X_N=\sigma_N$, these measures increase.
+Their limit
+\[
+ \sigma(B)=\lim_{N\to\infty}\sigma_N(B)
+\]
+is a measure and satisfies $\sigma\mathbin{\upharpoonright}X_N=\sigma_N$.
+Indeed, countable additivity follows by interchanging two increasing sums
+of nonnegative numbers. The sets
+\[
+ [-r,r]^N\times I^{\{N,N+1,\ldots\}},\qquad N,r\geq1,
+\]
+have finite measure and cover $X$. Consequently $\sigma$ is
+$\sigma$-finite. It is diffuse and infinite, and
+\[
+ \sigma(S)=1,\qquad \sigma\mathbin{\upharpoonright}S=\rho^{\otimes\N}.
+\]
+For $h\in\R^{\N}$, write $T_h(x)=x+h$ and
+$\sigma_h=(T_h)_*\sigma$.
+
+\begin{lemma}
+\label{lem:restricted-translation}
+For every $h\in\R^{\N}$,
+\[
+ \begin{cases}
+ \displaystyle\sigma_h=\exp\!\left(\sum_{n=0}^{\infty}h_n\right)\sigma,
+       & h\in\ell_1(\R),\\[4pt]
+ \sigma_h\perp\sigma,&h\notin\ell_1(\R).
+ \end{cases}
+\]
+\end{lemma}
+
+\begin{proof}
+If $c$ has finite support, then $m(B-c_n)=e^{c_n}m(B)$ in each translated
+coordinate. Applying this identity to $\sigma_N$ for $N$ beyond the support
+of $c$ and then taking the increasing limit gives
+\begin{equation}
+ \sigma_c=e^{\sum_n c_n}\sigma.
+ \label{eq:finite-shift-modulus}
+\end{equation}
+
+For the support calculation, define
+\[
+ b(u)=\rho\{t\in I:t+u\notin I\}.
+\]
+If $|u|<\log2$, the departing interval has length $|u|$, and the density
+of $\rho$ on that interval lies between $1$ and $2$. If $|u|\geq\log2$,
+then $b(u)=1$, up to irrelevant endpoints. There are therefore constants
+$c,C>0$ such that
+\begin{equation}
+ c\min\{1,|u|\}\leq b(u)\leq C\min\{1,|u|\}.
+ \label{eq:departure-estimate}
+\end{equation}
+Under $\sigma_N$, the coordinates after $N$ are independent with law
+$\rho$. If $h\in\ell_1$, the first Borel--Cantelli lemma shows that
+$x_n+h_n$ leaves $I$ only finitely often for almost every tail. Fubini's
+theorem, followed by the increasing union over $N$, gives
+$\sigma_h(X^c)=0$. If $h\notin\ell_1$, the sum of the departure
+probabilities is infinite by \eqref{eq:departure-estimate}. Independence
+and the second Borel--Cantelli lemma give infinitely many departures
+almost surely, for every $\sigma_N$. Hence $\sigma_h(X)=0$. As $\sigma$
+is carried by $X$, this proves the singularity assertion.
+
+Suppose now that $h\in\ell_1$. For $N\geq0$, the product formula gives
+\[
+ \sigma_N(S-h)
+   =\exp\!\left(\sum_{n<N}h_n\right)
+        \prod_{n\geq N}\rho(I-h_n).
+\]
+The infinite product here denotes the probability of the intersection
+of the independent tail conditions. Since
+$\sum_n(1-\rho(I-h_n))<\infty$, its tail tends to $1$; this also follows
+directly from the union bound
+\[
+ 1-\prod_{n\geq N}\rho(I-h_n)
+       \leq\sum_{n\geq N}(1-\rho(I-h_n)).
+\]
+It follows that
+\begin{equation}
+ \sigma_h(S)=\exp\!\left(\sum_n h_n\right).
+ \label{eq:shifted-base-mass}
+\end{equation}
+More generally, let $B_i\subseteq I$ be Borel for $i<M$, and set
+\[
+ B=\prod_{i<M}B_i\times I^{\{M,M+1,\ldots\}}\subseteq S.
+\]
+For $N\geq M$, the same computation yields
+\[
+ \sigma_N(B-h)=
+ \exp\!\left(\sum_{n<N}h_n\right)
+ \left(\prod_{i<M}m(B_i)\right)
+ \prod_{n\geq N}\rho(I-h_n).
+\]
+Taking limits proves the desired identity on this cylinder
+$\pi$-system. Both restrictions to $S$ are finite, by
+\eqref{eq:shifted-base-mass}, so uniqueness of finite measures gives
+\[
+ \sigma_h\mathbin{\upharpoonright}S
+   =\exp\!\left(\sum_n h_n\right)
+       \sigma\mathbin{\upharpoonright}S.
+\]
+
+Translations commute, so \eqref{eq:finite-shift-modulus} also implies
+$(\sigma_h)_c=e^{\sum c_n}\sigma_h$ for every finitely supported $c$.
+The preceding equality therefore holds on every translate $S+c$ with
+$c\in\Q^{(\N)}$. These countably many translates cover $X$: each of
+the finitely many coordinates outside $I$ can be moved into $I$ by a
+rational translation. Disjointifying this cover proves the equality
+on $X$. Both measures are carried by $X$, completing the proof.
+\end{proof}
+
+Let
+\[
+ D_{\R}=\left\{d\in\Q^{(\N)}:\sum_n d_n=0\right\}.
+\]
+This is the real-coordinate version of the subgroup $D=j(D_{\R})$
+introduced earlier.
+
+\begin{lemma}
+\label{lem:restricted-ergodicity}
+The translation action of $D_{\R}$ on $(X,\sigma)$ is free, measure
+preserving, and ergodic.
+\end{lemma}
+
+\begin{proof}
+Freeness is immediate, since a nonzero translation has no fixed point.
+Measure preservation follows from \eqref{eq:finite-shift-modulus}.
+Let $E\subseteq X$ be a Borel set invariant modulo $\sigma$ under
+$D_{\R}$, and write $f=1_E$. We first show that $f$ is constant almost
+everywhere on $S$.
+
+Fix $N\geq2$. Restricting to $X_N$ and applying Fubini's theorem, we find
+that for almost every tail under the product law, the resulting measurable function of
+the first $N$ real variables is invariant, modulo Lebesgue null sets,
+under every rational vector of coordinate sum zero. There is one
+exceptional null set for this assertion because the rational group is
+countable. The measure $m^{\otimes N}$ and Lebesgue measure have the same
+null sets.
+
+Such a function depends almost everywhere only on the sum of its
+coordinates. To justify this explicitly, use linear coordinates
+consisting of the sum and $N-1$ of the original coordinates. On almost
+every sum fiber, Fubini's theorem gives invariance under the dense
+rational subgroup of $\R^{N-1}$. A bounded measurable function with
+this invariance is almost everywhere constant: convolution with a
+compactly supported smooth approximate identity gives continuous
+functions invariant under the rational subgroup, hence under all
+translations, and these convolutions converge locally in $L^1$ to the
+original function. This proves the assertion on each sum fiber.
+
+In particular, $f\mathbin{\upharpoonright}S$ is invariant modulo
+$\rho^{\otimes\N}$ under every finite permutation of the coordinates.
+Here is the elementary zero--one argument needed for this conclusion.
+If an event $F$ in an iid product is invariant under finite permutations,
+choose a finite-head event $B$ with
+$\mathbb P(F\mathbin{\triangle}B)<\varepsilon$. A finite permutation
+moving that head to a disjoint block gives an event $B'$ independent of
+$B$, with the same probability and with
+$\mathbb P(F\mathbin{\triangle}B')<\varepsilon$. Thus
+\[
+ \bigl|\mathbb P(F)-\mathbb P(B)^2\bigr|<2\varepsilon.
+\]
+As $\varepsilon$ tends to zero, this gives
+$\mathbb P(F)=\mathbb P(F)^2$. The argument only uses invariance modulo
+null sets. Applying it to $E\cap S$ shows that $f$ equals one constant
+in $\{0,1\}$ almost everywhere on $S$.
+
+It remains to show that $D_{\R}S$ is conull in $X$. Choose a closed
+interval $J\subset\operatorname{int}(I)$ of positive length. For
+$\sigma$-almost every $x\in X$, infinitely many tail coordinates lie
+in $J$. Indeed, this holds in the independent tail of each $\sigma_N$,
+and Fubini's theorem and the increasing union prove it for $\sigma$.
+For such an $x$, choose $N$ so that $x_n\in I$ for $n\geq N$.
+Choose rational increments in the first $N$ coordinates which move them
+into $\operatorname{int}(I)$, and let $s\in\Q$ be their sum. Choose
+$M$ further coordinates lying in $J$, with
+\[
+ |s|/M<\operatorname{dist}(J,\partial I),
+\]
+and add $-s/M$ to each. The resulting translation has finite rational
+support, has sum zero, and moves $x$ into $S$. This proves the conullity
+of $D_{\R}S$. Since the group is countable and measure preserving, the
+constant value of $f$ on $S$ propagates to a conull subset of $X$.
+Hence the action is ergodic.
+\end{proof}
+
+We now push $\sigma$ forward by the continuous injective homomorphism
+$j:\R^{\N}\to K$ and continue to denote the resulting measure by
+$\sigma$. This is a $\sigma$-finite Borel measure on $K$: the image of
+every set in the explicit countable finite-measure cover above is Borel,
+by Lusin--Souslin. Its support in the measure-theoretic sense is contained
+in the Borel set $j(X)$. The set $j(\R^{\N})$ is a Borel subgroup of $K$.
+If $k\notin j(\R^{\N})$, translating $j(X)$ by $k$ moves it into a
+disjoint coset of this subgroup. Combining this observation with
+Lemma~\ref{lem:restricted-translation}, we obtain
+\begin{equation}
+ \QI(\sigma)=G=j(\ell_1(\R)),\qquad
+ \sigma_{j(h)}=e^{\sum_n h_n}\sigma\quad(h\in\ell_1(\R)),
+ \label{eq:compact-measure-modulus}
+\end{equation}
+and $\sigma_k\perp\sigma$ for every $k\notin G$. By
+Lemma~\ref{lem:restricted-ergodicity}, the action of $D$ on $(K,\sigma)$
+is free, measure preserving, and ergodic. These assertions concern the
+measure space carried by $j(X)$; no local finiteness of $\sigma$ in the
+compact topology of $K$ is asserted.
+
+\section{Finite-corner representation coding}
+\label{sec:finite-corner}
+
+Let $D$ act on $C(K)$ by $\theta_d(f)(z)=f(z-d)$, and form the full
+crossed product
+\[
+ A=C(K)\rtimes_\theta D.
+\]
+It is a separable unital $C^*$-algebra, since $K$ is compact metrizable
+and $D$ is countable. The canonical covariant representation on the
+measure space above gives a homomorphism
+\[
+ \iota_A:A\longrightarrow M,
+ \qquad M=L^\infty(K,\sigma)\rtimes D.
+\]
+We do not need $\iota_A$ to be injective. Its image is ultraweakly dense
+in $M$: the continuous functions generate the Borel sigma-algebra of
+$K$, so their multiplication operators generate $L^\infty(K,\sigma)$,
+and the image also contains the canonical group unitaries $u_d$.
+
+The standard group--measure-space construction supplies a faithful
+normal conditional expectation $E:M\to L^\infty(K,\sigma)$.
+The freeness and ergodicity established above imply that $M$ is a
+factor. Moreover,
+\[
+ \tau(b)=\int_K E(b)\,d\sigma,\qquad b\in M_+,
+\]
+is a faithful normal semifinite trace. Since the underlying measure is
+diffuse, invariant, and infinite, $M$ is of type $\mathrm{II}_\infty$.
+These are precisely the $\sigma$-finite versions of the crossed-product
+facts in \cite[Theorems~5.2.2 and~5.2.4]{Peterson}. In particular, no
+probability-preserving hypothesis is being substituted for the infinite
+measure-preserving action used here.
+
+Let
+\[
+ p=1_{j(S)}\in L^\infty(K,\sigma)\subseteq M.
+\]
+Then $\tau(p)=1$. On $L^2(M,\tau)$ write $L_b$ and $R_b$ for left
+and right multiplication by $b\in M$. The projection onto the right
+corner is $R_p$, and we put
+\[
+ \mathcal H=R_pL^2(M,\tau)=L^2(M,\tau)p.
+\]
+This is a fixed separable Hilbert space. Define
+\[
+ \lambda_p(b)=L_b\mathbin{\upharpoonright}\mathcal H\quad(b\in M),
+ \qquad \pi=\lambda_p\circ\iota_A.
+\]
+The normal representation $\lambda_p$ is faithful: its kernel is an
+ultraweakly closed two-sided ideal of the factor $M$, and it is nonzero
+as a representation. The left--right commutation theorem for the
+semifinite trace representation gives
+\[
+ \lambda_p(M)'=R_pR(M)R_p\cong(pMp)^{\mathrm{op}}.
+\]
+Since $pMp$ is a $\mathrm{II}_1$ factor, $\mathcal H$ is infinite
+dimensional, $\pi(A)''\cong M$ is of type $\mathrm{II}_\infty$, and
+$\pi(A)'$ is of type $\mathrm{II}_1$.
+
+For each $k\in K$, define an automorphism of $A$ by
+\[
+ \alpha_k(f)(z)=f(z+k),\qquad \alpha_k(u_d)=u_d.
+\]
+Translations commute with the $D$-action, so these formulas respect
+the covariance relations and define an automorphism of the full crossed
+product. They form a point-norm continuous action: continuity holds
+uniformly on $K$ for each $f\in C(K)$, then for finite sums $\sum_d f_du_d$,
+and finally for all of $A$ by norm approximation. Set
+\begin{equation}
+ \pi_k=\pi\circ\alpha_k\in\Rep(A,\mathcal H).
+ \label{eq:fixed-module-family}
+\end{equation}
+Thus the family is point-norm continuous on one fixed Hilbert space.
+Choosing one orthonormal basis identifies $\mathcal H$ with the usual
+separable infinite-dimensional Hilbert space. There is no choice of a
+Hilbert space, trace, or projection depending on $k$ in
+\eqref{eq:fixed-module-family}.
+
+\begin{lemma}
+\label{lem:diagonal-spectral-class}
+The maximal spectral measure class of
+$\pi_k\mathbin{\upharpoonright}C(K)$ is $[\sigma_k]$.
+In particular, if $k\notin G$, then $\pi_k$ and $\pi$ are disjoint.
+\end{lemma}
+
+\begin{proof}
+For $k=0$, the spectral projection of a Borel set $B\subseteq K$ is
+$\lambda_p(1_B)$. Faithfulness of $\lambda_p$ implies that it is zero
+exactly when $\sigma(B)=0$. Explicitly, if $(\xi_r)$ is an orthonormal
+basis of $\mathcal H$ and $P$ is this spectral measure, the probability
+\[
+ \nu(B)=\sum_{r=0}^{\infty}2^{-r-1}\langle P(B)\xi_r,\xi_r\rangle
+\]
+has exactly the null sets of $P$, hence exactly the null sets of $\sigma$.
+This identifies the maximal spectral class even though $\sigma$ itself
+is infinite. Under $\alpha_k$, the spectral projection of $B$ becomes
+$P(B-k)$, whose null-set criterion is $\sigma_k(B)=0$.
+
+If $k\notin G$, equation~\eqref{eq:compact-measure-modulus} gives
+$\sigma_k\perp\sigma$. Any bounded intertwiner of the two
+$A$-representations intertwines their restrictions to $C(K)$ and hence
+their Borel spectral projections. A Borel set supporting one of the
+two singular spectral classes and null for the other then forces this
+intertwiner to be zero. Thus the representations are disjoint.
+\end{proof}
+
+\begin{lemma}
+\label{lem:normal-trace-modulus}
+For $h\in\ell_1(\R)$, the automorphism $\alpha_{j(h)}$ extends through
+$\iota_A$ to a normal automorphism $\beta_h$ of $M$, and
+\begin{equation}
+ \tau\circ\beta_h=c_h\tau,
+ \qquad c_h=\exp\!\left(\sum_n h_n\right).
+ \label{eq:trace-scaling}
+\end{equation}
+The unitary implementing $\beta_h$ on the trace Hilbert space is
+\begin{equation}
+ U_h(a)=c_h^{-1/2}\beta_h(a),
+ \qquad a\in M\cap L^2(M,\tau).
+ \label{eq:explicit-standard-unitary}
+\end{equation}
+It conjugates both $L_b$ and $R_b$ to multiplication by $\beta_h(b)$.
+\end{lemma}
+
+\begin{proof}
+By \eqref{eq:compact-measure-modulus}, translation by $j(h)$ preserves
+the measure class of $\sigma$. It therefore defines a normal
+automorphism of $L^\infty(K,\sigma)$, and it commutes with $D$.
+It extends normally to the crossed product, with
+\[
+ \beta_h(f)(z)=f(z+j(h)),\qquad \beta_h(u_d)=u_d.
+\]
+One can check normality directly in the regular covariant realization
+on $L^2(K,\sigma)\otimes\ell_2(D)$: simultaneous translation of the
+$K$ variable, multiplied by $c_h^{-1/2}$, is a unitary and conjugates
+the diagonal and group generators according to the displayed formulas.
+
+The conditional expectation commutes with these automorphisms, first
+on finite Fourier sums and then on $M$ by normality. Consequently,
+for $b\in M_+$,
+\[
+ \tau(\beta_h(b))
+   =\int_K E(b)(z+j(h))\,d\sigma(z)
+   =c_h\int_K E(b)(z)\,d\sigma(z),
+\]
+which proves \eqref{eq:trace-scaling}. In particular, the sign of the
+exponent agrees with the convention $\sigma_{j(h)}=(T_{j(h)})_*\sigma$.
+
+For $a\in M\cap L^2(M,\tau)$, equation~\eqref{eq:trace-scaling} gives
+\[
+ \|c_h^{-1/2}\beta_h(a)\|_2^2
+   =c_h^{-1}\tau(\beta_h(a^*a))=\tau(a^*a).
+\]
+The inverse formula using $\beta_h^{-1}$ proves that this isometry
+extends to a unitary on $L^2(M,\tau)$. Multiplication on the dense
+square-integrable ideal gives
+\[
+ U_hL_bU_h^*=L_{\beta_h(b)},\qquad
+ U_hR_bU_h^*=R_{\beta_h(b)}.
+\]
+Thus \eqref{eq:explicit-standard-unitary} has all the asserted properties.
+\end{proof}
+
+\begin{lemma}
+\label{lem:right-corner-comparison}
+For nonzero finite projections $p_1,p_2\in M$, the left representations
+of $M$ on $L^2(M,\tau)p_1$ and $L^2(M,\tau)p_2$ are unitarily equivalent
+if and only if $\tau(p_1)=\tau(p_2)$. The same criterion holds after
+restriction along $\iota_A$.
+\end{lemma}
+
+\begin{proof}
+A unitary intertwiner between the two left modules, extended by zero
+on the orthogonal complement of its initial module, is a partial
+isometry on $L^2(M,\tau)$ commuting with $L(M)$. By the left--right
+commutation theorem, it belongs to $R(M)$. Its initial and final
+projections are $R_{p_1}$ and $R_{p_2}$, so it gives Murray--von Neumann
+equivalence of $p_1$ and $p_2$ in $M$. Conversely, a partial isometry
+$v\in M$ with $v^*v=p_1$ and $vv^*=p_2$ gives the required unitary by
+right multiplication by $v^*$. Finite projections in a semifinite
+factor are Murray--von Neumann equivalent precisely when their traces
+are equal; see \cite[Theorem~2.7 and the factor examples in Section~2]{Sherman}.
+Finally, an intertwiner for the restrictions to $A$ intertwines $M$ as
+well, because the representations are normal and $\iota_A(A)$ is
+ultraweakly dense. This proves the last assertion.
+\end{proof}
+
+\begin{theorem}
+\label{thm:representation}
+For all $k,l\in K$,
+\[
+ \pi_k\,\UE\,\pi_l\quad\Longleftrightarrow\quad k-l\in H.
+\]
+Moreover, the quasi-equivalence stabilizer of $\pi$ is $G$, and its
+unitary-equivalence stabilizer is $H$. Every representation in the
+continuous family \eqref{eq:fixed-module-family} has represented factor
+of type $\mathrm{II}_\infty$ and commutant of type $\mathrm{II}_1$.
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{lem:diagonal-spectral-class} excludes quasi-equivalence,
+and in particular unitary equivalence, when $k\notin G$. If $k=j(h)$
+with $h\in\ell_1(\R)$, Lemma~\ref{lem:normal-trace-modulus} gives a
+normal automorphism $\beta_h$ of $M$ satisfying
+$\beta_h\circ\iota_A=\iota_A\circ\alpha_k$. It follows that
+$\pi_k$ is quasi-equivalent to $\pi$.
+
+To determine unitary equivalence, conjugate by the unitary $U_h^*$
+from \eqref{eq:explicit-standard-unitary}. It maps
+$L^2(M,\tau)p$ onto $L^2(M,\tau)\beta_h^{-1}(p)$ and identifies
+$\pi_k$ with the ordinary left representation on that latter module.
+The two right projections have traces
+\[
+ \tau(p)=1,\qquad
+ \tau(\beta_h^{-1}(p))=c_h^{-1}
+       =\exp\!\left(-\sum_n h_n\right).
+\]
+By Lemma~\ref{lem:right-corner-comparison}, the modules are equivalent
+exactly when $\sum_n h_n=0$, that is, exactly when $k\in H$.
+This proves both stabilizer assertions.
+
+Precomposing both members of a pair with $\alpha_{-l}$ preserves
+unitary equivalence and reduces the pair $(\pi_k,\pi_l)$ to
+$(\pi_{k-l},\pi)$. This proves the displayed equivalence for all pairs.
+Finally, $\alpha_k$ is onto, so $\pi_k(A)=\pi(A)$ for every $k$.
+Their von Neumann closures and commutants are therefore the fixed
+algebras already identified above.
+\end{proof}
+\section{Coding by a single bounded operator}\label{sec:coding}
+We give the explicit coding needed to pass from the representation family
+to the two questions in the introduction. Throughout this section all
+identifications of fixed separable infinite-dimensional Hilbert spaces
+are chosen once and do not depend on the input.
+
+\begin{lemma}\label{lem:tuple-coding}
+Simultaneous unitary equivalence of countable tuples of unitaries
+continuously reduces to unitary equivalence of operators of norm at most
+$7/8$ on a fixed Hilbert space. Here the source has the product strong
+topology and the target ball has the strong operator topology (or the
+strong-star topology).
+\end{lemma}
+\begin{proof}
+Set $\mathcal H'=\bigoplus_{j\ge0}\mathcal H_j$, where each summand is a
+copy of $\mathcal H$, and let $J_j:\mathcal H\to\mathcal H'$ be its
+inclusion. For a tuple $U=(U_n)_{n\ge0}$ define
+\[
+ \Delta=\sum_{j\ge0}2^{-j-1}J_jJ_j^*
+\]
+and
+\begin{align*}
+ B_U={}&\sum_{j\ge1}2^{-j-4}(J_0J_j^*+J_jJ_0^*)\\
+ &+\sum_{n\ge0}2^{-n-4}
+ (J_{2n+1}U_nJ_{2n+2}^*+J_{2n+2}U_n^*J_{2n+1}^*),\\
+ T_U={}&\Delta+iB_U.
+\end{align*}
+The series converge in norm, uniformly in $U$, and
+$\|B_U\|\le1/8+1/4=3/8$. Thus $\|T_U\|\le7/8$.
+Since $B_U$ is self-adjoint, the real and imaginary parts of $T_U$
+are $\Delta$ and $B_U$.
+
+A unitary $W$ intertwining every $U_n$ and $V_n$ gives an intertwiner
+$\bigoplus_j W$ between $T_U$ and $T_V$.
+Conversely, a unitary $Q$ with $QT_UQ^*=T_V$ must commute with $\Delta$.
+Its distinct eigenvalues $2^{-j-1}$ have eigenspaces exactly
+$\mathcal H_j$, whose direct sum is all of $\mathcal H'$. Consequently
+$Q=\bigoplus_j W_j$. The $(0,j)$ block of $QB_UQ^*=B_V$ gives
+$W_0W_j^*=I$, so $W_j=W_0$ for all $j$. The $(2n+1,2n+2)$ block then
+gives $W_0U_nW_0^*=V_n$ for every $n$.
+
+On the unitary group the adjoint is strongly continuous. Each finite
+partial sum is therefore continuous in the product strong topology,
+and the omitted tails have a uniform norm bound tending to zero.
+This proves the claimed continuity. Finally identify $\mathcal H'$
+with $\mathcal H$ by one fixed unitary.
+\end{proof}
+
+\begin{lemma}\label{lem:algebra-coding}
+For every separable unital $C^*$-algebra $A$, unitary equivalence of
+representations of $A$ on $\mathcal H$ Borel reduces to
+$\approx^+_{F_\infty}$ and to ${\simeq_u}$.
+\end{lemma}
+\begin{proof}
+Choose a countable generating sequence of unitaries $(a_n)$ in $A$.
+Such a sequence exists: a separable unital $C^*$-algebra has a countable
+generating sequence of self-adjoint contractions $b_n$, and the
+unitaries $e^{ib_n}$ generate the same algebra, since the exponential
+has a continuous inverse on the arc $\{e^{it}:-1\le t\le1\}$.
+A representation $\pi$ is determined by $(\pi(a_n))_n$, and a unitary
+intertwines two representations exactly when it intertwines these
+tuples. A countable tuple of unitaries is precisely a representation
+of the free group $F_\infty$ on its named generators.
+Evaluation at fixed elements is Borel, indeed continuous in the
+pointwise strong topology on representations. Lemma~\ref{lem:tuple-coding}
+gives the second reduction. For the family in
+Theorem~\ref{thm:representation}, these maps are continuous.
+\end{proof}
+
+\begin{proposition}\label{prop:operator-group}
+The relations ${\simeq_u}$ and $\approx^+_{F_\infty}$ are
+Borel bireducible. They are also Borel bireducible with simultaneous
+unitary equivalence of pairs of unitaries.
+\end{proposition}
+\begin{proof}
+Only the reduction from one arbitrary bounded operator to two
+unitaries remains to be given. Put
+\[
+ Q_T=\frac{T}{1+\|T\|},\qquad
+ A_T=\frac{Q_T+Q_T^*}{2},\qquad
+ C_T=\frac{Q_T-Q_T^*}{2i},
+\]
+and send $T$ to $(e^{iA_T},e^{iC_T})$.
+The two self-adjoint operators have norm less than one. Functional
+calculus with the fixed continuous inverse of the exponential on the
+arc above recovers $A_T$ and $C_T$ from these unitaries. Thus simultaneous
+conjugacy recovers $Q_T$, and then recovers
+\[
+ T=\frac{Q_T}{1-\|Q_T\|}.
+\]
+Conversely every conjugacy of $T$ gives a conjugacy of the pair.
+
+The map is Borel: the norm and adjoint are Borel in the coefficient
+Borel structure, and the exponential on a bounded self-adjoint ball
+is a strong limit of polynomials with uniform error bounds.
+Pad the pair by identities to obtain a countable unitary tuple.
+The reverse reduction is Lemma~\ref{lem:tuple-coding}.
+\end{proof}
+
+
+\section{The operator and representation theorems}
+\begin{proof}[Proof of Theorem~\ref{main:operators}]
+Theorem~\ref{thm:representation} and Lemma~\ref{lem:algebra-coding} give
+\[
+ K/H\leB{\simeq_u},
+\]
+whereas Theorem~\ref{thm:nonreduction} gives $K/H\nleB{\equiv_m}$.
+Composition of reductions therefore proves
+$ {\simeq_u}\nleB{\equiv_m}$.
+
+For the reverse reduction, embed Cantor space in the unit circle and
+send $\mu\in\Prob(2^\N)$ to the infinite amplification of multiplication
+by the circle coordinate on $L^2(\mu)$. Its multiplicity is uniformly
+infinite and its maximal spectral measure class is $[\mu]$, so two such
+unitaries are equivalent exactly when the measures are equivalent.
+This has a Borel realization on one fixed Hilbert space: apply
+Gram--Schmidt, skipping zero vectors, to a fixed countable dense family
+of continuous functions tensored with the standard basis of $\ell_2$.
+All inner products are Borel functions of $\mu$, and the amplified
+Hilbert space is always infinite dimensional. The resulting multiplication
+operators therefore have Borel matrix coefficients.
+This proves $ {\equiv_m}\leB{\simeq_u}$, and hence strictness.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{main:thomas}]
+A representation of $\mathbb Z$ is determined by one unitary.
+The spectral theorem, with spectral multiplicities encoded by tagged
+measures, gives
+\[
+ {\approx^+_{\mathbb Z}}\sim_B{\equiv_m};
+\]
+see Gao \cite[Section~8.5, p.~200]{Gao} and Thomas
+\cite[Section~8]{Thomas15}. Proposition~\ref{prop:operator-group} gives
+\[
+ {\approx^+_{F_\infty}}\sim_B{\simeq_u}.
+\]
+Theorem~\ref{main:operators} now supplies the required strict inequality.
+In particular, arbitrary representations of $F_\infty$ cannot be
+classified, by a Borel assignment, using measure-equivalence classes.
+\end{proof}
+
+%\section{Scope of formal verification}
+%The finite-exponent classification and the $c_0$ nonreduction were
+%also expressed and checked in Lean~4 in the accompanying sequence-space
+%development. The source repository is
+%\href{https://github.com/RayjunWang/MeasureEquivalence}{RayjunWang/MeasureEquivalence}.
+%The stored verification records specify the checked statements,
+%the source files, and the dependency environment.
+
+%This verification statement concerns the finite-$p$ part of
+%Theorem~\ref{main:lp} and Theorem~\ref{main:c0}. The elementary
+%$p=\infty$ reduction and the operator and representation arguments
+%of Theorems~\ref{main:operators} and~\ref{main:thomas} are proved here
+%mathematically; no Lean verification of those additional arguments
+%is asserted. Their proof checks were performed within the same
+%assistant system and are not represented as external peer review.
+
+\begin{thebibliography}{99}
+\bibitem{DG14}
+L.~Ding and S.~Gao,
+Is there a spectral theory for all bounded linear operators?,
+\emph{Notices Amer. Math. Soc.} \textbf{61} (2014), no.~7, 730--735.
+
+\bibitem{DH}
+R.~Dougherty and G.~Hjorth,
+Reducibility and nonreducibility between $\ell^p$ equivalence relations,
+\emph{Trans. Amer. Math. Soc.} \textbf{351} (1999), 1835--1844.
+
+%\bibitem{FS}
+%H.~Friedman and L.~Stanley,
+%A Borel reducibility theory for classes of countable structures,
+%\emph{J. Symbolic Logic} \textbf{54} (1989), 894--914.
+
+\bibitem{Gao}
+S.~Gao, \emph{Invariant Descriptive Set Theory},
+Pure and Applied Mathematics 293, Chapman \& Hall/CRC, 2009.
+
+\bibitem{GS}
+G.~Greschonig and K.~Schmidt,
+Ergodic decomposition of quasi-invariant probability measures,
+\emph{Colloq. Math.} \textbf{84/85} (2000), 495--514.
+%\href{https://www.mat.univie.ac.at/~kschmidt/Publications/decomposition.pdf}{Author manuscript},
+%Theorem~1.5.
+
+\bibitem{Kakutani}
+S.~Kakutani, On equivalence of infinite product measures,
+\emph{Ann. of Math.} (2) \textbf{49} (1948), 214--224.
+
+\bibitem{MN}
+M.~Mendel and A.~Naor, Metric cotype,
+\emph{Ann. of Math.} (2) \textbf{168} (2008), 247--298.
+
+\bibitem{Peterson}
+J.~Peterson, \emph{Notes on von Neumann algebras}, 5 April 2013.
+%Theorems~5.2.2 and 5.2.4.
+\url{https://math.vanderbilt.edu/peters10/teaching/spring2013/vonNeumannAlgebras.pdf}.
+
+\bibitem{Sherman}
+D.~Sherman, On the dimension theory of von Neumann algebras,
+\emph{Math. Scand.} \textbf{101} (2007), no.~1, 123--147.
+%\href{https://arxiv.org/abs/math/0503747}{arXiv:math/0503747},
+%Theorem~2.7.
+
+\bibitem{Thomas15}
+S.~Thomas, A descriptive view of unitary group representations,
+\emph{J. Eur. Math. Soc.} \textbf{17} (2015), 1761--1787.
+
+\end{thebibliography}
+\noindent\begin{minipage}{\textwidth}
+\small
+\textsc{School of Mathematical Sciences and School of Pre-university,}\\
+\textsc{Dalian Minzu University}\\[0.4em]
+\textit{Email address:}\enspace
+\href{mailto:wangruijun@dlnu.edu.cn}{\texttt{wangruijun@dlnu.edu.cn}}
+\end{minipage}
+\end{document}
