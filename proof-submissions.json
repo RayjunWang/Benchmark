@@ -1,0 +1,299 @@
+{
+  "snapshot_policy": "Public target status, per-attempt verdicts and historical attempts are distinct. Missing evidence is not acceptance.",
+  "captured_at_utc": "2026-10-26T12:22:48.117025+00:00",
+  "current_targets": {
+    "theorem_1_1": {
+      "theorem_id": "75677ef4-8e7e-456d-ab33-8da7dba312f0",
+      "theorem_name": "BenchmarkComparisons.theorem_1_1",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "theorem_1_2": {
+      "theorem_id": "0a5aa022-7055-4b44-a89e-495f902ba050",
+      "theorem_name": "BenchmarkComparisons.theorem_1_2",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "theorem_1_3": {
+      "theorem_id": "cd76f74d-070a-45da-8e62-705f788bfe38",
+      "theorem_name": "MeasureEquivalenceMission.c0_not_reducible",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "theorem_1_4": {
+      "theorem_id": "be47bc72-5f09-4594-a598-07372aa009aa",
+      "theorem_name": "BenchmarkComparisons.theorem_1_4",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "theorem_1_5": {
+      "theorem_id": "bd5dca8e-48a5-4b0f-bd73-1dfcc028b11f",
+      "theorem_name": "BenchmarkComparisons.theorem_1_5",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Open",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "theorem_1_6": {
+      "theorem_id": "f17cf020-ed45-4544-bdf3-083332a851f3",
+      "theorem_name": "BenchmarkComparisons.theorem_1_6",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Open",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "all_main_comparisons": {
+      "theorem_id": "e51f68cc-69f7-4eb6-b875-8a89d44eff6d",
+      "theorem_name": "BenchmarkComparisons.all_main_comparisons",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Open",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "classical_countable_ell_two": {
+      "theorem_id": "09868483-001b-40cd-a1ce-bb9729560273",
+      "theorem_name": "BenchmarkComparisons.classical_countable_ell_two",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "countable_product_to_c0": {
+      "theorem_id": "047db2a5-ed59-41e6-8635-7790b23f554f",
+      "theorem_name": "BenchmarkComparisons.countable_product_to_c0",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    },
+    "c0_jump_obstruction": {
+      "theorem_id": "5ef38d4a-cc8c-43e1-a315-9a34a988b803",
+      "theorem_name": "BenchmarkComparisons.c0_jump_obstruction",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+      "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+    }
+  },
+  "latest_attempts": {
+    "theorem_1_1": {
+      "theorem_id": "75677ef4-8e7e-456d-ab33-8da7dba312f0",
+      "submission_id": "7c156fee-ef6e-4d69-8dc0-e56fe94874d4",
+      "verdict": "ACCEPTED",
+      "source_file": "benchmark-lean-work/mission/completed-countable/verdict.json",
+      "receipt_sha256": "c7b33d82290762fa54a5efccc944fd038f4ee6e1ea625d737bf97f00ed54229f",
+      "proof_sha256": "7ad58ddc248d61b9bbe48018ed8b29a9f76a04db7ef401422d21a177af8995b2",
+      "created_at": "2026-10-26T09:14:45.425124+00:00",
+      "updated_at": "2026-10-26T09:19:18.456152+00:00"
+    },
+    "countable_product_to_c0": {
+      "theorem_id": "047db2a5-ed59-41e6-8635-7790b23f554f",
+      "submission_id": "3f6570eb-3309-4afc-ac68-13c35010b8c7",
+      "verdict": "ACCEPTED",
+      "source_file": "benchmark-lean-work/mission/completed-positive/verdict.json",
+      "receipt_sha256": "7ad15daef4268228bc760dd66d9ee32ddc07ef081edf0c1f96b063fb5bb43b0e",
+      "proof_sha256": "cfd69e707298a107d2486868ccf254aae872f73eb021ba4736eb66b0b9c0c54c",
+      "created_at": "2026-10-26T07:43:58.731038+00:00",
+      "updated_at": "2026-10-26T07:44:40.145022+00:00"
+    },
+    "c0_jump_obstruction": {
+      "theorem_id": "5ef38d4a-cc8c-43e1-a315-9a34a988b803",
+      "submission_id": "923842bb-252b-4536-93ee-ae8620ffe495",
+      "verdict": "ACCEPTED",
+      "source_file": "benchmark-lean-work/mission/completed-c0jump/verdict.json",
+      "receipt_sha256": "7a98d3dc632857159b8d055231cd1b609641864d8cda199c9884962ba46cb49f",
+      "proof_sha256": "b5c14315ad03267d91f60c32e44ee786e417a308bc9b5367ef379b65f7789dff",
+      "created_at": "2026-10-26T07:51:02.183725+00:00",
+      "updated_at": "2026-10-26T07:52:49.691120+00:00"
+    },
+    "classical_countable_ell_two": {
+      "theorem_id": "09868483-001b-40cd-a1ce-bb9729560273",
+      "submission_id": "6b6bb2ec-c743-482c-9b13-6e8f22859ffa",
+      "verdict": "ACCEPTED",
+      "source_file": "benchmark-lean-work/mission/completed-classical/verdict.json",
+      "receipt_sha256": "4c27420b44ef983fd8a166a59c66e970cdbe2a504326e21f54c8f60605e282e6",
+      "proof_sha256": "94567d7cdff14a7e43aade1863abd7fd3f09739df69935736b50e8d48514fd4e",
+      "created_at": "2026-10-26T09:31:18.332732+00:00",
+      "updated_at": "2026-10-26T09:32:04.316798+00:00"
+    },
+    "theorem_1_4": {
+      "theorem_id": "be47bc72-5f09-4594-a598-07372aa009aa",
+      "submission_id": "dfb7dd79-ec35-4d38-86f3-2c698acf87fe",
+      "verdict": "ACCEPTED",
+      "source_file": "jump-platform/latest-verdict.json",
+      "receipt_sha256": "728d2582094184e525c11b908938653294658283de2108eb90fdc77ab94ab154",
+      "proof_sha256": "7e28f738c6d101a9640c23881dd565ffde40cf0fb78be66a2ab2fda81e7b6ef8",
+      "created_at": "2026-10-26T09:54:14.230767+00:00",
+      "updated_at": "2026-10-26T09:59:10.345987+00:00"
+    },
+    "theorem_1_6": {
+      "theorem_id": "f17cf020-ed45-4544-bdf3-083332a851f3",
+      "verdict": "not-captured",
+      "record_status": "Receipt capture pending: no bound spectral attempt is available at the allowlisted receipt paths."
+    }
+  },
+  "historical_attempts": [
+    {
+      "theorem_id": "bd5dca8e-48a5-4b0f-bd73-1dfcc028b11f",
+      "submission_id": "f54fcc28-4cb6-4c5c-a541-03db063a4007",
+      "verdict": "ERROR",
+      "source_file": "benchmark-lean-work/mission/completed-operator/verdict.json",
+      "receipt_sha256": "d66b27f1742a77750b4dfedcc0753fd429c716068aaf3298f786b1296d01b978",
+      "proof_sha256": "9dd2a584c4623f54ee7d72eca71f2219b1d94234555d6cc79790f3a5e363b50e",
+      "created_at": "2026-10-26T08:09:22.665283+00:00",
+      "updated_at": "2026-10-26T08:15:01.908146+00:00",
+      "historical": true
+    }
+  ],
+  "final_target_receipts": {
+    "theorem_1_4": {
+      "theorem_id": "be47bc72-5f09-4594-a598-07372aa009aa",
+      "theorem_name": "BenchmarkComparisons.theorem_1_4",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "jump-platform/theorem-proved.json",
+      "receipt_sha256": "ef48c46687e886c8cc6264e01299b1bb0e3d1e9c643bdc8eac1a85d3ed61f887",
+      "created_at": "2026-10-26T06:55:35.303503+00:00"
+    }
+  },
+  "supporting_latest_attempts": {
+    "cyclic_representations_borelReduces_measure": {
+      "theorem_id": "e035af98-f3f1-4b51-ae96-609ad822c18c",
+      "submission_id": "bd9046ee-057d-4284-b86c-8016e5be6fa0",
+      "verdict": "ACCEPTED",
+      "source_file": "operator-spectral-direct/cyclic/latest-verdict.json",
+      "receipt_sha256": "175e2e8eaf08635fb9cf0923e698c82dacf7416198a47e2268cc3df97ad66cca",
+      "proof_sha256": "e93e1fbbcfde6e139ee5cef02a02065c90a00e7b1f1eaeaaaeb5d673774a1b4d",
+      "created_at": "2026-10-26T11:01:21.869456+00:00",
+      "updated_at": "2026-10-26T11:05:16.617994+00:00"
+    },
+    "free_representations_borelBireducible_operators": {
+      "theorem_id": "a1c23a87-3e99-4e69-86ee-e01c4fff577c",
+      "submission_id": "000b355b-6efa-4390-b340-1f5fc8e39a29",
+      "verdict": "ACCEPTED",
+      "source_file": "operator-spectral-direct/free/latest-verdict.json",
+      "receipt_sha256": "9728358ca1b24b2cb092cdbad23eec52875c5bd97d658740a1000d88f8b18f78",
+      "proof_sha256": "adc4a8d6187d1c07ab3658cdaa5c88c586527fc1a297fa2859c326aedee6ba68",
+      "created_at": "2026-10-26T11:01:32.503506+00:00",
+      "updated_at": "2026-10-26T11:04:21.440994+00:00"
+    }
+  },
+  "supporting_historical_attempts": [],
+  "supporting_final_target_receipts": {
+    "cyclic_representations_borelReduces_measure": {
+      "theorem_id": "e035af98-f3f1-4b51-ae96-609ad822c18c",
+      "theorem_name": "BenchmarkComparisons.cyclic_representations_borelReduces_measure",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "operator-spectral-direct/cyclic/theorem-proved.json",
+      "receipt_sha256": "1d4c5e17a7bdc6173dc8433c2a7dbbec079abbb090bf37dbb5283ee3bb6f823a",
+      "created_at": "2026-10-26T10:43:24.447973+00:00"
+    },
+    "free_representations_borelBireducible_operators": {
+      "theorem_id": "a1c23a87-3e99-4e69-86ee-e01c4fff577c",
+      "theorem_name": "BenchmarkComparisons.free_representations_borelBireducible_operators",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "target_status": "Proved",
+      "source_file": "operator-spectral-direct/free/theorem-proved.json",
+      "receipt_sha256": "00d7f4c3b06226b01a5441cf5e0d788a23d75def449da1d41c0dab86b1a94ca1",
+      "created_at": "2026-10-26T10:43:38.204892+00:00"
+    }
+  },
+  "capture_issues": [],
+  "mission_targets": {
+    "theorems": [
+      {
+        "theorem_id": "75677ef4-8e7e-456d-ab33-8da7dba312f0",
+        "theorem_name": "BenchmarkComparisons.theorem_1_1",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "0a5aa022-7055-4b44-a89e-495f902ba050",
+        "theorem_name": "BenchmarkComparisons.theorem_1_2",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "cd76f74d-070a-45da-8e62-705f788bfe38",
+        "theorem_name": "MeasureEquivalenceMission.c0_not_reducible",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "be47bc72-5f09-4594-a598-07372aa009aa",
+        "theorem_name": "BenchmarkComparisons.theorem_1_4",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "bd5dca8e-48a5-4b0f-bd73-1dfcc028b11f",
+        "theorem_name": "BenchmarkComparisons.theorem_1_5",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Open",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "f17cf020-ed45-4544-bdf3-083332a851f3",
+        "theorem_name": "BenchmarkComparisons.theorem_1_6",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Open",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "e51f68cc-69f7-4eb6-b875-8a89d44eff6d",
+        "theorem_name": "BenchmarkComparisons.all_main_comparisons",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Open",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "09868483-001b-40cd-a1ce-bb9729560273",
+        "theorem_name": "BenchmarkComparisons.classical_countable_ell_two",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "047db2a5-ed59-41e6-8635-7790b23f554f",
+        "theorem_name": "BenchmarkComparisons.countable_product_to_c0",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      },
+      {
+        "theorem_id": "5ef38d4a-cc8c-43e1-a315-9a34a988b803",
+        "theorem_name": "BenchmarkComparisons.c0_jump_obstruction",
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "target_status": "Proved",
+        "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+        "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa"
+      }
+    ],
+    "all_listed_proved": false,
+    "source_file": "benchmark-lean-work/mission/final-proof-status.json",
+    "receipt_sha256": "fca3c0451d250687002d73404b40ef1d21b7096f9b00b463b321d60c9ed6f5fa",
+    "fetched_at_utc": "2026-10-26T10:02:16.770537+00:00"
+  }
+}

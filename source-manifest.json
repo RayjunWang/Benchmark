@@ -1,0 +1,4495 @@
+{
+  "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "scope": "Every delivered file except this manifest and computation-record.json (avoids circular hashes).",
+  "source_modules": 365,
+  "files": [
+    {
+      "path": ".github/workflows/lean.yml",
+      "sha256": "d0b81ea0f729db5e64e6d02f8c3b489f17170e3d7170afa422262e28209252d7"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9972380e4addf8a530e7ce021012607f410ffa587e1f112c8c22d5f2c5c3cdb7"
+    },
+    {
+      "path": "Benchmark.lean",
+      "sha256": "6db41f88bb4dda9f5c3847123ed41cfa0287c5c7d86dd5e5001f3b65898705d4"
+    },
+    {
+      "path": "BenchmarkJumpBridge.lean",
+      "sha256": "5449af4b6a2b3823c4fc9e7f20c61a9efc32283d6728641e7e1b7597942f890d"
+    },
+    {
+      "path": "BenchmarkMeasureJumpBridge.lean",
+      "sha256": "bc271be91c1d72df3c28724a1faab688fddb30fdab1a0d3c87abe07a7d888494"
+    },
+    {
+      "path": "BenchmarkOperatorTransport.lean",
+      "sha256": "114aff4f6643ef17fa6a0383fa890dcea4b125ca5a8e4ff0e94b7ab7242aa0b3"
+    },
+    {
+      "path": "BenchmarkResults.lean",
+      "sha256": "739d0e8319a05a5f7b6f898f5de06a88f3ee601556c2099fc65d020fcf67820e"
+    },
+    {
+      "path": "BernoulliIsoperimetry.lean",
+      "sha256": "5d1b5681bf58bf92ecc2c13f39b74e361c17a658fc16b289175bebd83441bca6"
+    },
+    {
+      "path": "BernoulliMedianGap.lean",
+      "sha256": "ef43c7179222af0e2b918e0136bfb176756f2b8a736c7d590586f4ed5298473f"
+    },
+    {
+      "path": "BernoulliPowerGap.lean",
+      "sha256": "21a54d24834ae84b0ad3f6bb68964da45a42f897e4eb3b684e84f9c27f5971d9"
+    },
+    {
+      "path": "BernoulliSpectralGap.lean",
+      "sha256": "6384f19ba718a04aa93199c13046166d423add72261a6c6d71864f1afddd3ce2"
+    },
+    {
+      "path": "BernoulliSupportGap.lean",
+      "sha256": "c46ade37087b0d355beb8349cc99168689ee098d7815de67a4cbaa69ade01a5e"
+    },
+    {
+      "path": "BoundedDifferenceJump.lean",
+      "sha256": "f6f8cf34ceb904cf21c15e05e691876c9323b78a3275e56b781ec2acbb5d96d2"
+    },
+    {
+      "path": "BoundedGraphNull.lean",
+      "sha256": "4c77f25e33ae0cd493bef3f7d8be5df65fa3d1aade579290d27fea26bdb81dd5"
+    },
+    {
+      "path": "BoundedNullProduct.lean",
+      "sha256": "cb6376588d3036d39f4aa8940e13df663aa00b247672ec62fe3eacacb1c1cb65"
+    },
+    {
+      "path": "CantorConvexNeighborhoods.lean",
+      "sha256": "7388330243241b7c8bfa49875258a9845ad0b566a1ed1ec465c4ab3a7804246a"
+    },
+    {
+      "path": "CantorCylinderRefinement.lean",
+      "sha256": "7355cd9cbc43afc956ab389da659cdd348a0eb33d7c3053b0f79d03297040fff"
+    },
+    {
+      "path": "CantorFullSupportWitness.lean",
+      "sha256": "2aa66b909355933c15994e223bfe0035cecb1f51e8cd9a6dda8ecddaf7706bc2"
+    },
+    {
+      "path": "CantorHaarComplete.lean",
+      "sha256": "76d3dd291f2fccf456e990c4d617426b89c700dd4a5aea3d79794113ca9f50b2"
+    },
+    {
+      "path": "CantorHaarContinuity.lean",
+      "sha256": "4fe2e1a58e865c67af309db16aabd6abcb544888a90b128668604b4d5b654766"
+    },
+    {
+      "path": "CantorHaarCoordinates.lean",
+      "sha256": "d2fc36462aab01e99e8cf8d78da4c6dae616160cd579be1e0b9a043044fd3aad"
+    },
+    {
+      "path": "CantorHaarCylinders.lean",
+      "sha256": "26079af531dc63298a1186b9f4aa4e517d3a25bc5496b9440746dd6335a2054a"
+    },
+    {
+      "path": "CantorHaarFamily.lean",
+      "sha256": "5799523e096650bab11410cbe23f673e3b41d3fc7abbcc2146f12b72d5e20815"
+    },
+    {
+      "path": "CantorHaarOrthogonal.lean",
+      "sha256": "feff3ae48e1ca324f79f108450e1f655f04c6fe74d9388823327de67dca19881"
+    },
+    {
+      "path": "CantorHaarSpan.lean",
+      "sha256": "b97bb05b79dd856086a783d8a00ad8dc2654c8bef1dc64bb6465637f3214d3e6"
+    },
+    {
+      "path": "CantorPrefixFunctions.lean",
+      "sha256": "ae342183643f1d42888474bb3e6db71ff3e7fb948f8a18db157eec923d8af9c2"
+    },
+    {
+      "path": "CantorPrefixPerturbation.lean",
+      "sha256": "ed8a09f8002057d0b361668a019858814ac7e9902418f23794d582f915eab686"
+    },
+    {
+      "path": "CantorProbabilityCoordinates.lean",
+      "sha256": "86b5fbae7d7094306e489fe6179066172aee463d06ef3b802514506126ad0a86"
+    },
+    {
+      "path": "CantorProbabilityMix.lean",
+      "sha256": "49c4167414e33125eba8eefb3e8bc2bbbc8646608a4f14f32a74632f0d1f1844"
+    },
+    {
+      "path": "CantorProbabilityMixOpen.lean",
+      "sha256": "465312b38266cc2ea7fdd452a0219c38c583ef0c0951a22f04eabe0db19132c3"
+    },
+    {
+      "path": "CantorProbabilityMixOpenContinuity.lean",
+      "sha256": "ffde1f56275755ca48755a5cc1fe5b6ba0017ddcd2bd3ed2bfb6ca01b3abf373"
+    },
+    {
+      "path": "CantorProbabilityMixOpenSection.lean",
+      "sha256": "e6caf36f2d0af8c69a1999a144a8c4cab4a79b9feb159337113ac223ae8f414b"
+    },
+    {
+      "path": "CantorProbabilityMixOpenWeights.lean",
+      "sha256": "400058c4860fcb171df997332c1239b7ef71a91fb54c2cd227606a90ee91097e"
+    },
+    {
+      "path": "CantorProbabilityTopology.lean",
+      "sha256": "23b16e2a0cad727e25c99034c43ec284f26a46eace7787d2cbd6f91cb2b08921"
+    },
+    {
+      "path": "CantorReweightOrbitDensity.lean",
+      "sha256": "acc52aa7a7770d7947a1bb9c66b87e799b3267bc54a3e9e55a881f0133d87977"
+    },
+    {
+      "path": "CantorSmallCylinders.lean",
+      "sha256": "8fdbd88b4160c4220f6a61112e0c53f777e0217ab5370b800394953706ddb61b"
+    },
+    {
+      "path": "CategoryLocal.lean",
+      "sha256": "c7b7a1cbeac2fb8c8ecbb173b7b40b9c9893c3c6a3810bf07cc0dfb7ea794a0c"
+    },
+    {
+      "path": "CategoryTools.lean",
+      "sha256": "e421fd434573eafc38ac144de23bb2bb946c122b4bf5014b2967af2599973e05"
+    },
+    {
+      "path": "ChartConvexNeighborhood.lean",
+      "sha256": "9809df83e4501e6b5e9652bf77f8524354d21cfb737d6a21099c44c1a54a6349"
+    },
+    {
+      "path": "CircleCategory.lean",
+      "sha256": "eaf1a3cbfe8c6e71b844cdafb60f378a4c86d8b8894fc120335e16fc603e8a7d"
+    },
+    {
+      "path": "CircleChart.lean",
+      "sha256": "c0b1e8737823f5522ce58a1bc90455db86d5adad4fb09e35d31b0f09b0f29de8"
+    },
+    {
+      "path": "CircleChartConstancy.lean",
+      "sha256": "2b783665ae85eecb300ef64c11e8f1a99b2d412b9cbcd98963e617e34f8fdefb"
+    },
+    {
+      "path": "CircleGrids.lean",
+      "sha256": "48bb099080cdec8c457d40cc0c626b7b682ee546438ea934e21e6ba612d1bf10"
+    },
+    {
+      "path": "CircleInterpolationChain.lean",
+      "sha256": "131547b15b9c302b4980008b1aa5991e1289f75639ea72d7d4c13bd72086b879"
+    },
+    {
+      "path": "CircleJumpObstruction.lean",
+      "sha256": "8da83310f1fdcc2ce974739a81ed6090836e7e7b53f511bcaf6df940a9ce6cb3"
+    },
+    {
+      "path": "CirclePresentation.lean",
+      "sha256": "9614d1473cc2e805bd2ae7f6425dfcf7d6ff4afb5cf6969ad2619a04ec8997dd"
+    },
+    {
+      "path": "CircleReduction.lean",
+      "sha256": "262beadb376fc19d79ef04bfb57c4247b931ac443f121c7a8f1ed63714233ce4"
+    },
+    {
+      "path": "CircleRowClosure.lean",
+      "sha256": "f2db0f46e77d4a89ea7167a448d197f351800769a586fb5e16a29ba25ee2aae4"
+    },
+    {
+      "path": "CircleRowCover.lean",
+      "sha256": "9cbcee9f4bab4596d417ea870937933162f6541fc92dc3550239742def1468ac"
+    },
+    {
+      "path": "CircleSmallPairs.lean",
+      "sha256": "bd1d1db73571df3ef1e37466e7474deab91fad12590ce1d8839d43f05932f9f2"
+    },
+    {
+      "path": "CircleTopology.lean",
+      "sha256": "7efe248002fbceab82c873d6ea6a036307e463dded406b1d4a557ab25b154640"
+    },
+    {
+      "path": "Classification.lean",
+      "sha256": "74793098c032b8bc32186ebc25017a6452298ca17a05c14f997e11af792d091c"
+    },
+    {
+      "path": "ClopenHaarNode.lean",
+      "sha256": "af0fbc9eab4e178539fc6cace357a1d7815718173282fc6b09da6ab8ee54eebc"
+    },
+    {
+      "path": "CompactAveraging.lean",
+      "sha256": "fc7ccc9955427115dd3981dc5c32119522747da6a9b4bc95599b1e7c78d9b4b0"
+    },
+    {
+      "path": "ComponentQuasiInvariance.lean",
+      "sha256": "9ad6de540a064114b5f48b1646306a30701172e12b6388fd429d21f96b20a1ef"
+    },
+    {
+      "path": "ComponentRigidityRoots.lean",
+      "sha256": "24ec0c9b1da33e69de220995790006d9c2544459a304dbb277860fefd7f782ce"
+    },
+    {
+      "path": "ConditionalFibers.lean",
+      "sha256": "8c9b8ad27b767afa2ebb47f634f0825f578ada6b1d75893f2491a9167b20e3ca"
+    },
+    {
+      "path": "ContinuousSquareReweight.lean",
+      "sha256": "a4aca6ec04ad8e9fc00246fa613ffbbc124de65b73b052eb74cbf667598c6538"
+    },
+    {
+      "path": "CoordinateAffinity.lean",
+      "sha256": "e7707b28e9335d50a2c613371baf62076f824e27bf5c6b56888afd775d2af0d5"
+    },
+    {
+      "path": "CountableBorelColoring.lean",
+      "sha256": "3319c70bb44d5c2d76230ab87f205dd0d17bbf37c63d8bf4f00c88b8c3a18070"
+    },
+    {
+      "path": "CountableComparisonsMission.lean",
+      "sha256": "631bf15448450c521a35dbcb4e26ea0c8b07d7ac970f9523646c2598ca7f6df1"
+    },
+    {
+      "path": "CountablePositiveMission.lean",
+      "sha256": "d60fc97567de593919bc0b64aaf3c22f46af9f03e199f1decd48b4e568ae6ba4"
+    },
+    {
+      "path": "CountableSpanProjectionBorel.lean",
+      "sha256": "0ffa2099b512ca07a1419626781798d8012c8af3e7c9774bc4c62463990458f2"
+    },
+    {
+      "path": "CouplingKernel.lean",
+      "sha256": "065e16b21f4e084d85f34698c3e02a3160b1bbc25d1180c5eb358fd950065ce8"
+    },
+    {
+      "path": "CouplingMarkov.lean",
+      "sha256": "f9c4422667f745a33ac0a658feb1fb3b6073105756dcd4a80186d4b0ce2cb76b"
+    },
+    {
+      "path": "CouplingMixture.lean",
+      "sha256": "edd6f79b7073cda4848de3b6b14b508788c748ef70d265674d8cb1f4136f8057"
+    },
+    {
+      "path": "Definitions/Def_BenchmarkRelations.lean",
+      "sha256": "6dd3e0262a61a1d6bd2326449c34a5ad5849d3e9167181fe6651924347f3043a"
+    },
+    {
+      "path": "DenseEventErgodic.lean",
+      "sha256": "b0208c3133d1a249a9c2c2986ef81a8036b1137265889a24790f6c83073e1693"
+    },
+    {
+      "path": "DenseInvariantAffinity.lean",
+      "sha256": "ac41bf57541e03b4cbe424e2fa9aea5f3baacf3f8ff2fbcdea6331bc363bbbdc"
+    },
+    {
+      "path": "DenseInvariantSets.lean",
+      "sha256": "13b9b7f9a1ef03e2a2238ba57e7d0fb7e0225bafe375cd9edf7093a7ac63b100"
+    },
+    {
+      "path": "DenseMeasureInvariance.lean",
+      "sha256": "66fb44991a1ef54c8af991eeaf46c85d141ba4f07b1246518cdd06882e8e0f92"
+    },
+    {
+      "path": "DensityBundleEndpoints.lean",
+      "sha256": "517bc95c3dbdbc77271764551c8b6f469365efc561abd16d50732d0e66448d04"
+    },
+    {
+      "path": "DensityBundleTopology.lean",
+      "sha256": "9019e3029989e286ced9bd8d59da3b3f5fc78c825abccce1b75e12f440cc338e"
+    },
+    {
+      "path": "DensityBundleTube.lean",
+      "sha256": "b43cff7319db906ef405c4c30d409fc3b851fdbd711a25388cec96c8607f1810"
+    },
+    {
+      "path": "DensityExtension.lean",
+      "sha256": "ad20f0034f6aff08a807e0b1ad7adf703ce55cc107e7de9c9e9f031a6ae9354f"
+    },
+    {
+      "path": "DensityGraphCompleteness.lean",
+      "sha256": "b2bcfbd0193cce734cf1ca0769170bf2a7d8febfbf7a55af8a9d9dc8b60c96d5"
+    },
+    {
+      "path": "DensityInverseContinuity.lean",
+      "sha256": "aeb3c96d52e762dade40b2f100264c6c1ffe2dbe818bccec9367af25c08b903b"
+    },
+    {
+      "path": "DensityInverseIntegral.lean",
+      "sha256": "a211348ed7e397c74d9c76c1c18aafea9c9cbd3f907e11bc27dd7282ab22e29e"
+    },
+    {
+      "path": "DensityInversion.lean",
+      "sha256": "1998781d5fa3e6757683e37c87894fdc27abd58a60d74d9b1d7b96ce979e8a4e"
+    },
+    {
+      "path": "DensityMeasure.lean",
+      "sha256": "f569cd10de7afb0d154a1dcf34fca3df419c68bcd1415b223c32676d002ada12"
+    },
+    {
+      "path": "DensitySourceOpen.lean",
+      "sha256": "40f4ffdff45e0d6da26925156482bbec017634c2414f01f68c14ed8c0adb8201"
+    },
+    {
+      "path": "DensitySquare.lean",
+      "sha256": "87979d5f04385fdb005b2490060cdf0f5a0d91ab1b89a30da243965f1186f5fe"
+    },
+    {
+      "path": "DensityTargetContinuity.lean",
+      "sha256": "aa1d60f7ea1ec8a2daf6b3663b4fe00e91344fdc6132639fdf60cf893fe985ff"
+    },
+    {
+      "path": "EquivariantTraceMass.lean",
+      "sha256": "1b985e41d022df701ddc94d5081fc790d4a5d9d8310a58b41b5341747d4498ca"
+    },
+    {
+      "path": "ErgodicComponents.lean",
+      "sha256": "9fe06b1ffe866eb70025b7c2163316471a3071431befd8f7709fc9a0ece1e5e1"
+    },
+    {
+      "path": "ErgodicEquidecomposition.lean",
+      "sha256": "48cd93d9f8184c96c4f262e912499b9b0697c6de2b398bcc7b37b41157b272b0"
+    },
+    {
+      "path": "FiberEventRepresentative.lean",
+      "sha256": "4a7bcb39945a9e38c81c96d99dd1c985fd3f63446e89a972abbcf5379ff67dc3"
+    },
+    {
+      "path": "FiberL2HilbertSum.lean",
+      "sha256": "acd2865182b3bb6b74472d6aab94476f5c7eea675ba222b982ad4902f4ead3a6"
+    },
+    {
+      "path": "FiberL2SpectralSum.lean",
+      "sha256": "6781b77472f34e16d6cff1f7892ab3ab6a6cce4e754b6debd22af8be3d5adfc1"
+    },
+    {
+      "path": "FiberMeasureClass.lean",
+      "sha256": "ceedcacbb05d4437aa71c5a3c3b0068c9be9eee43b7aa4392c0ddc5c95a1cb4d"
+    },
+    {
+      "path": "FiberMultiplicityBaseChange.lean",
+      "sha256": "e8383466f900fcbaa7471750cb7bd0a79176ec29cdc6c3164684cfc5190d28a9"
+    },
+    {
+      "path": "FiberMultiplicityClassification.lean",
+      "sha256": "1174cd2b598883601329012f3c78d052fa2bd39e4ca7c2f07d9b8c59220a06d2"
+    },
+    {
+      "path": "FiberMultiplicityLayers.lean",
+      "sha256": "ff4404aed293e211508c8abea70a96043b73394cd6337d477c0d78eff62bd3bd"
+    },
+    {
+      "path": "FiberMultiplicityMatching.lean",
+      "sha256": "54988292bac42114ff8698095668bb6aafe20a88b92d958a1405e7108bdcaeb7"
+    },
+    {
+      "path": "FiberMultiplicityMeasureCode.lean",
+      "sha256": "6d2a7a43dd88aa2d50e1eb67a1ec556b1d6faee49d1f7246df0f0b43458b642e"
+    },
+    {
+      "path": "FiberMultiplicityOperators.lean",
+      "sha256": "50ae8861f92533ac43fd3e90e95bf1b07eafae260d9b3850f369976d6188225a"
+    },
+    {
+      "path": "FiberMultiplicityReflection.lean",
+      "sha256": "3e1d7ec20a3379218228aa19cc90cf10678b151d5ffcd7470a56abcf8a9e2b4e"
+    },
+    {
+      "path": "FiberMultiplicityTransport.lean",
+      "sha256": "ad7d993769e6626c37f2cc243a3ce3adc57ee39aadec68365869e2f0a126c9b9"
+    },
+    {
+      "path": "FiniteBorelColoring.lean",
+      "sha256": "df34392830df95460573b769197c3ef53bf11121eb6133fedbbebf462b1c81ba"
+    },
+    {
+      "path": "FiniteFourier.lean",
+      "sha256": "d4a7e3fe8e673973df39458b90b188282c84dea438ed14ca82ab1aa21b775900"
+    },
+    {
+      "path": "FiniteOrthogonalProjection.lean",
+      "sha256": "8c2a242726bef90e13ad37e053e257abaf0a3ef95ee35b0b4ae62c0f4361d949"
+    },
+    {
+      "path": "FiniteSupportTranslation.lean",
+      "sha256": "b828ad7724f5db2bfc94cd23d1386d6d46a9b5f7c405a522b3d410e2d76bd96d"
+    },
+    {
+      "path": "FiniteTorus.lean",
+      "sha256": "52245daafdf91582b1e9ba06f4bbfd2f044357ca3df5cc9b52aabea6b2840af7"
+    },
+    {
+      "path": "FreeGroupCones.lean",
+      "sha256": "dc93f5c7b44f4e78932485099bb05991732c761db7ae28dc69e9d8799f1806a0"
+    },
+    {
+      "path": "GaussianCanonical.lean",
+      "sha256": "6b5ab6a2564717feb84dcc826c57916d0599a997f7bcbde572a0b54681920915"
+    },
+    {
+      "path": "GaussianCantor.lean",
+      "sha256": "abca965109427a21db888dbcd28344e57df31e500b0a934cf20b87ebf7b6753c"
+    },
+    {
+      "path": "GaussianContinuity.lean",
+      "sha256": "2e277ed1a88e57607d235421fb21ecc04b38a7e455d64a462bb6a00d6356c36e"
+    },
+    {
+      "path": "GaussianCriterion.lean",
+      "sha256": "353bfa9d76bb38b1e99ce4438c2d77dda964645512c306a1e18e11ce35630eba"
+    },
+    {
+      "path": "GaussianFinite.lean",
+      "sha256": "9499364f59b95193989cd5b31e349b1bcd89d1a51ceb9e0a170412a12331b948"
+    },
+    {
+      "path": "GaussianPositive.lean",
+      "sha256": "de653e3b7706c16d489da7ceb98c1a905b137c02434d91e24148334ab46d48ba"
+    },
+    {
+      "path": "GdeltaPolish.lean",
+      "sha256": "18ddee675186578d49aa31da3c86e48bcfaa5e9f6a51a06b6b76ea7951dd80ea"
+    },
+    {
+      "path": "GraphDistanceBlocks.lean",
+      "sha256": "b02bf10262662979b3b48c7f6dbc0ea75f27fac2f6006cbc514f76da3b174e92"
+    },
+    {
+      "path": "GridObstruction.lean",
+      "sha256": "dee2d508b2708b0cbc3c27bea267fdae2c3a10de50effb92e13d68513f571b6c"
+    },
+    {
+      "path": "GroupMarkov.lean",
+      "sha256": "96a824a3f5d07a497cc29cd607115ee8ce1a5d3f6d347e9368ef7457f61e740c"
+    },
+    {
+      "path": "HaarIntegralContinuity.lean",
+      "sha256": "5b68b6a9fb9d2253e2b300cbaf94a0b13778452c61f8ef43667578dd1a6c59de"
+    },
+    {
+      "path": "HaarLipschitzIntegral.lean",
+      "sha256": "381de24553be9f9f37f4c0f95a00ecc04e41ac90e5a64c7dd3797bddfb7501d6"
+    },
+    {
+      "path": "HaarMeanZero.lean",
+      "sha256": "a1481fb47cf3b30bc561783d7346467a880f24fe1330dc80077a95672485f4aa"
+    },
+    {
+      "path": "HaarSplitSpan.lean",
+      "sha256": "f0a6a79f1eaf6948c353c5e383c00ba5b2da7e37da85b289524c890d7aebae9e"
+    },
+    {
+      "path": "HaarUnitCoordinateContinuity.lean",
+      "sha256": "1a63cd3be460fc35ec159b1b9d4562dfaa852509f768b92a41a753288b403846"
+    },
+    {
+      "path": "HellingerAffinity.lean",
+      "sha256": "83c020c5fcf38ac35d98560bbea05154c302df3cd72b637268039abe9b43afa2"
+    },
+    {
+      "path": "HellingerConditional.lean",
+      "sha256": "bb403e137e0d59957cc5e86aab25e8a021342dc915cae55ec3e93374b06b1a54"
+    },
+    {
+      "path": "HellingerConvexEstimates.lean",
+      "sha256": "64ad34166de3322aa693a8f08fb2630562b909c26f22ce1a33b2cbfd82ac131f"
+    },
+    {
+      "path": "HellingerErgodic.lean",
+      "sha256": "411292c498966d94905ddfa193cfab4c9fad7fc8dabdb61bac97ae829654fbca"
+    },
+    {
+      "path": "HellingerInner.lean",
+      "sha256": "98fac2885aae9b51a93eb83bbcd3ea0793c0fbb83b06f7af9de2ef0197c7fe92"
+    },
+    {
+      "path": "HellingerKernel.lean",
+      "sha256": "1b3deef1734b5abd2ac3a984fdbc0d449d99ea61833ac1b7f995e114d16e512e"
+    },
+    {
+      "path": "HellingerMidpoint.lean",
+      "sha256": "ed51d647c1729e48d773eb33815ad3895d694694ff08676ec95b03d2343e5520"
+    },
+    {
+      "path": "HellingerOrbit.lean",
+      "sha256": "51c41b99f1303be86216725e2e2b3020877e4322d582a58008fc9425b0664e53"
+    },
+    {
+      "path": "HellingerSplitMap.lean",
+      "sha256": "8e5a17dbe4ee458575c44fac215de0b1379509595ce223d6f9670ba306dc5bad"
+    },
+    {
+      "path": "HellingerTransport.lean",
+      "sha256": "aebe47b1dae35755a8fd7d184ecf358eaa4b24986823d5e276f7ac2ce4923d17"
+    },
+    {
+      "path": "HellingerVariational.lean",
+      "sha256": "c912bd1ce1e9bc61a95e175790951c084090a95c68b9bc6ff7ab523c087cde29"
+    },
+    {
+      "path": "HilbertCoordinates.lean",
+      "sha256": "e0bd2df11bda254442053149078abdd5426342791ff9ffb7063105719830df32"
+    },
+    {
+      "path": "HilbertFamilyCongr.lean",
+      "sha256": "677f2997b84f248942b2d87f664f9671a5b3709b2cbd269d0d65b01b16e73508"
+    },
+    {
+      "path": "HilbertSequenceTopology.lean",
+      "sha256": "1917b8b55b193ca6a89d5be04be80a4bcb38a023f2d03cabab4a595da4e7ba89"
+    },
+    {
+      "path": "InducedCornerMassReflection.lean",
+      "sha256": "0d9c7a0a5cbb05cc13ba9984d1d96845306f9f9b7aec404eb2d69cafc1f44c80"
+    },
+    {
+      "path": "InducedCornerTransport.lean",
+      "sha256": "62c274462557d556c2eb9fa9d7c218cee0ea0903508ec157c0f483c6a91d6df9"
+    },
+    {
+      "path": "InducedCornerUnitary.lean",
+      "sha256": "c727630f530471bb6def53df3f8a022c969e1da34724e4f7d55b91d39b4b6790"
+    },
+    {
+      "path": "InfinityEndpoint.lean",
+      "sha256": "b0483c06d586682a3d601be677376b0f152badbdd6f9f8d8be3547ac14c8494f"
+    },
+    {
+      "path": "IntervalInterpolation.lean",
+      "sha256": "195a2ae7bb2f5bd5a3ac944ae73e57f98b7aeb624fd860aa3fba256329e62256"
+    },
+    {
+      "path": "InvariantAffinity.lean",
+      "sha256": "7eace7e1036af03383222d16848ba850c1cff3259542db24eccaff0f96ec2644"
+    },
+    {
+      "path": "InvariantConditional.lean",
+      "sha256": "18db8be10608de97d850984b7c4ff8902f00cffb313850ed50d0a0f207f194dd"
+    },
+    {
+      "path": "InvariantGraphGroup.lean",
+      "sha256": "02f095837c638c1dace11e4ece015f7ee6e3ec7502fb136c8decb253fdda3444"
+    },
+    {
+      "path": "InvariantKernelStationarity.lean",
+      "sha256": "62721313e060231e02d9f8d973e232d06346d6b625f9f1c62e28ba99ab16aebc"
+    },
+    {
+      "path": "InvariantRepresentatives.lean",
+      "sha256": "a89cf2534ee44edcddd411cf0a6ca63e12dfb71e80ec144f37daaf36bbbeb342"
+    },
+    {
+      "path": "JumpRows.lean",
+      "sha256": "615f34bee8bb9911e66249babb85c9898d57c1ec59529244c214bb3f1451c2a5"
+    },
+    {
+      "path": "KernelAverages.lean",
+      "sha256": "7754096b8d5c878189682abb644ab03a806ab19d770cf142b4f0566759158b05"
+    },
+    {
+      "path": "KernelCantorNormalization.lean",
+      "sha256": "bcd39a19f7cf9987f4cec6b5c14fc6cce89854cad6cee8f1427fac2e58a585d1"
+    },
+    {
+      "path": "KernelEquivalence.lean",
+      "sha256": "a1ae1e63853df4ee3a4ccb63b596048fd13ea3afb3347011d03753b6f4f01fe5"
+    },
+    {
+      "path": "KernelSpectralSupports.lean",
+      "sha256": "5dc7b1c1e5cf150034660eed972a9f242eb8d99179c2441788a02c8e4b2eefbb"
+    },
+    {
+      "path": "L2CoordinateProjection.lean",
+      "sha256": "b5f46febf39f7141ad5aa4cf9014fc3bd97d4a02d94b605ac89d8ed22d7c686b"
+    },
+    {
+      "path": "L2CountAdjoints.lean",
+      "sha256": "9f7f9c9ded9d7f0db20a8d63d3f7c01857752fb4d93d51d1bfe7824f18b887cb"
+    },
+    {
+      "path": "L2CountCoefficients.lean",
+      "sha256": "387bbdffb5883995693df01d57a94fe27134dc49d46457b8751fe39ad8db58a9"
+    },
+    {
+      "path": "L2CountInjections.lean",
+      "sha256": "10cee485e4e6b3bb229ea187e1d112f48f5f144d315d8e1afa2a6d77849e10a7"
+    },
+    {
+      "path": "L2FiniteOnes.lean",
+      "sha256": "b1ee7137cc0404e38ad9dfe3b35e8faa4de01add7322dcb4eb0e545d8f0c82cc"
+    },
+    {
+      "path": "L2FiniteSupportMultiplier.lean",
+      "sha256": "e6df7520c227b82ff33f99138b8e3f7bcf4d8f962ad7b1914fb8b0aa2b59d6d8"
+    },
+    {
+      "path": "L2IndexShiftCoefficients.lean",
+      "sha256": "2c58f9d5c92c9554b470239450f55d07739e0fb42ff6f72b36433f601cd76c77"
+    },
+    {
+      "path": "L2LocalizedAdjoints.lean",
+      "sha256": "af71a65d604b464c951a660d5c04483f93bdcfd6eb31a30a16c9e5d4434e7bfd"
+    },
+    {
+      "path": "L2LocalizedOperators.lean",
+      "sha256": "34dd5c000cbcd7a40f4f07cda1299b06d260408325ee04a9d7563b6c5c78590d"
+    },
+    {
+      "path": "L2MatrixColumns.lean",
+      "sha256": "8b17b435620faef9761b385238a58547f12225b08d9632a6da9f8967ebf2e777"
+    },
+    {
+      "path": "L2MatrixProjection.lean",
+      "sha256": "4f8dc64f6b79d38c85d3a73d85a9a82115bba658114b6940427811771de49db5"
+    },
+    {
+      "path": "L2ModuleCommutant.lean",
+      "sha256": "4e367c72e63e8a42c26d183453c08e8ea78b97caf8dbdb76d26eb9b54691d44b"
+    },
+    {
+      "path": "L2ModuleEntryMass.lean",
+      "sha256": "5c286c9090616626ac4c92be62a6e873c33998e985e024f0a247328b6efb2712"
+    },
+    {
+      "path": "L2ProjectionCommutantNormal.lean",
+      "sha256": "e6f25a67d10895a259ec9f05d270bd4c2dc2cc5d236837ab023b2913c7c1387f"
+    },
+    {
+      "path": "L2RestrictionExtension.lean",
+      "sha256": "c1451e819e6f6bc6464b2002c2be402116d3e02f9916602adc4ac6307d532e2e"
+    },
+    {
+      "path": "L2SpectralProjectionIntertwining.lean",
+      "sha256": "d66fffd4743a0d7d1bd648d1299055271a187bbd66fbf6a9c764db6ff586bc07"
+    },
+    {
+      "path": "L2TransportedMatrix.lean",
+      "sha256": "14ee57e3a88c3533a46d6725d7a7b596a019102048694ffe6fe6dcb22d2dd153"
+    },
+    {
+      "path": "L2TransportedNorms.lean",
+      "sha256": "29ace16c031d8016cb317c0bebe54200ad97780a4b39350e8b13ee367fc765b6"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "8c3f7cb52489ecaf75873bd44acf1f9fff129b665b45f510995df883b3a383e3"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "b19ee3a07f1a423c179adce3bcc3c727902539f57748d26a7c4d7ff109099f54"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "8b5db2d1b1d33453d63409fd86f5899c7918380553a90b70f09ed56028768cb6"
+    },
+    {
+      "path": "LinearHaarIntegralContinuity.lean",
+      "sha256": "2ba60c902b13713d6b07c51c0cdb8ced8f99f73d3222249dcc120d2c0124bc6c"
+    },
+    {
+      "path": "LpClassMeagre.lean",
+      "sha256": "714bea6a786ad3907728de38d98ab9d80365b9875c3002fa8e1454efb0a26d28"
+    },
+    {
+      "path": "LpCountableAction.lean",
+      "sha256": "384890a3b1554baabe0a6a22ecc220ef551d6c028120efc57d93e69c1341922c"
+    },
+    {
+      "path": "LpCountableLocal.lean",
+      "sha256": "97e39ca5e7092a327ff9ef2d0cbace4ea0bf0172c44efc7065c883ee2f75925a"
+    },
+    {
+      "path": "LpCountableObstruction.lean",
+      "sha256": "f0eb4f961e5405bbe1e99160e4063e631279a76872cf4dc5dd1fa5b23626f736"
+    },
+    {
+      "path": "LpGenericConstancy.lean",
+      "sha256": "89234edbec48bf7846331c78f95fc9307bdd49e6b6ee1d2dde9c8a292a779723"
+    },
+    {
+      "path": "LpPrefixInterpolation.lean",
+      "sha256": "da95b5a1f39c3c2b5cd4e0718ab530b55b156f3eabfebf17e3c10d216dd32567"
+    },
+    {
+      "path": "MainTheorems.lean",
+      "sha256": "94c49e04511220e9630d02ed18c11fe4338d6bc614bdca8b4ea993ebf6ae70d0"
+    },
+    {
+      "path": "MeasurableNthTotal.lean",
+      "sha256": "17f82573063de339caf085fa060f5a5aa958780e8a0ae619cd34d0f7c956b2da"
+    },
+    {
+      "path": "MeasureCantorAmplified.lean",
+      "sha256": "5a92fd355f705819ed903c4884a19929c8012bccf05e2d346e6309589cb44458"
+    },
+    {
+      "path": "MeasureCantorBorel.lean",
+      "sha256": "1cbe58500907fd72f88a114e54c4c6ac5254f220ec777653b5eca09577283375"
+    },
+    {
+      "path": "MeasureCantorCircle.lean",
+      "sha256": "2b1e89707cb1b465e8ce1da7600809ddfd46bb0248d07409a76fc78bfd053988"
+    },
+    {
+      "path": "MeasureCantorContinuousBorel.lean",
+      "sha256": "54e4d20d771ff9485978c1d903b70976ac9d3432d9c7a3849d6fa8650d726ceb"
+    },
+    {
+      "path": "MeasureCantorDenseFamily.lean",
+      "sha256": "b937432bf06c8c81cc427b1c20e3ddf5b2fb82b13de4c5785cf30d40303862ef"
+    },
+    {
+      "path": "MeasureCantorGram.lean",
+      "sha256": "3b323f9a79d29963b3b41bd2db4dd34026e6e00d881c7baaa04d0743ac6249db"
+    },
+    {
+      "path": "MeasureCantorReflection.lean",
+      "sha256": "301d13428684055d265ccd3ed3c0ab2f46f66e3f592780dea0a78bd7a1c14c32"
+    },
+    {
+      "path": "MeasureCantorTuple.lean",
+      "sha256": "b32b4da27193dab3bbb85a9a9e93a136cc0ccc409d41eb23326027ccd2332f72"
+    },
+    {
+      "path": "MeasureCategory.lean",
+      "sha256": "1f57e5c9f9aeede4b7a07cf7df9a2baec5982562ab314c0bc3d066df99494be8"
+    },
+    {
+      "path": "MeasureCharacterIntertwining.lean",
+      "sha256": "037158ca8e629088b79635bc5ad67fda43b24dbb4b88dd2f14d5d24830eccdf9"
+    },
+    {
+      "path": "MeasureClassClosedCover.lean",
+      "sha256": "5906299ad455bd753ec47e7438b264f5bd6e06b6b5d31f237d0d2d29a5c66918"
+    },
+    {
+      "path": "MeasureClassMeagre.lean",
+      "sha256": "65486618d10ea4954d435f363f9dc5c676582b31a20cd4b253ce1e7d41710d98"
+    },
+    {
+      "path": "MeasureContinuousMultipliers.lean",
+      "sha256": "9eee380062db3c6bde39399967bab5f7b8fca5baee3aa23526f8643b7c236cfc"
+    },
+    {
+      "path": "MeasureCyclicReduction.lean",
+      "sha256": "db4cfbca7225339b9ec9c40701813e7a6773ce8fd0678eb32fedf69a0ebd7d29"
+    },
+    {
+      "path": "MeasureEquivalence.lean",
+      "sha256": "46f0685e0d5d480a907c87ac2cc9889900470b7b3ba96a0064c9b52008141a8c"
+    },
+    {
+      "path": "MeasureFreeReduction.lean",
+      "sha256": "4a2d6b62047f7cdea4d79f1fe7e2fbbe70128567f8f619a6bbd6074304228c37"
+    },
+    {
+      "path": "MeasureGenericErgodicity.lean",
+      "sha256": "f731d0505470d9b8ecd16847954df922150402af0e0416836217a68f23675239"
+    },
+    {
+      "path": "MeasureGramSchmidtBorel.lean",
+      "sha256": "7ea95ae5a507f10812fc04e774d16f379f04128c5fb636ebbfc691a7e6f579ce"
+    },
+    {
+      "path": "MeasureHellingerFiberLift.lean",
+      "sha256": "94499d3d4d50fa705830c8945ac0668233bd690cedd5513ad30fa0f5ee309e71"
+    },
+    {
+      "path": "MeasureInducedOperatorCode.lean",
+      "sha256": "ca61cd3e904c53be699cb7b98cd3bfbcedd6aaaac3ca85a2007c486e13c6f5bd"
+    },
+    {
+      "path": "MeasureInducedOperatorEquivalence.lean",
+      "sha256": "dbe7fcc7ce83e931f1c363523a86d062e4a608f49d2be4a4289799ea4a6685ba"
+    },
+    {
+      "path": "MeasureInterpolationChain.lean",
+      "sha256": "c71376c7c46fc713ab264fe6a50a79ef901e210aaa8647f70d33d1bdd1a422d0"
+    },
+    {
+      "path": "MeasureInterpolationEnergy.lean",
+      "sha256": "e7f81d6149ef7ab44bc1e92909519c5f8c5c15c8a12fc106a5e6ab81f8d33b1e"
+    },
+    {
+      "path": "MeasureJumpObstruction.lean",
+      "sha256": "344f17015503d83aab1b55a01b8c1795afa3311ee977d3a922cd0b56d2643e4d"
+    },
+    {
+      "path": "MeasureL2Constants.lean",
+      "sha256": "734b905fb0897520cdee55ffdc7722148f607d5ee45e133b6d9b219a53356f39"
+    },
+    {
+      "path": "MeasureLocalSmallRows.lean",
+      "sha256": "4a6db88476bb4c5e79824c1edec3f63fcab8e4b8e4fd3d129da0fc1d10e4d874"
+    },
+    {
+      "path": "MeasureOperatorReduction.lean",
+      "sha256": "1e0dbda7e32cb5540f438279019c5e86697f6d2ccbd807be9cd331d0870da5e1"
+    },
+    {
+      "path": "MeasurePullbackMultipliers.lean",
+      "sha256": "f1a90d18d54a6c06acc41df59edad92ea7d023bb8644482d708737a93c524d0c"
+    },
+    {
+      "path": "MeasureRowClosure.lean",
+      "sha256": "2afb8a7e7931c0dbe227e4cd37de636ce459080da3249c8d08fdba4d1da7a6d0"
+    },
+    {
+      "path": "MeasureRowCover.lean",
+      "sha256": "2bf464d5c3437b81982a26aa8510c72285fb14275944912f1fcf61e6481199eb"
+    },
+    {
+      "path": "MeasureSmallPairBound.lean",
+      "sha256": "2122a60c49b1a4b1d1809b4b5bbf3d6db7320c2e23f741f27f1096e742227366"
+    },
+    {
+      "path": "MeasureSmoothingFiberLift.lean",
+      "sha256": "abe4bae1462da0927a6145d4533c75709297a03beac4ad448a46dfdfe3d2e892"
+    },
+    {
+      "path": "MeasureUnitaryDensity.lean",
+      "sha256": "597be580fe9c40dc13bab19adba6264878f4f8715a013c280a7547678b470311"
+    },
+    {
+      "path": "MeasureUnitaryMultipliers.lean",
+      "sha256": "004e77cbbca2123bec893189d4ce85a753a03c359aacf2b9c5bd1bb40177c094"
+    },
+    {
+      "path": "MeasureUnitaryOperatorReduction.lean",
+      "sha256": "fd34ae651341a6b973682ed15c78713cf7c746dbf5338824b338ea360850db7c"
+    },
+    {
+      "path": "MeasureUnitaryRN.lean",
+      "sha256": "7d99590863297b3f2547fbd1b18a6b4f71402e83b42778b5e8a834f02ffec1c9"
+    },
+    {
+      "path": "MeasureVariableGramSchmidt.lean",
+      "sha256": "b90203c968a95427b3fa23246b6f0144cee77a68584f9da485979cd2665ec87a"
+    },
+    {
+      "path": "MeasureVariableOperatorGram.lean",
+      "sha256": "00579f07531234394f3a8659c46909a4692636b1f12772780249710807f2c8d0"
+    },
+    {
+      "path": "MetropolisCoupling.lean",
+      "sha256": "5dd4c9054ac0ec7fd9b84a78437c0872889d3343d7cfeb4991d7d2011bc25e51"
+    },
+    {
+      "path": "NegativeReduction.lean",
+      "sha256": "f7a911294a86312fa3c1291cadfb2e020a11ef2361dadcda78bd16cf11ce69b1"
+    },
+    {
+      "path": "NonsingularDichotomy.lean",
+      "sha256": "542243f64d0aebba5102fce77fa9eb04c3dd0f758b75e3476dbe6c2265748e26"
+    },
+    {
+      "path": "NormalizedTruncation.lean",
+      "sha256": "7c9c98b6bed8db45315d0ad7adbdc01122c058aad433bc3e7eff02b1a3ba4081"
+    },
+    {
+      "path": "OpenFiberSquare.lean",
+      "sha256": "e603a199f04d80222d0424b45946635f50dbb848db404495d583fc5c01e78bf5"
+    },
+    {
+      "path": "OperatorAdjointMeasurable.lean",
+      "sha256": "3e5818bf42d9c52f5b47980faad59dfb9d3dd2474cfacb70aa8e9120518afd40"
+    },
+    {
+      "path": "OperatorAdjoints.lean",
+      "sha256": "9572c0c955fedb731197102e7b6c56e88ba258bd8ac92c4c236c456ac0bba8bf"
+    },
+    {
+      "path": "OperatorAmplification.lean",
+      "sha256": "0cea05fa5827c58e3874eba8ca6c35e9967e4db27b04ddf0eee087aae1e83f40"
+    },
+    {
+      "path": "OperatorBireduction.lean",
+      "sha256": "4f088a8a9d53e34971a31a0cb54d84d345933e6e18110ba0727eb10cc848108c"
+    },
+    {
+      "path": "OperatorBlocks.lean",
+      "sha256": "22f22190fd48f4a192c3b87b7637d78a4b3c10c12d9599c7feb78b71317943b9"
+    },
+    {
+      "path": "OperatorBorelNormalization.lean",
+      "sha256": "4dd01d2382998a40490831536b0baff0cefac3c3bf04f1c24c329ca2b558b56f"
+    },
+    {
+      "path": "OperatorCoefficients.lean",
+      "sha256": "c00cd3b70a50e860d857b4a24f3acc6ec3c7ce5d719ce00f4b3435d3681afa20"
+    },
+    {
+      "path": "OperatorConjugation.lean",
+      "sha256": "bd360ec49cde96f6704c3c627df661a16d5ce305ce987e503734ea568cb53dc5"
+    },
+    {
+      "path": "OperatorCyclicRepresentation.lean",
+      "sha256": "9b1728382899ccc31e8002494b010d7cd4fc33e3429b19ad91e5270273098fb7"
+    },
+    {
+      "path": "OperatorEigenspaces.lean",
+      "sha256": "c6e256a974455d69bd2c26d2b5a66a5a3ec8dce4e8a30b6b28a757ad58e235ec"
+    },
+    {
+      "path": "OperatorFreeGroup.lean",
+      "sha256": "881e3c4261d5203122c75806f65bd36cf46414676ea977941034efbd2ed0f31f"
+    },
+    {
+      "path": "OperatorFreeRepresentation.lean",
+      "sha256": "2716f34341663527a1ed09c815a030cad2c9f5513f322eb131a68b89cf662f7a"
+    },
+    {
+      "path": "OperatorFullComparisons.lean",
+      "sha256": "7651dcb6433b78f52763f5e47095e95b6277231d19f31543a46551b5b3766030"
+    },
+    {
+      "path": "OperatorHilbertFlatten.lean",
+      "sha256": "3e893b536ef1b553e02a4d0a26a36008a302dd5f3388a782f8a2349866df3538"
+    },
+    {
+      "path": "OperatorMeasurableEvaluation.lean",
+      "sha256": "1f534321922039e8b4df717d8717c5a846d3048d971d2cbdfa7a41e226a64ccd"
+    },
+    {
+      "path": "OperatorNormalization.lean",
+      "sha256": "8a9e72c84ca512fef4b8739326c484e4aebc19eec253eefc338bc914e77e3259"
+    },
+    {
+      "path": "OperatorPairCoding.lean",
+      "sha256": "84669adafd19e6a7c600d2c3b1055bf57077cc73a7715c71157812c9ae428ea3"
+    },
+    {
+      "path": "OperatorPreservation.lean",
+      "sha256": "88c803d66cfd55ec95fd8f32c8bfbe2cbd8a154ab82d66f11e4de7473436e805"
+    },
+    {
+      "path": "OperatorRecovery.lean",
+      "sha256": "3974d76b57f3ba76f2668f28e8cc4ccda4e1c2495f271e802213b60df05336e3"
+    },
+    {
+      "path": "OperatorSeries.lean",
+      "sha256": "a23472d990cfaf0cd622a00370f9e989909cfbd045d8b105e99fa954e4d96139"
+    },
+    {
+      "path": "OperatorStrictSeparation.lean",
+      "sha256": "9bcb1d01d60c8a118ae34b2241b8b63acc853889c608c3ea32265f47e366f38c"
+    },
+    {
+      "path": "OperatorStrongExponential.lean",
+      "sha256": "564514c0dd63c66ea322aff941a877adb0a80d6b21d3b8fba61a5e3317f44c84"
+    },
+    {
+      "path": "OperatorStrongUnitary.lean",
+      "sha256": "7b39edff9a9c795f906091c2eab7be7395c73ee87c90e822eede3c6d212b10be"
+    },
+    {
+      "path": "OperatorTargets.lean",
+      "sha256": "d1549f6c814c1d9bc6f14b1f80a9834c95484a58ba6efcf7d94a853f4491c3b5"
+    },
+    {
+      "path": "OperatorTupleCoding.lean",
+      "sha256": "2ee79c75ccbdb516773a3c72b07f7b13b3989c3709f3166db14b024b11c38144"
+    },
+    {
+      "path": "OperatorUnitaryBorel.lean",
+      "sha256": "433d763295f31788e5c463f7413019221de81296a0d65b0f5d8c6e77d85a556a"
+    },
+    {
+      "path": "OrbitMarkov.lean",
+      "sha256": "59f7e114fc169a67ea834ad174e6408cacca8014451a51d7ddf1d5c967d63629"
+    },
+    {
+      "path": "paper/Benchmark.tex",
+      "sha256": "683fed7e557183899600c82ef49a6d92de7b1dc742f033a5a6391181c0b47958"
+    },
+    {
+      "path": "paper/MeasureEquivalence.tex",
+      "sha256": "e6a30bcd7123a30eaa89b4017466e0df6a5d67a6b3755dfc1c7e5fdd6d825892"
+    },
+    {
+      "path": "PiecewiseMeasureTransport.lean",
+      "sha256": "2edb1f31b6c71d14b0e796241b6d1bfb11745945cc8578d8c8cd9b2f5df444a1"
+    },
+    {
+      "path": "PoincareNonreduction.lean",
+      "sha256": "59bf5c3ad7cfefc2135aaf5a8782c608abcd7298bde8a256368758571274b5bf"
+    },
+    {
+      "path": "PoincareRadial.lean",
+      "sha256": "aceea0eeff266bdb051444e26e9f12067fc1fba710d5ba6e9296d6781c76d6e5"
+    },
+    {
+      "path": "PolishGroupTopology.lean",
+      "sha256": "8e3ce824707d5a6841c793e95d5ff246e004e9b740e3821da065129832918f4f"
+    },
+    {
+      "path": "PositiveContinuousSections.lean",
+      "sha256": "db63950bd903a40904fd93eff1187533ba21b770bb2e9f5b0cb668f9fb1c4631"
+    },
+    {
+      "path": "PositiveConvexNeighborhoods.lean",
+      "sha256": "a815e9619ecdc9bdee336bf2cec409ba6ff4badeb2bb827fbbdcb9ee5cdc3c45"
+    },
+    {
+      "path": "PositiveDensityGdelta.lean",
+      "sha256": "183027f697bc8f9fb2a8030fa2fb1461148aeab8810eec654202799cdf628b55"
+    },
+    {
+      "path": "PositiveProbabilityMix.lean",
+      "sha256": "1a6ca08984bfb499d2537f7fc277975429ec69fce80efb2abf3392c3c80c4518"
+    },
+    {
+      "path": "PositiveReweightNeighborhood.lean",
+      "sha256": "71cf2ad0ceaf29db2293ca9428a24452ac3f23a18f888e7005936421c6d82b20"
+    },
+    {
+      "path": "PositiveSectionDensity.lean",
+      "sha256": "38df3b7286b614e04b16fc45b6d714c6648f150367a020548d714b96656b1092"
+    },
+    {
+      "path": "PowerDifference.lean",
+      "sha256": "4e1b2ab69b0a6420423c5e08d159d79a9dcb2ca53707b1167222043c8a40f896"
+    },
+    {
+      "path": "PrefixTruncatedEnergy.lean",
+      "sha256": "162b46c8a7d5715fc51848c0e64cce08694b691096a69d42501d171b9ba4d492"
+    },
+    {
+      "path": "ProductAffinity.lean",
+      "sha256": "f7dd6df55e7351b68560b2767cef5dacd0806b854a1ab9b246fd0b5c69090f72"
+    },
+    {
+      "path": "ProjectionMassGap.lean",
+      "sha256": "ebd7c2267cc1b5f50fa7a67407ceff99626a528a9acc714111745a446456e33f"
+    },
+    {
+      "path": "proof-submissions.json",
+      "sha256": "4fdc666941342471a0e1cfeb7e4f68d2e293283e1994cfddeb0f9ffd659fae78"
+    },
+    {
+      "path": "RadialEnergy.lean",
+      "sha256": "0bb914988521d461d8386415735c3a9dbb90c3b18e33a04ce5da4dca4cbdd812"
+    },
+    {
+      "path": "RadialRetraction.lean",
+      "sha256": "a7e10d8f0e85f2b12ca3f05b8d062639b675041111937215b0bbbbc114195f37"
+    },
+    {
+      "path": "RationalFiberErgodic.lean",
+      "sha256": "e079e9358faade3e4e6c38c707e6df0219f914969937551fd384759755265d45"
+    },
+    {
+      "path": "README.md",
+      "sha256": "eb056f1090a4f9cfbe903e122abf60f3fc8af61a16567395358172c16f9d021f"
+    },
+    {
+      "path": "RealMedians.lean",
+      "sha256": "cb8b8d95763ffde87191e11aa9aea548d2942647e0941984b52533a68b241538"
+    },
+    {
+      "path": "RefiningFinitePartitions.lean",
+      "sha256": "b4c48f204ed010a60cd609019835f009d607a9163c1252f79063324509586c18"
+    },
+    {
+      "path": "RegularFreeGroupGap.lean",
+      "sha256": "51a4756445c9a8e38d3d6b9f65e4d8eab1ba2a193b969248b8ebf9eabd2f9a5f"
+    },
+    {
+      "path": "RestrictedAction.lean",
+      "sha256": "062c1f8c7f569b003b63e682a5c151fd795c8964e147cb4245ead03ebfd7bdf8"
+    },
+    {
+      "path": "RestrictedBoxMass.lean",
+      "sha256": "c7f24f486a0adfd0a0030bcd977c7db59fb308a01f620dd791b05f3a1fa5db68"
+    },
+    {
+      "path": "RestrictedCompactAction.lean",
+      "sha256": "892c5d94b932421cb278935e8bb848b16716c35e3deb5385934c31860ed9d2d4"
+    },
+    {
+      "path": "RestrictedCompactMeasure.lean",
+      "sha256": "fe26ae0f28319c0d7282d0a75ab1080c183758d44ee5d67fde0ba3efce5e691b"
+    },
+    {
+      "path": "RestrictedCompatibility.lean",
+      "sha256": "9a27a53c7dd9b8641833ce8f9edb77bad303af54b0ab3ff611b072d7585e3952"
+    },
+    {
+      "path": "RestrictedCornerCharacterMass.lean",
+      "sha256": "7e69c892becaeae0cfd6c04e9fea32a6ad2521166703104fcc92e51b2dc43301"
+    },
+    {
+      "path": "RestrictedCorrection.lean",
+      "sha256": "ac6d17f6707b5d2729577f4586ca4832f7b00139a649abf42f9e97baa1661a91"
+    },
+    {
+      "path": "RestrictedDensity.lean",
+      "sha256": "43c4658a790fda338610dec10e9d4b14db018903de5314d13bc1e0f169c5ae74"
+    },
+    {
+      "path": "RestrictedDeparture.lean",
+      "sha256": "3dddc2281eae13725c9444a83e3caa08caf94aac59248efaca71afadf1a1d5f8"
+    },
+    {
+      "path": "RestrictedErgodic.lean",
+      "sha256": "1f015e13bc03b7ff93c631aa6a5af031db0038764d8b8482a9e5ac863c153d5f"
+    },
+    {
+      "path": "RestrictedFiniteCornerReflection.lean",
+      "sha256": "8144d086cead298d5eb1b7f2c2734f3fc09007387f1f0dbc7a70434e0170af59"
+    },
+    {
+      "path": "RestrictedFiniteEvent.lean",
+      "sha256": "b7733c5a901b84d3d4188b39d86dc06034d32258e56fd62452a8e58560d92487"
+    },
+    {
+      "path": "RestrictedFiniteModulus.lean",
+      "sha256": "aaec3b10b0987500fc5ee6c567e8cf300c815308af096d9ee19a019a963c8632"
+    },
+    {
+      "path": "RestrictedFiniteNull.lean",
+      "sha256": "44815bfba096cf9a82c996edf04a3b3a2ac2e8b7c9d9b8ea541c39e43229047f"
+    },
+    {
+      "path": "RestrictedFullReflection.lean",
+      "sha256": "38d1e2573897839815a96c96b5a2b82e5352eced2188b71bdb6f132fb3a62132"
+    },
+    {
+      "path": "RestrictedInducedFamily.lean",
+      "sha256": "cc00712984e9d68f5e576a2b8c05570dc96be35bea1d364f97fa893739b153fd"
+    },
+    {
+      "path": "RestrictedInducedReflection.lean",
+      "sha256": "bcf72180b9a4d1df61c95ce1e0f15538480a17ef04bcdb5ae42ffff9a5640077"
+    },
+    {
+      "path": "RestrictedInducedSpectral.lean",
+      "sha256": "8a01d968310c899286dafeb29b2746130c6104e7af478064fd2685e450e10a4d"
+    },
+    {
+      "path": "RestrictedInducedTuple.lean",
+      "sha256": "3e72a44f63378910da13ad15f610296daf18fff722f4320eaaa06b34978e9ae2"
+    },
+    {
+      "path": "RestrictedMass.lean",
+      "sha256": "da1a46ebc1230a58ea6e07b2c87d15b35c4d64b3df326f2b7335835e13163f32"
+    },
+    {
+      "path": "RestrictedModulus.lean",
+      "sha256": "7a4fc98b029001fdf12be75a697b5f4e08ce494f2d2bd463398b72de8e916224"
+    },
+    {
+      "path": "RestrictedPermutation.lean",
+      "sha256": "a10e2a753491954eeee94460358f0524f678958ebed39c18f4eb6a9cc3f232be"
+    },
+    {
+      "path": "RestrictedPhaseFamily.lean",
+      "sha256": "eb46161baeeca891bd478a0901acbe10b65e99c31e8bacb6e2dfcdff072e4ea5"
+    },
+    {
+      "path": "RestrictedPhaseReflection.lean",
+      "sha256": "589d4d06f41612037e6cc93d398bd6050e71b9609fcc128483e9d224a5614518"
+    },
+    {
+      "path": "RestrictedProduct.lean",
+      "sha256": "a897729bbdf4addc460cda33f83ee961bd232419597815f0b3c3a4c8e61bfe1e"
+    },
+    {
+      "path": "RestrictedPropagation.lean",
+      "sha256": "8c0f79b5f51f7fe1916068416b64e7f8dfca14230329419c9291c43efbc23057"
+    },
+    {
+      "path": "RestrictedRoots.lean",
+      "sha256": "ddbf154f4d140649d84d93033f65a2db6a3ed017bb873c37b5d237b28c113638"
+    },
+    {
+      "path": "RestrictedSaturation.lean",
+      "sha256": "ea9eda3a2d029d63b7880548365e3704d8ebb93b3eb06a7b82993360b56e7116"
+    },
+    {
+      "path": "RestrictedSpectralClass.lean",
+      "sha256": "a47d47b75483611d3a9d54db1bc4020846cbe2df237a08ae70ef1e5b8e8fa47b"
+    },
+    {
+      "path": "RestrictedStages.lean",
+      "sha256": "492384755dd125aa336a1d7c000a059c1effb1d57e9ac9fb4b7dd51d1068e9ed"
+    },
+    {
+      "path": "RestrictedSupport.lean",
+      "sha256": "7b396a774c98fe0653e18f8480ec88b8dcca75aace53437289bc3c31b6594e69"
+    },
+    {
+      "path": "RestrictedTail.lean",
+      "sha256": "74701b7aed1e0324f560320ee7a36a150f7f1d4a9d80bbde6bd550366f889ff1"
+    },
+    {
+      "path": "RestrictedTranslatedCorner.lean",
+      "sha256": "ac39d78690d8e55bdc1bc33a4bde0624d5dd1ad42d4243c680a7abfcd827da62"
+    },
+    {
+      "path": "RestrictedTranslationIntertwining.lean",
+      "sha256": "52bc52d018ad2f00daa7187067e2d53ba7efb13db3a58cc89a60bdb0826d5c87"
+    },
+    {
+      "path": "RestrictedZeroOne.lean",
+      "sha256": "ba22007e99e01f286ba5ea747693de7712aae7d73537e925b7cc50eba1e4e518"
+    },
+    {
+      "path": "RigidityRoots.lean",
+      "sha256": "2065c065a8ef889655833f9182163ac012be4432afb18eec37736d74e9464056"
+    },
+    {
+      "path": "RNGraph.lean",
+      "sha256": "cc8db11a6a4107f7ae6cf4e29673db3d07f1805fcbb02b5944b7deccfb1ca590"
+    },
+    {
+      "path": "RNPresentation.lean",
+      "sha256": "6d997732495125c9ad2f35fc168971798fb059d4ba9b716f05e4f960617cf186"
+    },
+    {
+      "path": "RootContinuity.lean",
+      "sha256": "fe50bd9ab67acd7f412c7c16f0eda5cc232760fba519cf2fba3dc983ff0e2e35"
+    },
+    {
+      "path": "SampleSpaceTransport.lean",
+      "sha256": "904b1240c0b6f5151f927ba295a705edb41aa47916f4d65a5a76e865a8e0e9df"
+    },
+    {
+      "path": "ScalarMeasureNormalization.lean",
+      "sha256": "b8afebd7384f449bb141da550b113155b3aa38061def3b92e5b5fad0cb4430bb"
+    },
+    {
+      "path": "ScalarMultiplier.lean",
+      "sha256": "08abb64d98007ad9e513cd2a39cba6b307d53cb1281c352b8f61241990cfb5af"
+    },
+    {
+      "path": "SeparatingMultiplierIntertwining.lean",
+      "sha256": "5a964d5dd33b2c5952435fee1838341dcf7b62bec800bf5ada534912406d7fbb"
+    },
+    {
+      "path": "SequencePoincareCollapse.lean",
+      "sha256": "8dd6fa4beb1382ee1a3aea250248c5a0c8f047ec75db02a55394c5dd8aa1ad7b"
+    },
+    {
+      "path": "SequenceTheorems.lean",
+      "sha256": "f256c761959b0e1e03f835b1931b17584fedf6f01ee9a184c1e5d6d434617837"
+    },
+    {
+      "path": "SharedConditionalDensity.lean",
+      "sha256": "1b4d59c2c307e2bc7e8a69e604358a2c6db58cf970debf1bb0da5607c5b8da9b"
+    },
+    {
+      "path": "ShiftBernoulliMeasure.lean",
+      "sha256": "fe25d61a125e735d4ae3c46785626867588a7dc7b8c0f5b041352a226523b3b8"
+    },
+    {
+      "path": "ShiftFiniteBalls.lean",
+      "sha256": "442740f4f6d4bbb222581aa323dea0f396c772ce150a64f8194038c2f59a46e4"
+    },
+    {
+      "path": "ShiftFiniteLpObstruction.lean",
+      "sha256": "47cbf0dc73d9fdd3ee15c80eea7e726f6453b39d4c12a56329391c68620b16bf"
+    },
+    {
+      "path": "ShiftGraph.lean",
+      "sha256": "4cc9ba8e37abff9d7acd24b25660c4c6587a588e3594c072224ce459ec2c1ad3"
+    },
+    {
+      "path": "ShiftLpNonreduction.lean",
+      "sha256": "d03d559ac839173bdd6ac55231287ba04f6be74623bbbe69ae07a388ba07fd6c"
+    },
+    {
+      "path": "ShiftNullReduction.lean",
+      "sha256": "955dc2113f449083be1a29727f3109a5aa4c68fe7175c9d84a99ac0286535eb4"
+    },
+    {
+      "path": "ShiftWalshCharacters.lean",
+      "sha256": "fb9eb97a0807fbd07a395d7b5e11ea34dbe7b09ae9ca35409f15736e17affd50"
+    },
+    {
+      "path": "SnowflakeIntegral.lean",
+      "sha256": "364f7804a21a1f61fe84fcc08fbdcce38f73d2f31434620de7cbd3087166c79c"
+    },
+    {
+      "path": "SnowflakeReduction.lean",
+      "sha256": "e85013c777ab8dcdf10a79e7cdc79a5761fe994c6487bc69e9eb1dfb7f4d869f"
+    },
+    {
+      "path": "SolenoidGroups.lean",
+      "sha256": "0bcadf3f743451d7a036309ee98d74023f5458abd0cf627381724ed06077331d"
+    },
+    {
+      "path": "SquareTestEstimate.lean",
+      "sha256": "cade0dbcec9dd111073fa4736c9aa2e242dfb9cb80ce7e2028ca2af71ed730fc"
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "a8ca9578f9e4b7077cfdfd6511e6f25445623a874751aa16914aa4b219d7ff75"
+    },
+    {
+      "path": "SumFiberCoordinates.lean",
+      "sha256": "cfa67862cbd7ecb0dfc60f341be57a02bf17afbe66381a437cba2c380823e183"
+    },
+    {
+      "path": "TailGraphObstruction.lean",
+      "sha256": "6598fc622e86f3e30dbe080f19a9e44e8c52a84f31d1b4b9819c02a44c8cbd4d"
+    },
+    {
+      "path": "task.md",
+      "sha256": "bcec95a05060da7f6ca5a8b189e56eaf13ab59078381a582a434f160a8fbccd2"
+    },
+    {
+      "path": "TestSetErgodicity.lean",
+      "sha256": "c0b4bd0a8d4b47e5dcf448cae633ad75dd20f4e944411c7d88046655802765cc"
+    },
+    {
+      "path": "tools/AxiomAudit.lean",
+      "sha256": "0ed5b64573d25497b543740110c8a741764117e9c570846c55273431be82926e"
+    },
+    {
+      "path": "TrigMultiplier.lean",
+      "sha256": "ed1f800b15f3c0502e823a875e005a92e6fe1230bec2ec1b1ae539958d36ea3f"
+    },
+    {
+      "path": "TruncatedEnergy.lean",
+      "sha256": "4e9ad50a733d1e9568bfb8d7cf0a1b85c2f291bd7223a81ad438eba766235886"
+    },
+    {
+      "path": "UnitaryCFCStrongContinuity.lean",
+      "sha256": "e77c3661d7a9c82c9d83321d652aaf1671773cb54d5f94723e6173f063c3af10"
+    },
+    {
+      "path": "UnitaryCircleFunctionalCalculus.lean",
+      "sha256": "382cda63236b2e804f1ff779622f138437437f29d8f0281c3786ae61ff2483c4"
+    },
+    {
+      "path": "UnitaryCyclicFunctionalCalculus.lean",
+      "sha256": "846b98aafe2f3936ead41bc1c791ec8bd4fa31f42c17f2b359af6e2ad1606e0c"
+    },
+    {
+      "path": "UnitaryCyclicProjectionBorel.lean",
+      "sha256": "fae644221bfd94e57298993ddec0a8982956d058fc246ce9bf1bba150af3f44a"
+    },
+    {
+      "path": "UnitaryCyclicRiesz.lean",
+      "sha256": "df859a870bdc824703c223caff706c0205cad442899544fa3d65c58ec5fbe722"
+    },
+    {
+      "path": "UnitaryCyclicRieszIntertwining.lean",
+      "sha256": "5fd6e0746e6e4dfb3a7645b243eef55e6cc3c27b7f4ef6d34caee16db3fe24d4"
+    },
+    {
+      "path": "UnitaryCyclicRieszRange.lean",
+      "sha256": "0461bcd59c079567627ea4e83f103e41fe985bc9fc4f4737d87e57100a368c6f"
+    },
+    {
+      "path": "UnitaryCyclicSpectralModel.lean",
+      "sha256": "c737721a283bb9a992315f28060da28db6009372be1265c3847cf07410f4fc94"
+    },
+    {
+      "path": "UnitaryCyclicSpectralSubspace.lean",
+      "sha256": "3dccec32c883e848082add03a25ed6591da336f7027aa7ed9850b2c69a6d071c"
+    },
+    {
+      "path": "UnitaryCyclicSubspace.lean",
+      "sha256": "bf71cd75808ba13b2ac20276fb123b9d98997206d17d759684a5c2966d7ef9e6"
+    },
+    {
+      "path": "UnitaryDominatedSpectralModel.lean",
+      "sha256": "8450557953b57ca778f1e27cfc017e1549624bf8875dd4e09b1e3c2760f1991e"
+    },
+    {
+      "path": "UnitaryFullSpectralModel.lean",
+      "sha256": "420c52882c4275f0cb44ed160088781b73df116ae760955df9f0eec8a62e3cb8"
+    },
+    {
+      "path": "UnitaryGreedyCyclicCompleteness.lean",
+      "sha256": "4f6ef401df23227ba978e96bbc93352f229bedd929f10b9000ab624234c2602f"
+    },
+    {
+      "path": "UnitaryGreedyCyclicDecomposition.lean",
+      "sha256": "1f5ed2caafae5df6c8b67ad4057336bb9322d5abe5762cc9a9a113a3b5e509c7"
+    },
+    {
+      "path": "UnitaryGreedyHilbertSum.lean",
+      "sha256": "2a1a494b3a60ef6b5459e052ff90a8baaea241dad10c904ccc5456f65f2627fb"
+    },
+    {
+      "path": "UnitaryMeasurableSpectralSupports.lean",
+      "sha256": "7b044b8cf3119534892cc4278050f213a2eeed257d79f9cd737641b0613b14fe"
+    },
+    {
+      "path": "UnitarySpectralCodeBorel.lean",
+      "sha256": "b1165d75080a750bfb3d304406a041be528e130d3518b4b99e2892299b0fd1c8"
+    },
+    {
+      "path": "UnitarySpectralCodeNonzero.lean",
+      "sha256": "fa01b013f2f81440fe36091412ef64d2b5382349fadd92b6210a63d2d4098173"
+    },
+    {
+      "path": "UnitarySpectralMeasureBorel.lean",
+      "sha256": "c37804e9db659a2a56fca7eb9e462e4d76344ae7b36912d94996d639b2166676"
+    },
+    {
+      "path": "UnitarySpectralMeasureClassification.lean",
+      "sha256": "046986bcef0144a8da67ec385e12755928a62263f8d9ec91d39ec5446d393ba7"
+    },
+    {
+      "path": "UnitarySpectralReduction.lean",
+      "sha256": "a0d0f994f9bb345156938cd3579e98b254073debc0006683cf23227f5f55d95b"
+    },
+    {
+      "path": "UnitaryVectorRiesz.lean",
+      "sha256": "9934d563072518a3e15e812035f3d3d423474596f744b9f8c0b1effe34180a9f"
+    },
+    {
+      "path": "UnitaryVectorRieszMass.lean",
+      "sha256": "5656c58b369c6b4b777a52582c8a25e0bda3413bf9f80bfa964c4a2f378362c2"
+    },
+    {
+      "path": "VectorContinuousState.lean",
+      "sha256": "ed65deb4d8a0e8134e3094639a561433d4100d84df03afd51d87c92690f436a6"
+    },
+    {
+      "path": "VectorSpectralState.lean",
+      "sha256": "91cf85685c9b39a58c792c41443686f066e3760b3d0b3abd17aec51928bc9287"
+    },
+    {
+      "path": "verification/AxiomAudit.log",
+      "sha256": "04b91bfcda47dae998b8d23332ac38da912033e5a059952dfd616fd6e08add04"
+    },
+    {
+      "path": "verification/independent-reviews/all-main-submission-review.json",
+      "sha256": "54e4f8d64f454202a03b3e892f15cb9ada1b881262e764d62641d3a39e1d510a"
+    },
+    {
+      "path": "verification/independent-reviews/final-jump-semantic-review-hash-evidence.json",
+      "sha256": "bbe28808d0b736bcbc4e7aabc0fad1a78c76a4e5f905a45bd8bac4c6d922bbeb"
+    },
+    {
+      "path": "verification/independent-reviews/final-jump-semantic-review-native-check.json",
+      "sha256": "60f5971d4231b57c2bff1308c6f0d51df6e2ef553fbecd5c495300dee4234a04"
+    },
+    {
+      "path": "verification/independent-reviews/final-jump-semantic-review.json",
+      "sha256": "61fd2931fb57ec97418cb52426173e3524f88e8b17c9e48b700788e2cfbbae48"
+    },
+    {
+      "path": "verification/independent-reviews/final-semantic-review-hash-evidence.json",
+      "sha256": "dfabb64cffc6b8650bbcdfbe9c64cd98acf88ac33df11b1065b797dbb4ea9de4"
+    },
+    {
+      "path": "verification/independent-reviews/final-semantic-review-native-check.json",
+      "sha256": "06b14c20c66711b7e8d7cfdd79bb664f7c4a00ed7dde471e18c0a78c31a9eaea"
+    },
+    {
+      "path": "verification/independent-reviews/final-semantic-review.json",
+      "sha256": "412af269cc37bc9bac44810920432610745da04683c8083bd3bc4630d8583838"
+    },
+    {
+      "path": "verification/independent-reviews/independent-review.txt",
+      "sha256": "923506cf770df2745d52793a3ab6a57f5b5b787afcea308612d80fadaf5dedf2"
+    },
+    {
+      "path": "verification/independent-reviews/receipt-capture-qa.json",
+      "sha256": "455746639f25219d026bcb5593eda60227d82a0f89cf83e8d626d1c97932b15a"
+    },
+    {
+      "path": "verification/lake-build/default-lake-build.log",
+      "sha256": "fc76e9c3cdc30916d8bb4e6fcd137f69da7500f9b1803631492f765eb03eaa56"
+    },
+    {
+      "path": "verification/lake-build/lake-axiom-audit.log",
+      "sha256": "04b91bfcda47dae998b8d23332ac38da912033e5a059952dfd616fd6e08add04"
+    },
+    {
+      "path": "verification/lake-build/module-logs/Benchmark.log",
+      "sha256": "195e8a3df29e17e8bb0ff552f45193f99dfc9c2f8cd2fb17a220ab8a6fae839c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BenchmarkJumpBridge.log",
+      "sha256": "7604e14f74746b122cd1a0a38de3ecf1fa8847c3bffb2ecfa7e14901e7f61d7c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BenchmarkMeasureJumpBridge.log",
+      "sha256": "be7b01f2dfaf5893b74e2eb6211f9dec6d231e45196bb791c5479a38d47fee80"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BenchmarkOperatorTransport.log",
+      "sha256": "9cbe81f5b89721d923d6663b00fff5d5aea8ce8d80a18534c2492334254cb9d5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BenchmarkResults.log",
+      "sha256": "1414012bdd1745df2a163ae770650309995d1c1f9bebb86e6f5e4d75012dc689"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BernoulliIsoperimetry.log",
+      "sha256": "2c1fcfd776c2f3e54219abf1730849db5c7e3eab4e25b2213bf2bf0bd52ea57b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BernoulliMedianGap.log",
+      "sha256": "b06176e6f742261e7ba835f669a1968f838f999d74de0c31c8ca4d413fab6f89"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BernoulliPowerGap.log",
+      "sha256": "75c16434cf79b4cc7ecc989491d8e1fa7cd97ef3f97b0cb1cd91ed63008b4607"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BernoulliSpectralGap.log",
+      "sha256": "f6a4549ac6c1bad7ce3b5a1b9fdb90a41f62e2d0de3f9c7c3acde5452c90ca4f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BernoulliSupportGap.log",
+      "sha256": "46269f3ae6e39f13707f3f5ca92c59bb6dbe85c46da79594e1c3c6b31e83ebee"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BoundedDifferenceJump.log",
+      "sha256": "8a9a58fd4c29a78ecb82d76e4c8d894f23c29cca5e1c718106d9562328921554"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BoundedGraphNull.log",
+      "sha256": "daf148d58d9a071622642f142a74abde008e2a5eb3f1437f732c0121500de9b7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/BoundedNullProduct.log",
+      "sha256": "e043b5a4321812cbf10e363f8f3775c45451d81c375485f174f71215aa44d1df"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorConvexNeighborhoods.log",
+      "sha256": "2e0395774e155039ca4e7bea900432dc1c9dc342bc52bc5bd948ad96b06b7a4d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorCylinderRefinement.log",
+      "sha256": "3189df2e7b64daa278d144933cec0c72d3623c68018e698794cc0de6dcd32292"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorFullSupportWitness.log",
+      "sha256": "9d65c8a0c94c0c3ea4a71ac52cfd6ce052b097ecbb62775defbe48e00209eef7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarComplete.log",
+      "sha256": "64bd8695e2cb6a5d546d0810981a324b7daa935366a92d3c2eb46344e7bb6170"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarContinuity.log",
+      "sha256": "34d129fada6ba5bc76b76467a17213c96d7a74ff348f154e53f03cd443290aa5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarCoordinates.log",
+      "sha256": "5bc25812a9ce25cd5a07d594ccd3767ff6a5ecd54712048ba2c560abad0a79a3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarCylinders.log",
+      "sha256": "2ecb26b0ae4b54b6992637aa5945719ebb2b3b0d6bdaa9c313e9a7561aef10a9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarFamily.log",
+      "sha256": "c594b843bc8c4da7faa436ce3053a11e0cade87785fddb2d39a7bfa773bd4aa8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarOrthogonal.log",
+      "sha256": "2b7f98e2fe852f98800ac0daf041e5611ae48d453b3f31eb183f2aeb4c141ed5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorHaarSpan.log",
+      "sha256": "e3d557229eefb87982194648a4ea7cb693c797f469916a86fb1c1c5d74eaf6ed"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorPrefixFunctions.log",
+      "sha256": "4ad86df1284b8c5356018cc60db45fac5834a462233bae01d3e2c7e4e1425a47"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorPrefixPerturbation.log",
+      "sha256": "88ad9ce4a72e6ebda52c127ff7c02f151ad40bea7cc2986f2b7742bd90c42697"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityCoordinates.log",
+      "sha256": "23d1500e45b5d61a454f1456686bddc31db2cf86c1c8262c49be5b6548a9071e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityMix.log",
+      "sha256": "35cffbf8615fb2129295032f006029cacf876592150a270c51acdc5a8e8a3929"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityMixOpen.log",
+      "sha256": "2cabd7761e3795664cb4ba1806db75444b7ebb2fa3bb56a8f3d9317f37cd2997"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityMixOpenContinuity.log",
+      "sha256": "717a0def0ce82180559551a86e6f43ee9f6ab4740a007db3744be42520dee585"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityMixOpenSection.log",
+      "sha256": "17a25dd8f8466baa4b399ba8fdddb2bcd4d995dcf7922de358157760c63a8d4d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityMixOpenWeights.log",
+      "sha256": "ea670a9b078fdbea26dce0fca0deaf723117725001cff2499a1ba1c7904cf4bb"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorProbabilityTopology.log",
+      "sha256": "d9522f0e68a9892a4a3dc161174275e4a99b93aa0152c9a5d8cf87de20a09ab2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorReweightOrbitDensity.log",
+      "sha256": "8b27c76dba8293ece889aa49bd260b4eb4071db8b41b6d62af7d5d3e4895ef5e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CantorSmallCylinders.log",
+      "sha256": "d7bd724a77cb6c7724429b7ca52f6f8a48704c5e50c450e5a1b60558c01214c0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CategoryLocal.log",
+      "sha256": "b2baff31edfff3177d7b276cd9c0ff6e94f64a0dbefda11e52784773ad529793"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CategoryTools.log",
+      "sha256": "947fbbf9ebbcc0f389533422996762d5324dc56736269660f6def3ec08405227"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ChartConvexNeighborhood.log",
+      "sha256": "3886ad4b645b4b13bdb3ef0207c803c0e8de3ce33da4d08693e85329a0f7c386"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleCategory.log",
+      "sha256": "5944e4c68f8acebb85494028a065316e393bca473fa44e3bdaa67a02b41fa626"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleChart.log",
+      "sha256": "bddf0e402dd28405388f6fecfc6de38312fdd3b29d86060d84365e5ebb758b9d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleChartConstancy.log",
+      "sha256": "1af4f138b1d65190e5e1c5011d441a081875031db93fcb973672a33533ab4d38"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleGrids.log",
+      "sha256": "0022c126fc73302b72a2471176ef399fefa92c4fd8cf8d391e96d0550aa4544c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleInterpolationChain.log",
+      "sha256": "c04b59ffbb3af5ab2e784b1f800b9edf3ebf286aafeca72e0ef7da1784ef6723"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleJumpObstruction.log",
+      "sha256": "67fe2b942a063cd388048d3bb353ab7ebaae4a345d1078984d320da3f9ad9f44"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CirclePresentation.log",
+      "sha256": "8977dcd49a0a8e04de841e30a932ccd139bb5e8869b14bd1bb94a82c83f076ff"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleReduction.log",
+      "sha256": "621c3bb1b39a0271d0d0a4a8492e0545de6717f4d45ebac645a28916695f19c6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleRowClosure.log",
+      "sha256": "3e2467ec1c122ac6bee67c7924c9f83d09e38518e178d1e2b3556e8c10a29c59"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleRowCover.log",
+      "sha256": "24e89b4e67148428e719928d88ed5774926816ac4478965dea4b8feb1b663ed3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleSmallPairs.log",
+      "sha256": "2b8c7392e72d85b97c7dd5adab7419250f6e0afb408d3c51fa7fe52354b0a3af"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CircleTopology.log",
+      "sha256": "9e9b85b4079ce592e7501ce18a7e39d4fe86d87aad130be9bcecbb3ef29c676a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/Classification.log",
+      "sha256": "157a544e9cc51d2a710614d544342bcefe8f073f5ea9251ee11ede1779501f0b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ClopenHaarNode.log",
+      "sha256": "8242c4a7e1a04848b2791809162cf2cbe5655b39e764f9c17ee2d08821094117"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CompactAveraging.log",
+      "sha256": "11227740147c072824e83e139b6479511791cbcb6789f356a08f8e6e1420107e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ComponentQuasiInvariance.log",
+      "sha256": "9c6a2a1cc10e0a17e544c532e927c4e147b48ee779b03392799e6bc30e154d9f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ComponentRigidityRoots.log",
+      "sha256": "06d9d19aea4dea4d39d6bc9f8aab6a328dca04e7450a4d12031f887bd5fac161"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ConditionalFibers.log",
+      "sha256": "fe61110973c525d469d3a0d3c6ed9378eb29beafd589dc9133829223b30dfd82"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ContinuousSquareReweight.log",
+      "sha256": "4c2b67a452c3dbcc4f9241c376e3b39d261084ca9ee92e33f2aca7e830710210"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CoordinateAffinity.log",
+      "sha256": "a50e464862439fa62aca382c09fa53c9eba4851c330b545e38b612d2ce59cf3c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CountableBorelColoring.log",
+      "sha256": "eb83a660c339a81bd46771ab947dcdad6fe261934c9e82dbcd007fbf6531699e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CountableComparisonsMission.log",
+      "sha256": "380ab4c8eed8a3385aa908c21c85fa9437822b9f1aae45edfe588bf93b67c186"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CountablePositiveMission.log",
+      "sha256": "de5dde7564a7a50112e7854ab1decba73e7fa105611b30c6e56c8c7d71ae23e0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CountableSpanProjectionBorel.log",
+      "sha256": "4c2a6772e053703bf140fba62afb06bfaf8b3550c3d4b403196d66b2a6d41f76"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CouplingKernel.log",
+      "sha256": "c7e23c32cc692769389d008dafcf78c75c4c837ca3a5cc2f844439a9181df661"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CouplingMarkov.log",
+      "sha256": "b99a3220da3ff712da983375fc6db7b03a3b021dd2241f5dc54e433561667868"
+    },
+    {
+      "path": "verification/lake-build/module-logs/CouplingMixture.log",
+      "sha256": "8845291fee8833fcbf0fa34f354d302820a1aa360ebf53f0f5d8daf6c35c247b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/Definitions.Def_BenchmarkRelations.log",
+      "sha256": "61c6442e56845aed005d89938da1e9c6a5626f3d7c34ce889afd339a381065c9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DenseEventErgodic.log",
+      "sha256": "b0392666f372955e4341eb8a1222fcbaa0b7a5f91d6fa8739643afaff69b5407"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DenseInvariantAffinity.log",
+      "sha256": "c2735c721cd59d09fc484a6a3cb23bdcecadf8dad60c495cd67dc9bb983329e2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DenseInvariantSets.log",
+      "sha256": "bd58f4565d13c55141d1182285867132d0672721601fd6fb37015c02eeb7f6ac"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DenseMeasureInvariance.log",
+      "sha256": "e6f9dbe6de3addc9c5ad03a00410ae0bc362ee712f315727a281cf16c15024fe"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityBundleEndpoints.log",
+      "sha256": "d2f67e36dff38dd5a33c2dddc2148ec06b60f684cdfc4f62305a4a9c98dde228"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityBundleTopology.log",
+      "sha256": "b5d61cda1b6aa96e31a3ba5137046840d0971b86826733314384fbae8724591f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityBundleTube.log",
+      "sha256": "9ed6752a084b3818c577cc47e5680db23c796dac3989a53f51b8c4a9a596ae86"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityExtension.log",
+      "sha256": "43728df227827935895be514d786765d49a17910077a73dcf63562711fb5d823"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityGraphCompleteness.log",
+      "sha256": "9fba401c7978becc79cd3fb8293def15c6b386606004cf756919b8fc524ade07"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityInverseContinuity.log",
+      "sha256": "1d7268a694a28516c957bb6ba14efe78bf4d408c87bb57c4e5122e5f04159a4f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityInverseIntegral.log",
+      "sha256": "86213759d09d02c2f4784f612775a1653b21c6d30f1d24850b322bf576ebc48a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityInversion.log",
+      "sha256": "66de7c2898e672e028c6b85022127de08cd15a78901daabb62a4d27f95a40f40"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityMeasure.log",
+      "sha256": "97923cf556b6ada55d027a33e54aff7a86957dc9a8d138d92190b3e7e10d82cb"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensitySourceOpen.log",
+      "sha256": "cfff3409ea12e90e4697f6d2d13fc8a3ff3b240ba127700e49c6e3dcae069d37"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensitySquare.log",
+      "sha256": "3036a51d507d5fcfc038b5947c536cd6c21c79b8b340c7ff2c84a00186fa5436"
+    },
+    {
+      "path": "verification/lake-build/module-logs/DensityTargetContinuity.log",
+      "sha256": "aa6eeb176de2bc670789b0f4dc643e5420d27b9a324f1ad8c09722e77d9f609f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/EquivariantTraceMass.log",
+      "sha256": "db9f2531884c4ca1739c659315d31559769393cfeca2be5f158380b97e920ee8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ErgodicComponents.log",
+      "sha256": "eb3dfaf7b502c47c07713dd52281eb008ceaa3d93ad31c23d50d3779db424f9c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ErgodicEquidecomposition.log",
+      "sha256": "4467de54a4563a0b70af3b3ebf08f5c9be326ae508eb01f7dd9e48f5b4f19dd7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberEventRepresentative.log",
+      "sha256": "f4586b0db6d807b3ca66c23a337b8dac47d520ffc0b6ccaaf0acd3bc9dd23f38"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberL2HilbertSum.log",
+      "sha256": "4e86fe5888b8b8244f5bce43cd834c30021627c61251aae7c2af1a7403f3fbbd"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberL2SpectralSum.log",
+      "sha256": "f0e0207dd33502abf92de35a5faba90c604d3f5bff26d6b60008bd8ddd18aa57"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMeasureClass.log",
+      "sha256": "b8beca9fcf3d0d75b80d16eef4567139d0181212c7aec23715d2e03b8266573d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityBaseChange.log",
+      "sha256": "0ec7d18a2de9fea61517637334e7a8f2cefb155f5eb64713a282a605435a5fce"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityClassification.log",
+      "sha256": "4d9bcbecb45f887ef351ffa69885aa6f646bbef58cee7f5a0ec0c854afee906f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityLayers.log",
+      "sha256": "5deb159c9cbb3166bfc6e92c4a6e6747dffbabd9d20c660a6b40a9d035a9aa9d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityMatching.log",
+      "sha256": "591268ed489371212dd88e2e73ef94daa8cc881c7392b5d47c2940d49c9bd1d4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityMeasureCode.log",
+      "sha256": "d67379ac1845e4c7c0a7707c02e7598c423867b67bf9b3054eb56aeeea81d722"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityOperators.log",
+      "sha256": "eed32c7f49a3a1c3408ebe76d659d8afbcf6cfc095f313a8715a0167273c312a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityReflection.log",
+      "sha256": "0d6d5ef31ec470813b80abd4abea78a28458fa609305c04a42ccc11c3a136bb0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiberMultiplicityTransport.log",
+      "sha256": "24142ae6eba2a04d4aba05d89bac6935b805c2d4610f46a10e9a341354d11943"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiniteBorelColoring.log",
+      "sha256": "d6bde4c73d58561a379d76218f167ef4c571c4f19e81a6db3c5804f300d8558b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiniteFourier.log",
+      "sha256": "602b6748a9549a4f2deb5fab3ef0a174658cd6dfe57aeec8a72b6c4cbe341c83"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiniteOrthogonalProjection.log",
+      "sha256": "3cbd132a5bdea48acd66aa3b1e13e20b9887e914171da2179b3f2c433708f28b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiniteSupportTranslation.log",
+      "sha256": "ae402ffd8a135bc3d52b02814c82edc5543d28d9a5b9f2417f6e166f444febc2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FiniteTorus.log",
+      "sha256": "6aefbfb7362f48e0905c1f2bd6347c71f296043212266832dd367fd10a968f1b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/FreeGroupCones.log",
+      "sha256": "2ee6b7108b7bfdedf34fa5dd9538f167aa94cc7d2f592cb0d98e73d9b84f7398"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GaussianCanonical.log",
+      "sha256": "675e8b08d507e97de568f0a8f4f5508c5ebe4b9d369e7a0437239460d127f815"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GaussianCantor.log",
+      "sha256": "eec6c8e2420165fe317fb33315122ffb5f4812bb5aaf066c681128a5f935ef59"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GaussianContinuity.log",
+      "sha256": "b030aeeda6d91383488f3ce0e7a1500b50e9cdee309a88d9492b9507ec299a30"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GaussianCriterion.log",
+      "sha256": "525dc71972cb40184814d4cdd147311115f1239191e2fc460c395afacf125e3c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GaussianFinite.log",
+      "sha256": "0d8253d5eb803eb4ac4715776bc4a6f558eb7644931dc015adf33d8824e8a852"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GaussianPositive.log",
+      "sha256": "e7e0ba7dd726440d0c702e78f96ff9a33ecf141e9d6e2be68e57b0c72b3e11ee"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GdeltaPolish.log",
+      "sha256": "1eb34f46306f921760ad7e76e6a8bf367f4b01f1b154cf55bab1930012e6c235"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GraphDistanceBlocks.log",
+      "sha256": "af0d409eac11a2dc2307dc1b56fcebe5ef971265b07f6b03406236abf83ce976"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GridObstruction.log",
+      "sha256": "1ea584421eebc9fdd4ed6678fb351a0d3def91928e72e324d11a6d58d798a082"
+    },
+    {
+      "path": "verification/lake-build/module-logs/GroupMarkov.log",
+      "sha256": "b38a229a101e88dd87102673d924970dcc2ad794947385c98ae67851d2dd661d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HaarIntegralContinuity.log",
+      "sha256": "bed50aab233f1bcc21fc505c2375419e1eca95a12363bba3366116f63c18a6c1"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HaarLipschitzIntegral.log",
+      "sha256": "05a67d839ba51b609a0e75229ffbbfc1c0004ca8481c1e3678394764ccc77bcc"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HaarMeanZero.log",
+      "sha256": "af32e59d7d988929ab68406eab94260770bc1dd13236f3ef733a249bdc4f8a80"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HaarSplitSpan.log",
+      "sha256": "3f86f998e50b741503adb5d00ead55e022df5aa00bcb01181c21955477188b1d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HaarUnitCoordinateContinuity.log",
+      "sha256": "1184f36639c5419dd40813e7c603a82594498d464b5fad40469f569413179b07"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerAffinity.log",
+      "sha256": "ecd282eafd3ab8e978ef2d36a302d1831998efaca2cbe99189ecb29456831e83"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerConditional.log",
+      "sha256": "be46bac16ad1a5128a5bb82cc432141445fd8ae5f801749cdd1910d2367ea01d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerConvexEstimates.log",
+      "sha256": "1d28e0d7c4695e23fb71182b5e2094dbc3a1beae0e5b9013acea05ec010e8f00"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerErgodic.log",
+      "sha256": "74bdce09c7f6fa04c1fabb139dd660d9163814c0bea59dffc752b48f2c3629c4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerInner.log",
+      "sha256": "ead10452d9bacd656737843948a2f98895ba40f9f321b070a5ea857451d2bf1f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerKernel.log",
+      "sha256": "55218e72d9ff90806a051cc5ea6c55064b8a59297b7e1538eb917d8617612317"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerMidpoint.log",
+      "sha256": "d8b5c8858a2f4f52944df4f0999ab2a2a2951948043fdb0a8283dc40bbd04a8d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerOrbit.log",
+      "sha256": "6e71cc81aae3a793fb954c8b368f8dee4d15f93ca60910faf7e148a48412a64d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerSplitMap.log",
+      "sha256": "64716c7a2bd443e79a511ce3b4af4bac4b7ad818bac01d8db61ea095fe5c6b9e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerTransport.log",
+      "sha256": "b0783c60e360b552c388909de48bcf53e3adcc95103c172ebc84e82c1c73f93e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HellingerVariational.log",
+      "sha256": "a9feb15cfce3d24885c19265b2ea838ee442efb9047fc5a4c5f9d5f82515c053"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HilbertCoordinates.log",
+      "sha256": "14cde8733b5dc7491d68034c89f305c5a0ab1c12cbe55c6aefd9ff3a36ccfb96"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HilbertFamilyCongr.log",
+      "sha256": "219e8ee04606da5f213b130ed712a870733522b008dcd6f4d6225bcb1296309c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/HilbertSequenceTopology.log",
+      "sha256": "a424deac3052aa24497687b3f02cc8e268b9c60d913e4b56df79f4aa14e7d0e4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InducedCornerMassReflection.log",
+      "sha256": "3073bd16b69ae2edb3b103bc2870db113f93cc089dec73a42a9b12d80a30af4f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InducedCornerTransport.log",
+      "sha256": "74d2a9f3f7eb5acee9cf0f8647492c0ede3cefe8d1158eddbd76750112b6f561"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InducedCornerUnitary.log",
+      "sha256": "eba6e39f70692fc8ab9441e55bcef6ccdea67288656089f423800ff2ca059067"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InfinityEndpoint.log",
+      "sha256": "9d2dbc5283b794442c1bba7f8020440208d48de898f651ce871b1b3b9f2e0ae6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/IntervalInterpolation.log",
+      "sha256": "e80de5d13f88ae7766ff86daad91103ee445aaf8a943b8815453bdc40d2ca8be"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InvariantAffinity.log",
+      "sha256": "fd71d09627f7588263f4dc164f503f88b156d934023d896a79d8448402c277ba"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InvariantConditional.log",
+      "sha256": "70264539e87c441c12cb62b54f712623f78a85679ac69bae44156d43b67bbc43"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InvariantGraphGroup.log",
+      "sha256": "50f46c964d179a383e7e12843fa90dc54f1a8c49f228dcb8ce4717c15c3e4354"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InvariantKernelStationarity.log",
+      "sha256": "999d48264191d107551df69782874cf5c45c2f84984d177db1fddab58501f78f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/InvariantRepresentatives.log",
+      "sha256": "45c7674d77fbd38e40ad0d6d9ec5cc7265785765ef8f4f745f6d2922975c3cb3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/JumpRows.log",
+      "sha256": "62946d02ae9d91c087a64cb6952c8d14a76fc460a2d246c6c65d80b4ade446e7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/KernelAverages.log",
+      "sha256": "73380bb9f2e109e0f9de0029910ed8d96429a7cb4daa357d8f62df425503fc03"
+    },
+    {
+      "path": "verification/lake-build/module-logs/KernelCantorNormalization.log",
+      "sha256": "ffa96dae4303fa83335a8f126e0280b31ab25e2d12c3784747c18ab852285621"
+    },
+    {
+      "path": "verification/lake-build/module-logs/KernelEquivalence.log",
+      "sha256": "68148e1109a2dbc0b545e0b8d34cc30f8af0f342f3850aa0720abdb99d7b0819"
+    },
+    {
+      "path": "verification/lake-build/module-logs/KernelSpectralSupports.log",
+      "sha256": "04d88354ef81938051b8204dc5613ee30ee6eb0454eb294c2bbefadd03b9e324"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2CoordinateProjection.log",
+      "sha256": "de4b2ff341184caa958a0f6062c764087c92671e1daa1f0685e5c8aefa5a25eb"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2CountAdjoints.log",
+      "sha256": "fa08966231ec1534cee0d9562c98521e47a5e008448c9a49592cfee7cfea9480"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2CountCoefficients.log",
+      "sha256": "cdd9637abc03203e60df8610a015f1ca79b6ddc75557e7b175d247fb70dd6431"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2CountInjections.log",
+      "sha256": "74fe0c32ce83a9f636afd1790a57454a28d84e90e31876a9c51ccb36fdd2acb1"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2FiniteOnes.log",
+      "sha256": "ada63bfced53558641262bc6b7ca1b8096a49c0bd9173ec43a7a2d7dd520ef8a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2FiniteSupportMultiplier.log",
+      "sha256": "5cdd794292b0b184eeec364921d373794521df63f3227ba47a767ace28c010f7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2IndexShiftCoefficients.log",
+      "sha256": "f3a65364ca1d25d5a69217b749d6218144cbd32881896c032901a5100282997f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2LocalizedAdjoints.log",
+      "sha256": "198268a5c1fe8a6f8f9c13a2e485cd613e88fcf3f625eb2523589d0df23a77bc"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2LocalizedOperators.log",
+      "sha256": "ef7845a71a55645075f2432dd74aa8015c7c8a48fbc71c9aa40776e3ca51185a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2MatrixColumns.log",
+      "sha256": "5b2b34bbe3509dddf35d644682e2f4a75390c878dee3cdc1cb600b2de7ef886c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2MatrixProjection.log",
+      "sha256": "d965bb7b7dcf5d0cf2a044f352415c6d6f8d15e237c2b1baf16d41f9d560d9f9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2ModuleCommutant.log",
+      "sha256": "fe15cd63af52cdcda171a04058e72f45ab1d596c440109209a2596e22a5e404b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2ModuleEntryMass.log",
+      "sha256": "48b4a2db9671aff35d3d8d7f770872703058ed9197b1fde186d2a3b25690e2e3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2ProjectionCommutantNormal.log",
+      "sha256": "b5dd35c0c7653dc93df1ad4b872c313b5d004228bbfae5512a2c8e8be1d6e81d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2RestrictionExtension.log",
+      "sha256": "965b5c66692648eb24f1d3a9ef4f9ad4132fc2d2aecb1f4486e496964208a328"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2SpectralProjectionIntertwining.log",
+      "sha256": "ac9bbbc77546e4fa50086d17464a3e60c1cb3fba420c9708fb4339c1d9cb6826"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2TransportedMatrix.log",
+      "sha256": "89b02030e231ceb398d435b507e2007baf0d91825fd30bdfc4af0559ce07aba2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/L2TransportedNorms.log",
+      "sha256": "a731f3f01cdb9099eda974633d6080cde946997f957460670f8d1a349fc6ec80"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LinearHaarIntegralContinuity.log",
+      "sha256": "24644aef18d3ae512b413e26ddda7590bd7b1e5bea2cdae6ebc66be5e4df60a8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LpClassMeagre.log",
+      "sha256": "f2ee3af2be5c2e01c079248ec0146a87fb11431db8d0be2bff9aa6ab01ea140e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LpCountableAction.log",
+      "sha256": "66efa85239c5449470672e7a49aad04e150832bd9f0026b972481164183a5590"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LpCountableLocal.log",
+      "sha256": "039da6690a42a4285b49fe818578dbbb7774ac5c6508a6c3d8a89340df88cb3b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LpCountableObstruction.log",
+      "sha256": "29f1474e4286ad51d3b5283a85ac1f3ded410b85d57dda609cac44aca94e8045"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LpGenericConstancy.log",
+      "sha256": "6a97fee982e3c1c2c3c9fd8102e6883d55ee7bb4aca80e02fb19f9de758fa605"
+    },
+    {
+      "path": "verification/lake-build/module-logs/LpPrefixInterpolation.log",
+      "sha256": "b8ca881131faf55e28f45ae4a52cae115f82ac74cbff643e4e7ed02ce0ebf795"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MainTheorems.log",
+      "sha256": "642485a7338721e340d8223ab67e162132f04985522c0f9cf8fd7c0fc7334443"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasurableNthTotal.log",
+      "sha256": "d2d71c2cebc4b3137bb0bc3e40de0ac2f5cd14c686d86481151a601b1a3670c0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorAmplified.log",
+      "sha256": "844c674b14b016d1fef1e04113571ae2e237237fc1cfb5b4d96bfd2b75907a0d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorBorel.log",
+      "sha256": "aa18fbc882c3532b74cd705ef516eea5f47be5f884c4d1b1be53097c66ced4c3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorCircle.log",
+      "sha256": "debcd9a47311ba5024f8f20d6feadfd7226c497bc4e971435ca5891f5ea2994c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorContinuousBorel.log",
+      "sha256": "ce2981df72d79092cbb97874cb0904c59c1773d23fb70840cd7d9df58185338a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorDenseFamily.log",
+      "sha256": "63913624de29e114ef8bfe8701b901bec3e5a89d905ccc78501238a8353ec167"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorGram.log",
+      "sha256": "99d24f14113db836cfd9abb4604dfd82ad091943a0021507d312f8b1236de9c9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorReflection.log",
+      "sha256": "a9569455d434ab68ddb9536ee1c53b5ad4878e967f6074b1ee2d1e139fd3f543"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCantorTuple.log",
+      "sha256": "2c181f8f764e55eb84c34644db1ffeffa57e89a25b7e084df085bf6b5e00d4bd"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCategory.log",
+      "sha256": "a147dcfdac805dd502255c67fa0dcd7d37457dc7b11ed315c9eb34173bb436da"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCharacterIntertwining.log",
+      "sha256": "3f4b8555b039bee03d85a6f6b13826264346de3e129ecfa7fb58c975199f47ad"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureClassClosedCover.log",
+      "sha256": "ad58f77730265f6d6bdcd40c4bc24eb70d476e372cd333c1226bcc241b86d9e6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureClassMeagre.log",
+      "sha256": "679ef29ee8c88a37670f95865718f629d570bb9d7e18e4f4c17fdf47bcc06a34"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureContinuousMultipliers.log",
+      "sha256": "1dc03c88cdc67ab4133a9ae4d7ec547c473b68de58f1672bdb5668e7390a87b7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureCyclicReduction.log",
+      "sha256": "64beef7cb0dbd09f9e2cc820d8c6533b76aeba29381bbf4dd489ef969a4f909f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureEquivalence.log",
+      "sha256": "dbaf073e55bdcc2705d4d726cee4573851f1bae4352b4fc162a8f042033080ac"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureFreeReduction.log",
+      "sha256": "a287421294d1539e567ffde55abfdaf62a7a9cf6f876c80095adef2ba619f3ba"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureGenericErgodicity.log",
+      "sha256": "b2389b3f7805456b9ce1cdf190f0aa3f46526e2969da3a6a85fb8e1e31cc3161"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureGramSchmidtBorel.log",
+      "sha256": "8316fb77f0054187fb33d629cf4152803f49ee7268e44a19585bceac27f68a96"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureHellingerFiberLift.log",
+      "sha256": "7f3c6a5a958f5bdeedeed07b8d05f90f63062ee9297a76710545b0967358d0e7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureInducedOperatorCode.log",
+      "sha256": "2ebb9ef1ac4667024d48b7d8ceb0657780914ec3419e0322b6a486e143da4c1a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureInducedOperatorEquivalence.log",
+      "sha256": "b1dc76f8b4f511a9b4e55db9a62424167d3cd45fda5bedb21c9af33b0287bbfa"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureInterpolationChain.log",
+      "sha256": "8542ef614a66a8d2e8b746772b748a01806ab1ae32b0e2adacd7f58d4024aecf"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureInterpolationEnergy.log",
+      "sha256": "8f9624232b3ef9fe60c846395a41e7192e40b5199d09f2bfc360ed61abf81a59"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureJumpObstruction.log",
+      "sha256": "bd2e193d17bd7ebffd0a970b08c289b281b3525fcfdcf5d6b9c574cce6989cac"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureL2Constants.log",
+      "sha256": "04bcdb7312859d695a044694993dd7243bedb5aa873af6fd8322656e39fde077"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureLocalSmallRows.log",
+      "sha256": "8415ef82d145f319561dc4c218060c780fc827fa049a7085461a286cb8383601"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureOperatorReduction.log",
+      "sha256": "eeb7f781fa814528c9d04bce00ffd839bcd0e04179e7b3d33d5a85e49f75fae3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasurePullbackMultipliers.log",
+      "sha256": "48bb29f2c4c7c3534859999c557200708d09731a163e02e6f545a7da548dd9ef"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureRowClosure.log",
+      "sha256": "9fcba68d4b34ab3809b834e47fec7b423ee12272ec99ab76a5309c3f16eac9cf"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureRowCover.log",
+      "sha256": "49476746eeb132542759940200e97996413f71288622843b36299e445eaf9dbf"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureSmallPairBound.log",
+      "sha256": "879949fd488c248a57eba3ef6405c61744957c9b6a78dd28555b7b09d08a36e4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureSmoothingFiberLift.log",
+      "sha256": "77045d764728896adfd06e69670977bf66d7b19a1054f6f345fd715b7949637d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureUnitaryDensity.log",
+      "sha256": "24fa103ccbb77019b829a685d96e465616cc3930466cc99089a9bba18ad3b17e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureUnitaryMultipliers.log",
+      "sha256": "c01520bbb0f577b0c9bcf4c19d1021e68a962948259000c7e989391f0e558c1d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureUnitaryOperatorReduction.log",
+      "sha256": "6ea2761597eb7959d15aadb9735f73adcafef7eae2d69c87b12cc87d0d40ec35"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureUnitaryRN.log",
+      "sha256": "fdc2373ddcf52ca34e4c8aa45711f4a50f568d871c74ac57f94efe47968d63f4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureVariableGramSchmidt.log",
+      "sha256": "a395be62748f58d7ba6e87cdca3e8c890213a66c3149fa2841499cff322e5b69"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MeasureVariableOperatorGram.log",
+      "sha256": "84009299399acd25b6438b2424ee76060e7d088a832d19230a4235d4dfa98d08"
+    },
+    {
+      "path": "verification/lake-build/module-logs/MetropolisCoupling.log",
+      "sha256": "9b010ed72d797d20ea017734083426f186170d7330caf5290ba72fb6a5e3f632"
+    },
+    {
+      "path": "verification/lake-build/module-logs/NegativeReduction.log",
+      "sha256": "f51c0f50f3f4f1340721462f955e1dce1a7c724b23ba8795407952d81f7c0746"
+    },
+    {
+      "path": "verification/lake-build/module-logs/NonsingularDichotomy.log",
+      "sha256": "9f02be73459d2b6574099aba01d90ecdd5940e6c1114ff3d52fa7eafb8168fbb"
+    },
+    {
+      "path": "verification/lake-build/module-logs/NormalizedTruncation.log",
+      "sha256": "8bee89221fdaf2dcb66f9b395fe4af38b2b08e6b49941b1fd125e2aae9d67f1d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OpenFiberSquare.log",
+      "sha256": "32ae63f1d0a43dd3f9ecaab8bfadf0520812018b9a6cf1cd61977f4429280440"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorAdjointMeasurable.log",
+      "sha256": "eb3932ff361f6ed5b7cae8a11eee4741e7afc2941aebdefdbbe796aa6cf26d35"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorAdjoints.log",
+      "sha256": "bb4c929217e25c34d5b2af8b97b3a8e851521e5747b34b688f0388b0f38df6a5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorAmplification.log",
+      "sha256": "9d5ca484b44a7ce54248d121fadd58d99e25b341692ebc899317f9da3c2338bf"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorBireduction.log",
+      "sha256": "00a5327fd751addbea5e0dda028a2b23492f90055d091a121186fa2d7df985cd"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorBlocks.log",
+      "sha256": "5b9e223aa679536840a1fb2e5a8a33e47a5213b0c4f252424c0506c967864627"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorBorelNormalization.log",
+      "sha256": "3c035be80c6800ec378c749cbc580b100b6d375e4dd48022daf8e635a3bdd667"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorCoefficients.log",
+      "sha256": "503ec54a41d37775ed994925dea6f686fe835ce73ea4ff84968f3aa49ecc22d2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorConjugation.log",
+      "sha256": "6fbc2acd5269ecde5a29662c35a95d9ba16edc690548433c6d555fbd07d26810"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorCyclicRepresentation.log",
+      "sha256": "7547528fd864f6901f378d756b5c1e5f0265aa10b368b3cea9a6698f7276a0c6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorEigenspaces.log",
+      "sha256": "c29d2f9803e5e8d016613fd135864fde0fbccb9cb8621f13763e074c210d3dae"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorFreeGroup.log",
+      "sha256": "bfd80fe0e862f10100e77fa958f3544895d766e75c6b5f731c3e4f7f9a29ab7a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorFreeRepresentation.log",
+      "sha256": "905c49c9f0590b6f654d7de5075bb06edffc2a34cbf4e339c861e304a1476e8a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorFullComparisons.log",
+      "sha256": "6525a9daefc6b711a6b693f4409814b2cef820923d5ecf352bb3386026bd0685"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorHilbertFlatten.log",
+      "sha256": "979fb6df1ab34ef7c1fcb683459be16d62635bfd5c2bea3a0b376f04be344e94"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorMeasurableEvaluation.log",
+      "sha256": "e98b385d4edd1338ff046be8eb408f632aec035be007aeee0f5c3567e243f58c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorNormalization.log",
+      "sha256": "242b5c7efb79e242e31d1a74b69aa514f46371a0814fc524da10caa8566784f2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorPairCoding.log",
+      "sha256": "d4ec347c2eda273a1b01fb816ced046a2afae840321a92c3c527876877bb1bad"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorPreservation.log",
+      "sha256": "139d74ea1e966a2e4ff771f83ef95a54b89b5caca3a7079ec93e517b314e567c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorRecovery.log",
+      "sha256": "8b2e24ade680acbde459cd8075b658f449cf39eb391763657ef657bd9ecfb966"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorSeries.log",
+      "sha256": "5c59956d39797ea497bfd9fa9985530b64060ab4d2190114ce0bbedfefa12562"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorStrictSeparation.log",
+      "sha256": "0fce22b4998bc9e6c1477e96a4cc4d1b476596ecbd73a54e04b6bcc88319dd1e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorStrongExponential.log",
+      "sha256": "62b3b8e7ff4ffaf1e1e2801faa67023e37ece210749339d4b07ffeeb0e893c67"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorStrongUnitary.log",
+      "sha256": "de34268a6da98606ef675694a6f516eed4cb237bfae6faf73ba9ae5abe28472a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorTargets.log",
+      "sha256": "2833301949ef3e495e77e00e31eefbf321bf8619822e449b6448c1f3b608334c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorTupleCoding.log",
+      "sha256": "3aa1a628d8c3f4006c1fb44f1a5de201959e6ce1309b9c48359e9c7a792df92c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OperatorUnitaryBorel.log",
+      "sha256": "28ad46e79d3d9f6a07646671b014b70f37294649af1abe97fa2a03ef4e19c0b5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/OrbitMarkov.log",
+      "sha256": "b6b9e0afe35de0bd2148dffaa562bc3a8ef82ce26ee56d8edd582a59a4c830c3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PiecewiseMeasureTransport.log",
+      "sha256": "d3b202cacc4e6033e22724e0bc88057f6a760506a131b1edfb37cfdcecf1add6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PoincareNonreduction.log",
+      "sha256": "dc5568c9367b55b5b003e62077c4bdf229885323ae2919f80edb09df75b8e266"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PoincareRadial.log",
+      "sha256": "9c310249be970e008890ada34abe87194053feed49b9e09cb27a8842c43100c4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PolishGroupTopology.log",
+      "sha256": "bc89a802c73e003ad460790494f5007ad9f545e83f5b4a206075bce9d4cdc4a2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PositiveContinuousSections.log",
+      "sha256": "9df254ab52855303ed11351622fc76b437e722e0a4bf2879fccf938f3d2b80f0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PositiveConvexNeighborhoods.log",
+      "sha256": "a8211b59d0514f00d4d96ec4454cf9446801c3260302c27b44eac1e4f10f3607"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PositiveDensityGdelta.log",
+      "sha256": "1cc32b917c903337c9669a8f723d6f3a768aa76c2f817b3ca8e288f07c445145"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PositiveProbabilityMix.log",
+      "sha256": "20dc92f0aef210363474534fe45c8f4d5a67f76501ead54086606cc6a043a2da"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PositiveReweightNeighborhood.log",
+      "sha256": "fadb1f18b0e92df3b5b6873add8b178f1b260a0fa76813251a34174b8e28487e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PositiveSectionDensity.log",
+      "sha256": "ebfbfae88921c3e632e153f602928aca7331ee608fe532eecf1357298df54a35"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PowerDifference.log",
+      "sha256": "b4a6956938ab156425d54588421735f0379bdfe634da0338b07e2c74b53e7d7c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/PrefixTruncatedEnergy.log",
+      "sha256": "f26838136a526f46f2fdfc3ab97cd2aec05ee19ff5489f4acbff8351a2842bd8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ProductAffinity.log",
+      "sha256": "eac20c1fec0c23d47da283fbe75c043a1e93a23ad946226f1f5d5665c5495397"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ProjectionMassGap.log",
+      "sha256": "402c221e4bb65aa9cc6a6fd36056d2de571d57afc83fca42715d161a1d5b4d53"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RadialEnergy.log",
+      "sha256": "64efa7b2744c30c0eaec97bc078b5696ec77a9ca7bacb9b2284fae3081380bb6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RadialRetraction.log",
+      "sha256": "9bcdc9f1f5a4915a1cddf530a87f83e96c16d817d8d7283e11c9135d91bcddee"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RationalFiberErgodic.log",
+      "sha256": "ea1de1817f2f30ab54944a7bf6ccc3bd9f8fa17e562b9d98b50542af2b2bdaf7"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RealMedians.log",
+      "sha256": "5a10dd1f985c195870bc799b68a7433bbb1ced6255f34e75e39949f5b4a8a3c5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RefiningFinitePartitions.log",
+      "sha256": "e67bd3522e108d2e5621ae5793166fc162dca89ab80184da41055cd65ff7d25f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RegularFreeGroupGap.log",
+      "sha256": "3ee1f31adf24c37b4190eedb279a23091ab271405b4dd3c9be9a4eba9662d851"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedAction.log",
+      "sha256": "e59dd2349756946f8d0530119713adfa90641fd25f8eccdd54f37fb0b2381885"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedBoxMass.log",
+      "sha256": "6c766e14fbc050240e19b9fdc7e8f6d31976ad1617345c237874b13fab983445"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedCompactAction.log",
+      "sha256": "ec2c44c273fef4079f6389d78744c3595f65867d9d4de111af654fd42d319283"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedCompactMeasure.log",
+      "sha256": "ed766873779150a304b4cc6ec3c9d663b2aac911fa4f1e72ef8dc31a1a12ccb9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedCompatibility.log",
+      "sha256": "df1f034190b2613fb23fc2404109dc67bd9ee26fcfe5425b9a5f0ff806318922"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedCornerCharacterMass.log",
+      "sha256": "e1a09cb9008aef96b1383059631655c307c69777db73bf5f1810f2437c266c7d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedCorrection.log",
+      "sha256": "e848c50f0a2dae92734d65d27226f5d9c53ac54ab23764180c699ccb0271c5c5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedDensity.log",
+      "sha256": "226bbbec57872e30bab861ba093e96208f1c6542bd110a89d4956869c61009e8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedDeparture.log",
+      "sha256": "f4faec007217ef34195805e4923ea7f377ff4c2b3ec424ab934477a614fa4993"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedErgodic.log",
+      "sha256": "53053834207ae9f22048e0c1c0290804177c3867633db16d1b817a3364413ea6"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedFiniteCornerReflection.log",
+      "sha256": "2cf41669fd3735cf6f19b6eedebf84cd7665c2802509c0303e9973feef4560aa"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedFiniteEvent.log",
+      "sha256": "f70eaa40cadb4d30beae9e186236047e55e844dd8b00262136f788c6c7a03cdc"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedFiniteModulus.log",
+      "sha256": "e8dbccc003de1923895d331c9a26deb297ff17da633d707c8aa0c94de37fc0d8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedFiniteNull.log",
+      "sha256": "34eb3747c2141807f11ce70a236d8f1e0d3f9e79cfd266c33c4142caef97e54f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedFullReflection.log",
+      "sha256": "2ab025c2a451cd78fc2aa27ae2ab6f401b1dbf6cc70bb4c4fb7328fbf45057a2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedInducedFamily.log",
+      "sha256": "701e326a7166099cbd68209ebc4c618d633105ecb3a75d18e0939753e9c0a839"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedInducedReflection.log",
+      "sha256": "8c04435af1d7cd877f8093cecb474e6d413f7bc06d77b70bc660f31860eed1e5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedInducedSpectral.log",
+      "sha256": "585421ae532a54e7fb61a505cf9313bf5d613b9628d9132061978aeecfef3341"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedInducedTuple.log",
+      "sha256": "ca61fae135b558342b02313f4164b547bf03a2f7afddcf24c9605fc3a82bcba4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedMass.log",
+      "sha256": "cf7234ce5c9b49f9823244e93fb73b5044ed1378142422b1eb7fa9e4fac7ef75"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedModulus.log",
+      "sha256": "fdce6a29c1fc97f22e477ae2176b319840fde4f0918710006126b4d2511b7cf4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedPermutation.log",
+      "sha256": "8897d22de6efb41eb8cf051b41fc6addc555517bb3547363187b52fcc8ca7a94"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedPhaseFamily.log",
+      "sha256": "768358428f9997a5119a48abeefc8c822d784e5f715278aa87f60bca7d1b09bd"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedPhaseReflection.log",
+      "sha256": "d96dbd80766eb09577678be6bffbebebde06347b8867f4c50c0260955d986fce"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedProduct.log",
+      "sha256": "64a84482e2baa2526b916003ad98f26463c7a1e54b1a6d257dae1bcad5fecda2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedPropagation.log",
+      "sha256": "b53cbb59ece172bde391ea412964e9cc6d54f16d91f1757a5ad673b2f969d58f"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedRoots.log",
+      "sha256": "e03ca1540d36b3e2b916f5173c32a6aac5410c937658b6c168bc590b10d9ac88"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedSaturation.log",
+      "sha256": "fa57d6f3a518901bf34224b3d27bf9a626b17930116ba857f0c3da40ebf8c096"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedSpectralClass.log",
+      "sha256": "9f0b089319addede577b118c4e07e3041cc7a79e269e4c33f603fc1a935b60b4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedStages.log",
+      "sha256": "cf3c003676a1dc930ec4fb21618b167a8936c086b27adf416dadc96b71ad0fd0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedSupport.log",
+      "sha256": "d79750b1bc17031e0444ee44904b8f62985bd000dcbe1815b320547c08b0afde"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedTail.log",
+      "sha256": "695998600730c7baad649947b9f969eb6512eff9753601909c7fe34cb506df79"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedTranslatedCorner.log",
+      "sha256": "545f0153506bdde2f52a2a9f4055446fd17ee8cadcaf3139658039de0adb8955"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedTranslationIntertwining.log",
+      "sha256": "d46e45c7481fdbc0133a5ba8ba44bb317ae70e279ad16b1f0c835282dee3c0ef"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RestrictedZeroOne.log",
+      "sha256": "effc4003836e19fb4a4a0387b8e2c102557e1f915d392a919e5d89820af0be12"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RigidityRoots.log",
+      "sha256": "c705bbaec4e0a27139d6e1e347f1c4d520759df2b03a8e11c25d5dc20f55992d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RNGraph.log",
+      "sha256": "baa0ca3a1b1dd8d2439112fb3683ca7508914da96d581f12530db0ef03118fa2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RNPresentation.log",
+      "sha256": "4542960027f107cf7edd4f945462da2c5b87e1eb201b61cec60a465ef7eaf2e0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/RootContinuity.log",
+      "sha256": "5bd6641873f0bf0f1372b5a4a024ef0b34388aaea791691b86a87978eded436a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SampleSpaceTransport.log",
+      "sha256": "1dffa9622db61e85fd56b10986f52573faa051ae8fbb82429c8cc90e724b5e9d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ScalarMeasureNormalization.log",
+      "sha256": "e4f9bfe5aa7a52e48c3f558672e4569ae7d6100b25aeda362ade2a7dc89825df"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ScalarMultiplier.log",
+      "sha256": "320627ae609bc8d07d71301e598dcfa0d21ac7465651dc99decd542c3dae6655"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SeparatingMultiplierIntertwining.log",
+      "sha256": "6f193721606e9da6e0971fe87635dfdc54dcde71106a48aa170920b8812014c0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SequencePoincareCollapse.log",
+      "sha256": "45c4901c74e16fa844ec6bacd7e9edb44cc2928ef3429833a845e24311ad5410"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SequenceTheorems.log",
+      "sha256": "78d91584d1ca13c36bf157b095671a9875fcfe3bf9f050d80e1c8a7b47e35996"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SharedConditionalDensity.log",
+      "sha256": "44d4ffc7a99e95e103ce1bd780b1521505aba9d75f307daad19f87561f15107d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftBernoulliMeasure.log",
+      "sha256": "6a537164f14cfd829110a83cbdd0849bf620c4c60f11295982e8a8b275d688d5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftFiniteBalls.log",
+      "sha256": "85f8862b200937c9c85759d3dc0d9301c15f3ee542b0d8821a0cd25f9d90e104"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftFiniteLpObstruction.log",
+      "sha256": "71ddf19dc4379b6800f7fa2f09214418b12348d558c1bc0b52ef9a19e83c7559"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftGraph.log",
+      "sha256": "eb5906fb89d365543ba9c896e14268fe6bb904bcb7b368e3a75c665a6c34429a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftLpNonreduction.log",
+      "sha256": "af3f1837b2671341f5c4268abe94e5f287915c5788327a43e1e04b39279f4183"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftNullReduction.log",
+      "sha256": "d576d44cb6f1bc237751bb4932c90ff6f72a112cd0c0976e527434386212f5ad"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ShiftWalshCharacters.log",
+      "sha256": "98e5cdfa76a729ab986fa81610d88f22c7b5af309c0e69b28464e23d102b26a3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SnowflakeIntegral.log",
+      "sha256": "0880731d63e1ca98452a536e4b9fda58e9484a4dec3928a87a0a5209f1bc349e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SnowflakeReduction.log",
+      "sha256": "5c2c22942645b4557d96acc8303ca87882fe8a0532bf4e118c337c5b251fe76a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SolenoidGroups.log",
+      "sha256": "25876d7f79836efb4c2864140b810c8b5322453eaaf095be1a8463dbcf85d4cc"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SquareTestEstimate.log",
+      "sha256": "d755f820c066eb9ed52d664345cd2d39ee33d018659d4beff31b91d73dbb085a"
+    },
+    {
+      "path": "verification/lake-build/module-logs/SumFiberCoordinates.log",
+      "sha256": "7dbb47c83aceb56f2d0fbe06cb09283a48f8c4263bbfc46d672e274d5aec7912"
+    },
+    {
+      "path": "verification/lake-build/module-logs/TailGraphObstruction.log",
+      "sha256": "201099b529a89b261d3854ef6a151ef33e56e386e17535f8069b015b12e63817"
+    },
+    {
+      "path": "verification/lake-build/module-logs/TestSetErgodicity.log",
+      "sha256": "2ec28916f6f678278717c328ca7db01fbdb2d45d1520a81b9c9bbb58f268afc3"
+    },
+    {
+      "path": "verification/lake-build/module-logs/TrigMultiplier.log",
+      "sha256": "2a49a5abfc99bca8bbb1df5ff90ec3944329f7a4aad29b0a6a0cb419046b1dfc"
+    },
+    {
+      "path": "verification/lake-build/module-logs/TruncatedEnergy.log",
+      "sha256": "caf760d0b9f57459719de2693c37d57b2294b881b7aef58c93bb56b0c39d1dfe"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCFCStrongContinuity.log",
+      "sha256": "00457dc9e4dd49aca8c85e2021a95c64e469d8eca2f4fbafbf4c3c24c313935c"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCircleFunctionalCalculus.log",
+      "sha256": "9d148a66074159b2c371121172040df4ab793755789a298ef34c8e1a8b7511fb"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicFunctionalCalculus.log",
+      "sha256": "c2bc6fd5b0b5a640c613c5f06b3a9184c0caea4338036a2201c00ad000499d24"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicProjectionBorel.log",
+      "sha256": "2a9b0a18e833a1b093a278e50f30c6c88c26993fedb79fe534cf7ac78c5fc771"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicRiesz.log",
+      "sha256": "93d699eeb60415bb150393461e1f9705848194c0e85a37c078b4b580267b45f5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicRieszIntertwining.log",
+      "sha256": "e6d14d6d22a5ce97ef6e21dc50378c7a74ecbb724e6af19adf4da91db4392c41"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicRieszRange.log",
+      "sha256": "04db6cfec51bcdfd5cfd19abf58d2e15dbe40dcc2f0c8f4d3017c0444dd298f9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicSpectralModel.log",
+      "sha256": "cbff0fe6f78d50e6a71fca6611a9d0cf0fb7e6b59dfb3911774fcf19f3875ed9"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicSpectralSubspace.log",
+      "sha256": "0086956b30513a605b566324e1106457dd1838220ac4c99cc41f17fdf328bc28"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryCyclicSubspace.log",
+      "sha256": "86ea6ed8f3f42ec94c865ab4635ceedfcb52ed2a8c3cfd952b57507bba5f86a4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryDominatedSpectralModel.log",
+      "sha256": "655af81126ab4e4806fd40fbde3259c84d1db3b27672f61786e0e7a9d3311a62"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryFullSpectralModel.log",
+      "sha256": "d0af648ca33d05b1d4a246cb1fedfc0cef12ffef992e761342a058e888cbfaea"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryGreedyCyclicCompleteness.log",
+      "sha256": "bac1fc7aa1fe7bca2559924f4aa841dfe6118b342393d36c793d4c2f80122be2"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryGreedyCyclicDecomposition.log",
+      "sha256": "1b847ee3f4c408338086729815ece6bbfc4377d013c914dea2d8ee102dff91db"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryGreedyHilbertSum.log",
+      "sha256": "70977eb7d952d3d1dee1a632671acd43dd0b5b29df7c5cda1f6625114e8841ff"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryMeasurableSpectralSupports.log",
+      "sha256": "8722a647d1ee72131ebd0e22dd3747711d7a5fcb6d5dc4bb10835215a22c31ea"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitarySpectralCodeBorel.log",
+      "sha256": "03f60130e8eb57f4d2bfb18559666053f9778aaedddd2e34b6ce3c3731648936"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitarySpectralCodeNonzero.log",
+      "sha256": "e880d29a365530d0fd4014cf85aa43fd7abfdc4d5955d3c681b17b121f29ad8b"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitarySpectralMeasureBorel.log",
+      "sha256": "6d7ed70f6ea518cb2c586cba5b9d3d3561b1cee9acfaf5e3f620e123b7094333"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitarySpectralMeasureClassification.log",
+      "sha256": "b5b8e7f3e1a663893bc1226d8d38179505f256593b238d82b595b5fe74c544a8"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitarySpectralReduction.log",
+      "sha256": "71f05bb3e75d4854aa0475630028451cc3d10b6b7a69b78e632e5da32f26fa21"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryVectorRiesz.log",
+      "sha256": "423fc10a787b40866f813bc6bf9e20fd7a1a0085fa47f2eae397109a8af5402e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/UnitaryVectorRieszMass.log",
+      "sha256": "7130c03acb5e414b18672e00a1c906b81684570694f64a48be19681f3fda8e21"
+    },
+    {
+      "path": "verification/lake-build/module-logs/VectorContinuousState.log",
+      "sha256": "884d3248ceecd51b918308504493bd7080606034ed23b7c448795e6e059c2bbb"
+    },
+    {
+      "path": "verification/lake-build/module-logs/VectorSpectralState.log",
+      "sha256": "978203a737a38e6bedce81875dcd7464e7b68d3bb8badee84a0afc8931318e9e"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WalshContinuousDensity.log",
+      "sha256": "bd2ce60371f081afa32a5788254fd9480027594d83376f564a4892f316956ba5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WalshKoopmanRepresentation.log",
+      "sha256": "a678f21abe5c9061fc3d7b7e4f7cf4982b31988f3ad2141bc4f1a22b5133e905"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WalshL2Basis.log",
+      "sha256": "d42bf99f0562084fb26a7d22ad07f7ad387bc7cffe07bab5edea6cf1d50d3730"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WalshShiftAction.log",
+      "sha256": "0393b6a3b63fb4abd383d67d864b7b50a22a938542c268087ebaf196d1012bed"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WalshSupportOrbits.log",
+      "sha256": "1d2de4446c589c00a171ff897067fc69da23ff175df69c4fff5ce6b1d7ef2f39"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WeakGiryInclusion.log",
+      "sha256": "57af76c555f3a1ca183f50c2fca5193ec6bdcd9b6ab64ae03d51b5e11733c823"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WeakIntegralContinuity.log",
+      "sha256": "5bbef77dd4b037e7fef3e21fbe6638b772cff1d4a736d01183a115191787fe8d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WeightedDominatingKernel.log",
+      "sha256": "4262329664064f290bf59e14c23d6421431175f2e099cfa23a7ccd64c91b39be"
+    },
+    {
+      "path": "verification/lake-build/module-logs/WeightedRootSwitch.log",
+      "sha256": "15b281ad8949dbd4b534fcc2f87defb15f114e9485b741c339eb4331b90806f5"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ZeroSumAffinity.log",
+      "sha256": "8ad5df33c4d27486563a3dd5ed83343db9e84dce69db97e591fcd634a1bef8c1"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ZeroSumConditional.log",
+      "sha256": "8d1dc5e5b6c4f14ed4cb3903154945204765c2c1c3cef62b72029d4008e8873d"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ZeroSumDense.log",
+      "sha256": "619e610026c0007073eba5820602b527e8c3e497f5fc464c89fce29edc7c7be4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ZeroSumFiberEvent.log",
+      "sha256": "db5f422b48cc6afc8c462094de9886578ac1ae922e391fae8d763aac5a2066f4"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ZeroSumNonreduction.log",
+      "sha256": "65c50e47e49da32beb6f2e142d47f976365ee56ca51ef8dc6a034b125fa45de0"
+    },
+    {
+      "path": "verification/lake-build/module-logs/ZeroSumRigidity.log",
+      "sha256": "f1957a97e568b860ecc4898182e4b1d7e3fa3fee01dc3fb186505c54fb70dfc5"
+    },
+    {
+      "path": "verification/lake-build/portability-review.json",
+      "sha256": "12f3e703751f0af709a7cc0edc4f515e975f139b53e2ed9f55b7e4be06e01583"
+    },
+    {
+      "path": "verification/lake-build/report.json",
+      "sha256": "526f7c2d8257819ffc92e5b807a3fc275040ca29263440360ba5a5ee0d351319"
+    },
+    {
+      "path": "verification/native/BenchmarkJumpBridge.log",
+      "sha256": "d9f92095f689e3e8648bf148d56ecef3d1759051d43b1089c85386f25685236b"
+    },
+    {
+      "path": "verification/native/BenchmarkMeasureJumpBridge.log",
+      "sha256": "ded779c67fd9f029f2ff4061c6446eb47d1a46e0f769634429591876ef12ed82"
+    },
+    {
+      "path": "verification/native/BenchmarkOperatorTransport.log",
+      "sha256": "ef4b5041e3fcaba940e9485c9bc0bd93247eb69db516fbc9b4eb6c944366367d"
+    },
+    {
+      "path": "verification/native/BenchmarkResults.log",
+      "sha256": "1bf2066d1b7572bf2283faa8a8b9f8a640059c458917b008e8866b95f36d80ef"
+    },
+    {
+      "path": "verification/native/BernoulliIsoperimetry.log",
+      "sha256": "11f90bcc089b992f175742d20324785f35486b509f759fb3c4a0879af9a6c6e3"
+    },
+    {
+      "path": "verification/native/BernoulliMedianGap.log",
+      "sha256": "d2632f888fd490a46786b7a98c9ed4a7ab956e1a4178c3c7faf806d357132ecf"
+    },
+    {
+      "path": "verification/native/BernoulliPowerGap.log",
+      "sha256": "c7d67ea2752e87cdf27c7629fe704fc2c329453c333e9547f9c28875cb5cd716"
+    },
+    {
+      "path": "verification/native/BernoulliSpectralGap.log",
+      "sha256": "484699409558596fb5bbbc9acb040de7a3d532946906a29c2bb00c995565ce0f"
+    },
+    {
+      "path": "verification/native/BernoulliSupportGap.log",
+      "sha256": "3d031ccc1ed218d3eb2d3bee514030f94e98b12ce513f3fa49318a0d2f3cef8b"
+    },
+    {
+      "path": "verification/native/BoundedDifferenceJump.log",
+      "sha256": "1709c31936f054c08744578c9dc8215cdc42ca49063a834461e7ab967436d942"
+    },
+    {
+      "path": "verification/native/BoundedGraphNull.log",
+      "sha256": "3723254e4e0e81fbce3aa5b8651a031a6dc11792a4889fa333c5b6ea186d6a86"
+    },
+    {
+      "path": "verification/native/BoundedNullProduct.log",
+      "sha256": "06307d6a0a97015a888a3762dcdb9c1353af50f8d7a48a3ffbc486634a00949b"
+    },
+    {
+      "path": "verification/native/CantorConvexNeighborhoods.log",
+      "sha256": "ec1c59960b47e7379d0199f6309c58f123d30b50e00c3e1926523c18ceb04717"
+    },
+    {
+      "path": "verification/native/CantorCylinderRefinement.log",
+      "sha256": "a8f7eecf4ff9a266e8d3bb71bd0b3f99dd34409e88c62005bbef76484d87c72a"
+    },
+    {
+      "path": "verification/native/CantorFullSupportWitness.log",
+      "sha256": "64b75814bc3c45c8fd3513bc69166304ccf6af994ee9da1a7078b1207848b292"
+    },
+    {
+      "path": "verification/native/CantorHaarComplete.log",
+      "sha256": "7511f0b0f088d2561e954b9d482cff4cba19b5b4979e66d852bcb34a8d1126d8"
+    },
+    {
+      "path": "verification/native/CantorHaarContinuity.log",
+      "sha256": "ff3bfdff35c69843d21417527215e1ab44c5cee0d0535c755e74e43b5dd3bbc8"
+    },
+    {
+      "path": "verification/native/CantorHaarCoordinates.log",
+      "sha256": "b0cd6c6494a942947de5084dc6393fa2ee467dd3a96cd856c1e9acb3d21def87"
+    },
+    {
+      "path": "verification/native/CantorHaarCylinders.log",
+      "sha256": "98be2e1d0105ddb89dfd75c033403e1dc344da862c9252d5305931fa0c03067e"
+    },
+    {
+      "path": "verification/native/CantorHaarFamily.log",
+      "sha256": "31f309d1612bcc5c2c35eb5f17492e69a543f473e55b329f7bf0e96123d432bb"
+    },
+    {
+      "path": "verification/native/CantorHaarOrthogonal.log",
+      "sha256": "37411fb4f29bf5bce982b696976777adc6588d12fd9159cc37db60f5a08d6d47"
+    },
+    {
+      "path": "verification/native/CantorHaarSpan.log",
+      "sha256": "c548cf3a15a1b8777a892281f93321937db7781d36d4612782391358929e07ae"
+    },
+    {
+      "path": "verification/native/CantorPrefixFunctions.log",
+      "sha256": "a73fcd3a3be9d4b55024d5912b3fcc209a428232348f74494822defef3929ae2"
+    },
+    {
+      "path": "verification/native/CantorPrefixPerturbation.log",
+      "sha256": "6b8fdb0486fd6bba706e547132263ce0a50c79e16630a546cb291594c4ca0d2b"
+    },
+    {
+      "path": "verification/native/CantorProbabilityCoordinates.log",
+      "sha256": "14ad5d9c3c88462ae10ae1475abdbffca3ba10685b9c43624281ee6dcd7d815f"
+    },
+    {
+      "path": "verification/native/CantorProbabilityMix.log",
+      "sha256": "177a3fd9e18935d19fe2f3726849bc24916cc1a2112da51f643a59824c0e0b4a"
+    },
+    {
+      "path": "verification/native/CantorProbabilityMixOpen.log",
+      "sha256": "0994c2362ce9498bdd6fbe495e82d93ea97319562a03f0262fbd87dd0035b8dd"
+    },
+    {
+      "path": "verification/native/CantorProbabilityMixOpenContinuity.log",
+      "sha256": "ec735e39d9ee98aedf6c7d4f98b430bc768047a029feeba5986745d13a02fc02"
+    },
+    {
+      "path": "verification/native/CantorProbabilityMixOpenSection.log",
+      "sha256": "cd4b66315950756f684bbabd7845dca7a70c3aa59c6a2a4e908a442393f5f688"
+    },
+    {
+      "path": "verification/native/CantorProbabilityMixOpenWeights.log",
+      "sha256": "ed18c811879a5f5935d1342bc976d91456195ce757970edf29e0ab698cb9bfdd"
+    },
+    {
+      "path": "verification/native/CantorProbabilityTopology.log",
+      "sha256": "f11d4995ccd699c111d02f4503e29f12a51764445cc814e37740d2e4bae9cd8d"
+    },
+    {
+      "path": "verification/native/CantorReweightOrbitDensity.log",
+      "sha256": "8439c3c4485e1ca96a1bfcb100a93718017bb868fd05957a2b7e7868ab19fe3e"
+    },
+    {
+      "path": "verification/native/CantorSmallCylinders.log",
+      "sha256": "abaf05b80c5d5291d1a9ec57cee501636c67f581698c44e3507e79d00e4562a5"
+    },
+    {
+      "path": "verification/native/CategoryLocal.log",
+      "sha256": "9c23f8e17bbb8dc4e92212b6916fbc24fc3765d88c196e4ccc0bb4e040aa0052"
+    },
+    {
+      "path": "verification/native/CategoryTools.log",
+      "sha256": "fcfdd91b62232e630a0985299df6c18e209eaf805b37130693761eaa4c81bebb"
+    },
+    {
+      "path": "verification/native/ChartConvexNeighborhood.log",
+      "sha256": "ba14eec5e5e59a264a781c461b7ee95b37bd50f4a732f81d6d1cc1da3f4acf71"
+    },
+    {
+      "path": "verification/native/CircleCategory.log",
+      "sha256": "5395b2224417d1f94cc868263a84dcde31324e2167f57b72f15b7a0a2e8e3fde"
+    },
+    {
+      "path": "verification/native/CircleChart.log",
+      "sha256": "bda9609c4b2418113e8d824b5e10a8e6b458f013e7660b460816506f62786122"
+    },
+    {
+      "path": "verification/native/CircleChartConstancy.log",
+      "sha256": "8bb67b9cf17134f3a536842db4854481fe8c86a7fadf0d86e3b4f00bfc4ee0f0"
+    },
+    {
+      "path": "verification/native/CircleGrids.log",
+      "sha256": "6757547eeee869be3b59e7fd7134f480bf816493d427e4e3ab354f6d490a321e"
+    },
+    {
+      "path": "verification/native/CircleInterpolationChain.log",
+      "sha256": "99089cc663f4c92d72cd8b106de145314603be686d4a42ba982c1f3ec3fed042"
+    },
+    {
+      "path": "verification/native/CircleJumpObstruction.log",
+      "sha256": "b06b61bec40f3aa3ed14eb3df7470e8817598dbcb9441e94bf3309f96ee4bfc7"
+    },
+    {
+      "path": "verification/native/CirclePresentation.log",
+      "sha256": "28caffa236784a96eb3df0866da61986ee9af4ed5c26c25a6833e5248c309986"
+    },
+    {
+      "path": "verification/native/CircleReduction.log",
+      "sha256": "7b720d9032081a7c8c0c90995e41cdbe5cdc23339c7b6f79a51503bacc6cbae5"
+    },
+    {
+      "path": "verification/native/CircleRowClosure.log",
+      "sha256": "449db34026553d679417d2326c64045a94821c69426c859d481b3bfb688b384f"
+    },
+    {
+      "path": "verification/native/CircleRowCover.log",
+      "sha256": "46efd3cb32fecb77a54e4f3da666765de072e5afd18d9c61c13656c4c202345d"
+    },
+    {
+      "path": "verification/native/CircleSmallPairs.log",
+      "sha256": "91cdf3598715b3d62e55a8d2764de8fa91be59fbf7cf51cf97118ff579970772"
+    },
+    {
+      "path": "verification/native/CircleTopology.log",
+      "sha256": "5387e2c57fae09f32f8346fffacf4ed6615aa7764c58ea884b61f6afcb47cacd"
+    },
+    {
+      "path": "verification/native/Classification.log",
+      "sha256": "d291a35f81a076b1be0eab1b169cd3f520c578681b79fcb335b87b5765473d42"
+    },
+    {
+      "path": "verification/native/ClopenHaarNode.log",
+      "sha256": "30288039e9f656bd128f7e9a7a096bddb65f4e0b8d785745e0b23474dd2dfd7d"
+    },
+    {
+      "path": "verification/native/CompactAveraging.log",
+      "sha256": "df04643a64252c89d4850e84e5f92b32a9a7c008adee96653a7f67c977b61b1a"
+    },
+    {
+      "path": "verification/native/ComponentQuasiInvariance.log",
+      "sha256": "ad9000d63d7c4130ce935df79d4081e37cf572515ef1fbafb5eb773406fc70de"
+    },
+    {
+      "path": "verification/native/ComponentRigidityRoots.log",
+      "sha256": "7e6457650a4e2af404e0b16b66d67d83e7a12ab0c3764eaa90fe8ce7707b6171"
+    },
+    {
+      "path": "verification/native/ConditionalFibers.log",
+      "sha256": "460046743ada6b1b3d92360361c77fde687f04286cc55a7af4c995a15469b84a"
+    },
+    {
+      "path": "verification/native/ContinuousSquareReweight.log",
+      "sha256": "c2b1591c81c1aef87944cad36459ac2fc0541c0f94ba33f926a2265719f0e12a"
+    },
+    {
+      "path": "verification/native/CoordinateAffinity.log",
+      "sha256": "c5c49b4c0507d879aeabc9261493ee722b92e3e75705b3d495cca2256d196e64"
+    },
+    {
+      "path": "verification/native/CountableBorelColoring.log",
+      "sha256": "4abe931485109c3e9d2db999739ff96a9036d78a29280d02559502dc1be76991"
+    },
+    {
+      "path": "verification/native/CountableComparisonsMission.log",
+      "sha256": "618527dd5f49826e5ef052c6f7c30e6bb9e8ad939a6c8538ccd812984b56079a"
+    },
+    {
+      "path": "verification/native/CountablePositiveMission.log",
+      "sha256": "932d61e968835b453aa4387ede3b6ff35ebb42103ddcfc6c997049cbdd1110b0"
+    },
+    {
+      "path": "verification/native/CountableSpanProjectionBorel.log",
+      "sha256": "486ac993d34c9d736e4f078659ea699e84bf7d68005e3478284742fa5386bc98"
+    },
+    {
+      "path": "verification/native/CouplingKernel.log",
+      "sha256": "bc902161dd136b51f8ee78823f1931197eb06e19ae315894b4819fed96656f6e"
+    },
+    {
+      "path": "verification/native/CouplingMarkov.log",
+      "sha256": "9f0173c1f129745b78303cc9b4525f72e4e325fe35fd82d1a49fb8d148f2ec3f"
+    },
+    {
+      "path": "verification/native/CouplingMixture.log",
+      "sha256": "f294d9fb8c3a07113f129c8e0ee01ea14ff3f4556dcb29e82e3894ce4b829844"
+    },
+    {
+      "path": "verification/native/Definitions_Def_BenchmarkRelations.log",
+      "sha256": "175940dee4c7a032ecfb6c48079f84b10fa0a03b8786dcb8105f840ae3184322"
+    },
+    {
+      "path": "verification/native/DenseEventErgodic.log",
+      "sha256": "7501508f6bf79bd836528afc33dfbaa6df2ac1c98f46a7e6e36173c70cae0380"
+    },
+    {
+      "path": "verification/native/DenseInvariantAffinity.log",
+      "sha256": "179fd2fee56530ef082ed3111a174542bcdaa2fdd651c1464c2f7302430e3ae2"
+    },
+    {
+      "path": "verification/native/DenseInvariantSets.log",
+      "sha256": "46d612342bfc5cf8c4770a56e1e75d8248af05d91a401ad7e32f22f45b69a2ba"
+    },
+    {
+      "path": "verification/native/DenseMeasureInvariance.log",
+      "sha256": "b84a05f459f9a1538192863a0db5bf04f51c96b94377215161866895d8aeeab5"
+    },
+    {
+      "path": "verification/native/DensityBundleEndpoints.log",
+      "sha256": "106a1a5c6096411fa98b1f61cf1723ceb55c5b2910b8656981f077ec04a91e85"
+    },
+    {
+      "path": "verification/native/DensityBundleTopology.log",
+      "sha256": "e17b806fdb27d38bf314e61847ef7b19b2504771f842655886a88e0b3cfb1327"
+    },
+    {
+      "path": "verification/native/DensityBundleTube.log",
+      "sha256": "0290e637cefd2cb932b40375789a4a6e64fe15f3cbc0f69563df83744aac1f93"
+    },
+    {
+      "path": "verification/native/DensityExtension.log",
+      "sha256": "0ca729e7bdc0f8689389ada5166f6ecf326b5c7eba4fdfa7a2a0f9bbefb3df18"
+    },
+    {
+      "path": "verification/native/DensityGraphCompleteness.log",
+      "sha256": "67c0f6be2061c5edd85776a034245e5b067b77656d8e360b8b73aa2371e45014"
+    },
+    {
+      "path": "verification/native/DensityInverseContinuity.log",
+      "sha256": "253979358ae73e2bff7d022d5348d65cd738437c6d3f2961835006d3ce79891c"
+    },
+    {
+      "path": "verification/native/DensityInverseIntegral.log",
+      "sha256": "675583ec689785736b0b1e1250173cf10444de213617dd10a64017b210667964"
+    },
+    {
+      "path": "verification/native/DensityInversion.log",
+      "sha256": "f7006305fbfcfa8d5017b704d3448e9eda519a95514f86aa7703aa3dfba08201"
+    },
+    {
+      "path": "verification/native/DensityMeasure.log",
+      "sha256": "6c8e6f58a67fb9506d50e3d9cbfbe74a5dd463751ed55f422ee540b90513cf58"
+    },
+    {
+      "path": "verification/native/DensitySourceOpen.log",
+      "sha256": "4b9c6b6a76341d31b4704293407d39529249d6b8731007c83c6a53aee5efb308"
+    },
+    {
+      "path": "verification/native/DensitySquare.log",
+      "sha256": "165f729d19422af5f540ba67e484b0fe9bbb5ab4dec631760f12626a2ebde36f"
+    },
+    {
+      "path": "verification/native/DensityTargetContinuity.log",
+      "sha256": "93bcc49e8007279822ecefbb756d16ff500f70e83254622db70f8c5fbb63c586"
+    },
+    {
+      "path": "verification/native/EquivariantTraceMass.log",
+      "sha256": "95e4e18f22b9f7b74ffbe4987baab9a0833d43c7582af65aa39c05fb3ba05ee1"
+    },
+    {
+      "path": "verification/native/ErgodicComponents.log",
+      "sha256": "b5cbc018bdf1bcd25f7dcdfcb415c038eb10d409c86d95bec437d55aa2df2ace"
+    },
+    {
+      "path": "verification/native/ErgodicEquidecomposition.log",
+      "sha256": "0d8637575d10922628f118920d41c044c28a12d54f9d9be49bb397495cc00045"
+    },
+    {
+      "path": "verification/native/FiberEventRepresentative.log",
+      "sha256": "792997a408e3763399df84ab65a9dc902a07b7f42d61fea54dcb5bed989b43a8"
+    },
+    {
+      "path": "verification/native/FiberL2HilbertSum.log",
+      "sha256": "80f6b79ad6a2fab06490e15d9cd48aa0d6abbab9776e03b1fa887968104f6eae"
+    },
+    {
+      "path": "verification/native/FiberL2SpectralSum.log",
+      "sha256": "4bce6e99c7f5742e23fceaf358c42a8b726a498eabf99029eede4c042a567ef0"
+    },
+    {
+      "path": "verification/native/FiberMeasureClass.log",
+      "sha256": "dc1af77cc74fefba41e6e65bc5b9e8491b88727cececc5d0be7dff53a79f5196"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityBaseChange.log",
+      "sha256": "7d34761c6714ea9d259851567149c119326722f4b59b120bf68cb86e1092b4a8"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityClassification.log",
+      "sha256": "a9a6178a5a425552ae5265544035850d085d0446dc543add2e20b0a9c8bfb786"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityLayers.log",
+      "sha256": "ed398b7937c9aa704e60f297a1b3393a0117702f4e4a87395bbd00f762c3f832"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityMatching.log",
+      "sha256": "ab8481ca05aabd22cfb55a28c2c20ec4d580f28b8dfcc21121129903b98434f3"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityMeasureCode.log",
+      "sha256": "b52b447f20c3039dbf6b75041448a1592394f28032dbd06b059aec9b0f28a703"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityOperators.log",
+      "sha256": "4f0b170285dbb33109316983cae76691e3c79e33cdb228368e2d500ca3bbc63c"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityReflection.log",
+      "sha256": "9e637500e7c5615ae436decf3a9f23e0fb5b5609a3045d5f241720884a9a4948"
+    },
+    {
+      "path": "verification/native/FiberMultiplicityTransport.log",
+      "sha256": "1563da06bdb331642711c17ceb1dd4cba7f92e17cac2b8d3c813733ae62e9906"
+    },
+    {
+      "path": "verification/native/FiniteBorelColoring.log",
+      "sha256": "7f4106a2b590dc8d6da92e3b396de4cf5b2b286254aa262e852a01e5a7b33f98"
+    },
+    {
+      "path": "verification/native/FiniteFourier.log",
+      "sha256": "afb2f2909a5f2e222ca01b60bbb70bf100d12311b80db3c750a164003b07c259"
+    },
+    {
+      "path": "verification/native/FiniteOrthogonalProjection.log",
+      "sha256": "7f7e0d4f614e456fdc3d6ede8637da329ad9cb964dd4e0b4836a526ce994c681"
+    },
+    {
+      "path": "verification/native/FiniteSupportTranslation.log",
+      "sha256": "cd1ec34cbb116a83278e6b604a52bf74c7a0acaa00d21514d9c97ab0032febb3"
+    },
+    {
+      "path": "verification/native/FiniteTorus.log",
+      "sha256": "67b6be00122a1a43e2519162740a2e324c557fb380220945db120ff7e6019e72"
+    },
+    {
+      "path": "verification/native/FreeGroupCones.log",
+      "sha256": "97c27799e0d9e8a0be51928af030405ce9a63ec1016f90542cd68d96bd3e264b"
+    },
+    {
+      "path": "verification/native/GaussianCanonical.log",
+      "sha256": "8c0b44d286d785c4bfa56eada3dbae05b066f0b1dfa7cf69d3e68b3a7267ef9f"
+    },
+    {
+      "path": "verification/native/GaussianCantor.log",
+      "sha256": "077247dc25ab2ff1db9774bf57bdcfcefc6d188f904edea369520b6d3c8681ee"
+    },
+    {
+      "path": "verification/native/GaussianContinuity.log",
+      "sha256": "d6ef9f5f8141601fe362aa47d3331dddf93a4691e5b957dd69b55e588cf8ff78"
+    },
+    {
+      "path": "verification/native/GaussianCriterion.log",
+      "sha256": "a0254e4efd5698426819da5c8d6033844f17160fcec65cc1212b6852e73aff7d"
+    },
+    {
+      "path": "verification/native/GaussianFinite.log",
+      "sha256": "79dfbcca4c638175faa657a08ab50119d5ac61ecd9f29af554daab71148c01e2"
+    },
+    {
+      "path": "verification/native/GaussianPositive.log",
+      "sha256": "69e2c79bade5b1bc14b9c08ca2a7a3503c3b9ed544cc69689ec6a917d40df5f7"
+    },
+    {
+      "path": "verification/native/GdeltaPolish.log",
+      "sha256": "43fb9c2923fc43b5c59ac48448c94a17384b8ebb1b13e0bfd53e9426933a36af"
+    },
+    {
+      "path": "verification/native/GraphDistanceBlocks.log",
+      "sha256": "1af2691b63f3df0495e9ae18a7fcadef77a8142551328beeb88019a2895d7aca"
+    },
+    {
+      "path": "verification/native/GridObstruction.log",
+      "sha256": "b4893b19cba65bc2f315fb6699b77640210eb1769886d952194adb6e16147fbb"
+    },
+    {
+      "path": "verification/native/GroupMarkov.log",
+      "sha256": "6c3ae274ef37afbc3f6e3ba114275c4a91f9e7f54f2af5017d6bfa57eb613749"
+    },
+    {
+      "path": "verification/native/HaarIntegralContinuity.log",
+      "sha256": "33e1f5fd8a9c823bb4c9da2cb21eb093cff2482d27344e2244cee42929b4ba63"
+    },
+    {
+      "path": "verification/native/HaarLipschitzIntegral.log",
+      "sha256": "33b04adcb7057ca004dc61aae48a8200331be7dbd6c8682297945d6b00dcd3f0"
+    },
+    {
+      "path": "verification/native/HaarMeanZero.log",
+      "sha256": "295b68af39fdefa35f168dc3520af4451aeb84b91dff7c2f44be31aa12c8ba49"
+    },
+    {
+      "path": "verification/native/HaarSplitSpan.log",
+      "sha256": "ae06efe0a9c89d045107652d47da8f5eede9806b36422858447ab4d913d90894"
+    },
+    {
+      "path": "verification/native/HaarUnitCoordinateContinuity.log",
+      "sha256": "53dffd0b532a168b07f85e283cbd1748ed729784583b756a41d14aaafc9bcf33"
+    },
+    {
+      "path": "verification/native/HellingerAffinity.log",
+      "sha256": "be5e6464e67adf10a204b481646421139db126e4df4eeab9332bd4a990abfe74"
+    },
+    {
+      "path": "verification/native/HellingerConditional.log",
+      "sha256": "f3dfe9b2d1e2e7c8698835daee09063747b47bb1af04724fcde73973f54faa39"
+    },
+    {
+      "path": "verification/native/HellingerConvexEstimates.log",
+      "sha256": "7f995e95f3b9cff0bee43318c48c276f3b2964a463e6bb419776aa60030294e2"
+    },
+    {
+      "path": "verification/native/HellingerErgodic.log",
+      "sha256": "5ebc782f35ae7d246b57a93788c768e94d191e07e78d8bbc5466d6672907afb0"
+    },
+    {
+      "path": "verification/native/HellingerInner.log",
+      "sha256": "b1f0104351ca9958476a271381d45e373b5f4606587985082773d3fead4ca414"
+    },
+    {
+      "path": "verification/native/HellingerKernel.log",
+      "sha256": "16074996c37f1e84b83d4947b66e730621b343b0e97b182293efefd7433eb884"
+    },
+    {
+      "path": "verification/native/HellingerMidpoint.log",
+      "sha256": "940e48c571fab22dce3239bbab11ba842927677de7ff0f9a3d54dcb678dbc42a"
+    },
+    {
+      "path": "verification/native/HellingerOrbit.log",
+      "sha256": "0a9a19f5dfcd19e48b4b5e04b03d739c234cabaac41e47768e753d7d7784d2d7"
+    },
+    {
+      "path": "verification/native/HellingerSplitMap.log",
+      "sha256": "46bb9c52d5407f60c4a6aa5b893ca7e3b0a8f55c776098d6c14c0370e0456809"
+    },
+    {
+      "path": "verification/native/HellingerTransport.log",
+      "sha256": "fbe8b4905534cb7d725413de40d2c6223596d86568561ccc55ccffd5b74e233f"
+    },
+    {
+      "path": "verification/native/HellingerVariational.log",
+      "sha256": "1ffffc32f6f9d3a15c874e6dba29634d762e4ab68659f126ce36736963c430ea"
+    },
+    {
+      "path": "verification/native/HilbertCoordinates.log",
+      "sha256": "1f7f1a700a81d4c27055f560f6582c29fbb97f36e2876996aee09e6fb175e1f0"
+    },
+    {
+      "path": "verification/native/HilbertFamilyCongr.log",
+      "sha256": "45f24e0ab1f54e53d288b86c247d05644668c75eea8d0e0d7e13162e4f524b9f"
+    },
+    {
+      "path": "verification/native/HilbertSequenceTopology.log",
+      "sha256": "6708742fdee997523b8acf348384cc5098041b84ccd1e2e9937d68ce320bc546"
+    },
+    {
+      "path": "verification/native/InducedCornerMassReflection.log",
+      "sha256": "011edf32f5561a72cc76e04fc7d5f854169cc52891e19cb3ec749b3434f9a0ed"
+    },
+    {
+      "path": "verification/native/InducedCornerTransport.log",
+      "sha256": "47c1750eed5a2e326d7c4a097b3ace9d9962144431b13aa83e88b29df2e918ac"
+    },
+    {
+      "path": "verification/native/InducedCornerUnitary.log",
+      "sha256": "fb73ce8b8752cfb6558d95be761acee32e096ac9c941bc13ae5516c179b98282"
+    },
+    {
+      "path": "verification/native/InfinityEndpoint.log",
+      "sha256": "97c863c2a45a36af147b9249a7a61c6185f7f741d263cf7a75f0e41f83035ec9"
+    },
+    {
+      "path": "verification/native/IntervalInterpolation.log",
+      "sha256": "b0f5d8c06434965e6f7f7d21d8ac63fdfbec5d18fcbe31a99a47c98bb9fefc43"
+    },
+    {
+      "path": "verification/native/InvariantAffinity.log",
+      "sha256": "9131ac92ca827106fb252290bf51f3472052a2fdb2f4d4b6410cbf76ff139972"
+    },
+    {
+      "path": "verification/native/InvariantConditional.log",
+      "sha256": "09025c770fcce55f8a1e957f9da99e8850c3ee2cdc35a44d63d46ef96aa2abe1"
+    },
+    {
+      "path": "verification/native/InvariantGraphGroup.log",
+      "sha256": "6296b3ee8f72f993b52f13f4f8b71ed0cb8b3eea05ec98142cb9e9d8db41a3ed"
+    },
+    {
+      "path": "verification/native/InvariantKernelStationarity.log",
+      "sha256": "8c5063a74f5994b7985f790e96d909fc4f3cd59cfdc6830c15d03f75323499d9"
+    },
+    {
+      "path": "verification/native/InvariantRepresentatives.log",
+      "sha256": "047657700f9f846a23d036fcfb9cbbc92043b9b535643565d6f90b35ea7b373c"
+    },
+    {
+      "path": "verification/native/JumpRows.log",
+      "sha256": "26cc523437073100f92b7986b9ae34bab66c06ce2134942758f95a0dc27b08ce"
+    },
+    {
+      "path": "verification/native/KernelAverages.log",
+      "sha256": "3eea6bf53487a914f300b7e432de9b9b31abcfa8b10fbc38920bb0fea3a8bbbc"
+    },
+    {
+      "path": "verification/native/KernelCantorNormalization.log",
+      "sha256": "adb140ee49e8972b6bed4e7f50eba3e9d1338b5c407be173643b0fc3a456d7eb"
+    },
+    {
+      "path": "verification/native/KernelEquivalence.log",
+      "sha256": "05e0b7edbb07d60119fc610c9624c36929a4350005bdc164b2203b1a6803d374"
+    },
+    {
+      "path": "verification/native/KernelSpectralSupports.log",
+      "sha256": "bb25e2268a8134248598619846c6472f433b6edd9d33963827243f1bfac20c75"
+    },
+    {
+      "path": "verification/native/L2CoordinateProjection.log",
+      "sha256": "40299ccfe913047b760ebc6e0ebc6256cf6580d1f27d5098898d18ab462dcd04"
+    },
+    {
+      "path": "verification/native/L2CountAdjoints.log",
+      "sha256": "c0b1642cca8619b99e036584eb4f8e4d44a16a791d32dcecddee5ab1754dfda8"
+    },
+    {
+      "path": "verification/native/L2CountCoefficients.log",
+      "sha256": "8b9dcd0a38484c7c161bf08eb04f52f773c5da8c6472fc10ea2a02239154bede"
+    },
+    {
+      "path": "verification/native/L2CountInjections.log",
+      "sha256": "4acd5be4b2e5a28fb27774bb7af700783bd6380f33a668160821108bc970cd11"
+    },
+    {
+      "path": "verification/native/L2FiniteOnes.log",
+      "sha256": "b608f02c5e867a7ee9aa7d38333a14b1b65290ff18b190c96c9f8cee94e6f9a2"
+    },
+    {
+      "path": "verification/native/L2FiniteSupportMultiplier.log",
+      "sha256": "57b99405a9d206db08bd10f648067e4d6a2b7c6943788fa112854c3eefcd73ea"
+    },
+    {
+      "path": "verification/native/L2IndexShiftCoefficients.log",
+      "sha256": "2ac6d27beacfbf9c107b5652898d62dd343bd51d5b077682f666d446d67cbf05"
+    },
+    {
+      "path": "verification/native/L2LocalizedAdjoints.log",
+      "sha256": "2c521c5727e7a662262dee2db22c47f32cf811253ecfcaf2ec69a52224b20592"
+    },
+    {
+      "path": "verification/native/L2LocalizedOperators.log",
+      "sha256": "10c631bab576e2ad1f862faa3541bf61e86b5efeebb227e070b63e067804d8b5"
+    },
+    {
+      "path": "verification/native/L2MatrixColumns.log",
+      "sha256": "d683c73c8606d1dfaa2e207bbd754470997f49a224325b979fd56e1d66e81432"
+    },
+    {
+      "path": "verification/native/L2MatrixProjection.log",
+      "sha256": "56b224bf6b37eb5f5e47522a3611702edf2de75062fd626c1216213f499960ac"
+    },
+    {
+      "path": "verification/native/L2ModuleCommutant.log",
+      "sha256": "a5b5164ee6941eca32e33a34d7b6847df7fccb9c926d38fb3b18f0cb5d58f36f"
+    },
+    {
+      "path": "verification/native/L2ModuleEntryMass.log",
+      "sha256": "ffa9e332d7cc81e8b2ee65216854480643bb798a5acb60c42e996b48b059563c"
+    },
+    {
+      "path": "verification/native/L2ProjectionCommutantNormal.log",
+      "sha256": "cf2f14d6a11bd0be76a18909e9813ac9b8fddd2c01b584a2b74a3f9dd216b56d"
+    },
+    {
+      "path": "verification/native/L2RestrictionExtension.log",
+      "sha256": "a5984638c61b2452cd65d71a904e124e1d9e3055fc5a16a351edbd7efa5d6f09"
+    },
+    {
+      "path": "verification/native/L2SpectralProjectionIntertwining.log",
+      "sha256": "bcd408180b18780b86b4fb17bfb8b5afdb360d8821bec60c9388f1b5e3d1838a"
+    },
+    {
+      "path": "verification/native/L2TransportedMatrix.log",
+      "sha256": "cf799de6e520a2a295e92f1ad692c81f4dd7d6d4a59bc079b4871e0c7b3caae6"
+    },
+    {
+      "path": "verification/native/L2TransportedNorms.log",
+      "sha256": "ea3d168d07696993b7f6fc056a2d854b2dde88dbb41737eb32c0b3419f2784d8"
+    },
+    {
+      "path": "verification/native/LinearHaarIntegralContinuity.log",
+      "sha256": "8152002c6307c1d0133408b95171f2af4ed46027d89789f94c3c717fefe01bc5"
+    },
+    {
+      "path": "verification/native/LpClassMeagre.log",
+      "sha256": "c6beeb92144605bbae07f9c7bd1bed7ae5ecd2415dede95b4344635d88fe4f1d"
+    },
+    {
+      "path": "verification/native/LpCountableAction.log",
+      "sha256": "25d2ed7447f0ac365f749e7c874664d81bd499555553f1670d454812a8541d58"
+    },
+    {
+      "path": "verification/native/LpCountableLocal.log",
+      "sha256": "4c78c631b9ea216dd1aa41c79790cc629daa1809318fd495bfa553e4b88c2c4c"
+    },
+    {
+      "path": "verification/native/LpCountableObstruction.log",
+      "sha256": "319a4864f3ec9bf55ea7e0f4891d5a914e2ef9db3cb44360e7922cf4a2f5da1a"
+    },
+    {
+      "path": "verification/native/LpGenericConstancy.log",
+      "sha256": "a0bd123699c3771b752ded757c1ab361647896dde29286430f816c9d7183a70c"
+    },
+    {
+      "path": "verification/native/LpPrefixInterpolation.log",
+      "sha256": "fa7e372ac7128dae7191464df9fbe02a2323bf385a38ba31430a4f2f91f44077"
+    },
+    {
+      "path": "verification/native/MainTheorems.log",
+      "sha256": "fefe5f622b81edbd451a85e6fade1e6e19deb40470b8f6d0c7f38d694fe0135b"
+    },
+    {
+      "path": "verification/native/MeasurableNthTotal.log",
+      "sha256": "44162fef477a91627a2db3495f52a77a65920d75a911b370b6f4827043868ee5"
+    },
+    {
+      "path": "verification/native/MeasureCantorAmplified.log",
+      "sha256": "404d84d9056bbe19c2212c947952f2afd90d1564c3033ee4c2dc41778a26a265"
+    },
+    {
+      "path": "verification/native/MeasureCantorBorel.log",
+      "sha256": "dbf6ce50dc8cdfe23202e256f45ca031cc96e74dd5d6da5ba737df8fd1008a2a"
+    },
+    {
+      "path": "verification/native/MeasureCantorCircle.log",
+      "sha256": "7c57ef3d2db4f360e6d41ad0936558a7fb92cfeb15b94ce003225ce3d8fd8933"
+    },
+    {
+      "path": "verification/native/MeasureCantorContinuousBorel.log",
+      "sha256": "58b9d8352c27f0aebc2f0748d1631d8eeb776355a7a06b6f193257247063fb3b"
+    },
+    {
+      "path": "verification/native/MeasureCantorDenseFamily.log",
+      "sha256": "8be93282954c5e26d140b6bb7fa6a62e28925a888ae06eaa3d724346d6500a79"
+    },
+    {
+      "path": "verification/native/MeasureCantorGram.log",
+      "sha256": "7807344fef3cf52da67df8575cb820c3c31aef338848d4531b5607237da3c424"
+    },
+    {
+      "path": "verification/native/MeasureCantorReflection.log",
+      "sha256": "7cd8bae395dc4a50f17ec212a8cd884445db1f0f7a3f0ded2fd1758aceaced8c"
+    },
+    {
+      "path": "verification/native/MeasureCantorTuple.log",
+      "sha256": "f02a989528fc19149032f1fa7d52de2a896c0eae91d2a16b8652f838ec55fb46"
+    },
+    {
+      "path": "verification/native/MeasureCategory.log",
+      "sha256": "961e0acfcb81b403753add5f91ad5fbf6156722aedbb59542b436df3217f8d0e"
+    },
+    {
+      "path": "verification/native/MeasureCharacterIntertwining.log",
+      "sha256": "f29e9bd99e33107f292cc8e4731fb618ebf080eb838f0f77c6b478b526e51eb1"
+    },
+    {
+      "path": "verification/native/MeasureClassClosedCover.log",
+      "sha256": "c6331ac236acc0b9ea2e16b930d2870b9804317914820c050a3bf0c1cbee5b70"
+    },
+    {
+      "path": "verification/native/MeasureClassMeagre.log",
+      "sha256": "9a116b01a62de7a9b5c78029f84628b74ce025acb2ad15ec1a1f90ee32e8e95c"
+    },
+    {
+      "path": "verification/native/MeasureContinuousMultipliers.log",
+      "sha256": "4cba1eb2342d1f57dd19a98ce806b1bb8f9095282a736d0ef96a8d5dd91162f9"
+    },
+    {
+      "path": "verification/native/MeasureCyclicReduction.log",
+      "sha256": "13c3abb00150b2bba1696662b55c21e63eae73e138378df90efa34800e91de22"
+    },
+    {
+      "path": "verification/native/MeasureEquivalence.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/native/MeasureFreeReduction.log",
+      "sha256": "d95833e7b79b98a0b2659b5e61ebbe63df0cd8c64fbd1fd25b09528ef088022a"
+    },
+    {
+      "path": "verification/native/MeasureGenericErgodicity.log",
+      "sha256": "ad153eccb651f8c00ced8ced28d4ef04f90f97a025e9b9c6c25f1169a10e8024"
+    },
+    {
+      "path": "verification/native/MeasureGramSchmidtBorel.log",
+      "sha256": "e1993cd003b4ccf6cf71afc6f3c5d29f58d8b9bcc9b031c4ff5550ae50c00bf3"
+    },
+    {
+      "path": "verification/native/MeasureHellingerFiberLift.log",
+      "sha256": "143f64efb3d1b6bf62d0df2cbd59901ea5fbe2a7f15b3f26dbc117c05d044cc7"
+    },
+    {
+      "path": "verification/native/MeasureInducedOperatorCode.log",
+      "sha256": "7e82c17a24302a274748d30553cf7d2ef34268e13cb8760279da27546c996554"
+    },
+    {
+      "path": "verification/native/MeasureInducedOperatorEquivalence.log",
+      "sha256": "0a775cf46bae8389b85ad9cc108731e04f6cd950f79c986a912590dd78b544cc"
+    },
+    {
+      "path": "verification/native/MeasureInterpolationChain.log",
+      "sha256": "0fc0d6090656892e088c044a7e05552429041f09067e14166d90173a9145d37d"
+    },
+    {
+      "path": "verification/native/MeasureInterpolationEnergy.log",
+      "sha256": "ab91015469470a0fe9f6d852c2497806e7e39fb596fc3000c0e41d8420f80086"
+    },
+    {
+      "path": "verification/native/MeasureJumpObstruction.log",
+      "sha256": "6f09114a8bd4d6bc3ebdcb2886727b68edc680537a715a54b7cb65e3f56768bb"
+    },
+    {
+      "path": "verification/native/MeasureL2Constants.log",
+      "sha256": "4f0518f884740470b574f6167a0858311fb246576c313d1dbfcaab9385b03f13"
+    },
+    {
+      "path": "verification/native/MeasureLocalSmallRows.log",
+      "sha256": "f3240818b3efb666c5f95f8b6c202ffcb025ce534eae7e33785a692f0806df80"
+    },
+    {
+      "path": "verification/native/MeasureOperatorReduction.log",
+      "sha256": "d826d8fcbfda2e9729cdb0c49a265eafa181d6504cf22d746bd54c6797c541b7"
+    },
+    {
+      "path": "verification/native/MeasurePullbackMultipliers.log",
+      "sha256": "71a1c97c3a5997c52432f40a85e5e803a29637ae15f3de9454289f9abaa59a2f"
+    },
+    {
+      "path": "verification/native/MeasureRowClosure.log",
+      "sha256": "c9053873e032d46ac380d48c5724a7424858a0e455f27fb303e1705acf15ffae"
+    },
+    {
+      "path": "verification/native/MeasureRowCover.log",
+      "sha256": "ab4dc27a319752182bfff80ed451c4b6482d0757fd5f09f5a1022936b77ab2dc"
+    },
+    {
+      "path": "verification/native/MeasureSmallPairBound.log",
+      "sha256": "a852a98745eaf8ae3f554b0cf58cdc0e153c12405bffe7ba3ad0d71ce626193f"
+    },
+    {
+      "path": "verification/native/MeasureSmoothingFiberLift.log",
+      "sha256": "8315feb58482b5937afe63a76cee57b24d77be007773d6b614c826c6fa96fb36"
+    },
+    {
+      "path": "verification/native/MeasureUnitaryDensity.log",
+      "sha256": "f8af699c63ad617783261c78b5b18df8afe80a9881cbab0fb78cd5753a35bfd7"
+    },
+    {
+      "path": "verification/native/MeasureUnitaryMultipliers.log",
+      "sha256": "3d1f4f6a0d9e4d7402c16b9f045b4874f04aefa4651b0b5c06d43369f8b84074"
+    },
+    {
+      "path": "verification/native/MeasureUnitaryOperatorReduction.log",
+      "sha256": "65efa4213377ffdded6543e1fe9430618d5c8ff2399a77c38f539caff0b2c6fb"
+    },
+    {
+      "path": "verification/native/MeasureUnitaryRN.log",
+      "sha256": "11cf4025afdd5621e5258d6d78b6f68131cfaa7f4895c782fdb436c777b70232"
+    },
+    {
+      "path": "verification/native/MeasureVariableGramSchmidt.log",
+      "sha256": "d0117a0f565a45f5c7ff0be7cf027da474c472f7019bf2c997064bd799abd182"
+    },
+    {
+      "path": "verification/native/MeasureVariableOperatorGram.log",
+      "sha256": "d43496471d465b89dc64e6813bb4cc69a623dc9f65ed284ad95235310f52ca32"
+    },
+    {
+      "path": "verification/native/MetropolisCoupling.log",
+      "sha256": "6db9097514d36f1ce98d8e4860d728e9b905c428b250f0ebe888a1e05b0b56d2"
+    },
+    {
+      "path": "verification/native/NegativeReduction.log",
+      "sha256": "233741ed1a16195477a056b76943d1976a9093cac835641b94cfdc78386f9e86"
+    },
+    {
+      "path": "verification/native/NonsingularDichotomy.log",
+      "sha256": "b38d433e6dc464d6f56a523e2f0b2b4f7bdba420ee2ed6e31295a7d89f210b86"
+    },
+    {
+      "path": "verification/native/NormalizedTruncation.log",
+      "sha256": "e2cd5ff55c9066d5c305c5888f6be4adc02ccaf88182036586ec346171113cae"
+    },
+    {
+      "path": "verification/native/OpenFiberSquare.log",
+      "sha256": "5c6c5e1783b6a8af901a80417096a39024e42fa576659f13e2f24550783f0855"
+    },
+    {
+      "path": "verification/native/OperatorAdjointMeasurable.log",
+      "sha256": "c41e192140ed868d559a06990372406c3e868ae7fc94f4f7d6d476bde82a3eac"
+    },
+    {
+      "path": "verification/native/OperatorAdjoints.log",
+      "sha256": "f3f53a6d3da39c887aeb4cf0500c338e5b82325fcce46420f7b11015855e7485"
+    },
+    {
+      "path": "verification/native/OperatorAmplification.log",
+      "sha256": "90522c6d148f5570fdab007c88e975877789d5acb734bcfd1a0f575ba3a8c786"
+    },
+    {
+      "path": "verification/native/OperatorBireduction.log",
+      "sha256": "1c0b8033d49a362ec578aa86525d3d4341424032d86d3b6b3b5eaf5974f820c7"
+    },
+    {
+      "path": "verification/native/OperatorBlocks.log",
+      "sha256": "ca49930e4f0c4e8214c91fada9ff807f8da902eefe4bec87fd017080565bc1a7"
+    },
+    {
+      "path": "verification/native/OperatorBorelNormalization.log",
+      "sha256": "50df2d7298e08550722fc1bd6e7dc836c838b5804501c544a773e6f21ffd53dc"
+    },
+    {
+      "path": "verification/native/OperatorCoefficients.log",
+      "sha256": "7f3e088266baf53ae934876d4a87e443eb25b5dcac539b6085d6b96a9eda2843"
+    },
+    {
+      "path": "verification/native/OperatorConjugation.log",
+      "sha256": "bf1dca7c3794ab9dab023db96ba9f36866fdcc679d048f8179888408e4f5b622"
+    },
+    {
+      "path": "verification/native/OperatorCyclicRepresentation.log",
+      "sha256": "89cd578b16aa94a41231f50389a925115e5caebb354a49350c132e95c8e72133"
+    },
+    {
+      "path": "verification/native/OperatorEigenspaces.log",
+      "sha256": "d4b36ac47dbd766550f8fa07e84c355df94cd33c6fe3ba9ca9057d03023ac20e"
+    },
+    {
+      "path": "verification/native/OperatorFreeGroup.log",
+      "sha256": "d4347c15d81fcfca52b6e83c87583b9da2cf72768b210dd7e0d7795f3a3ed0ec"
+    },
+    {
+      "path": "verification/native/OperatorFreeRepresentation.log",
+      "sha256": "600506cb8d213500b2bae5779878d3460ed183cc342dc776f56b03e65a40d2b7"
+    },
+    {
+      "path": "verification/native/OperatorFullComparisons.log",
+      "sha256": "f4bd24b38b7327308385986df896c1a86331b875723668920bbcc03339219153"
+    },
+    {
+      "path": "verification/native/OperatorHilbertFlatten.log",
+      "sha256": "bb3789b19087b7639bdfdb5580ac6d8a6c87af4faae7f9e57ae4e8b0aec62687"
+    },
+    {
+      "path": "verification/native/OperatorMeasurableEvaluation.log",
+      "sha256": "4a916a492a61a73a4e59811758a813647928c0ba713834dd413b06ffc8dd4ffe"
+    },
+    {
+      "path": "verification/native/OperatorNormalization.log",
+      "sha256": "7ac591269033284551d55b906fb8a49550599c0a427e8f4ccf0c1724dad04fdd"
+    },
+    {
+      "path": "verification/native/OperatorPairCoding.log",
+      "sha256": "558cdd34bbe776b847b18628339aa89fedb64b70a0dab19b8447d932767cc98b"
+    },
+    {
+      "path": "verification/native/OperatorPreservation.log",
+      "sha256": "48eb14bc4656462b93a36ae26ef1a333213cf5b034a8d18c53f95bf68898eb0e"
+    },
+    {
+      "path": "verification/native/OperatorRecovery.log",
+      "sha256": "ed300092cc66dfa727afd7b60a569621f5985d63785ba383df0dad51bc835816"
+    },
+    {
+      "path": "verification/native/OperatorSeries.log",
+      "sha256": "e5f2e5e690b6baeba7fd4f2dcd719af5066448881c632260a692c3fc16315121"
+    },
+    {
+      "path": "verification/native/OperatorStrictSeparation.log",
+      "sha256": "49ffef939f9b6aad58dc79902878676c30a02058f50bb2783157c82d51774ab4"
+    },
+    {
+      "path": "verification/native/OperatorStrongExponential.log",
+      "sha256": "d4858f611cd87dc97d758678c402d01e8de19d40f45e69fda80ad12e06025498"
+    },
+    {
+      "path": "verification/native/OperatorStrongUnitary.log",
+      "sha256": "28f43127c3d883ad91dcb2f1608c71f6cb51c5eeda2e3cf9198b3f8fc35b2e7b"
+    },
+    {
+      "path": "verification/native/OperatorTargets.log",
+      "sha256": "a2c36b39f0a326924b1f3da65ec936d0ebbb7f8043f482d87bed32ed611db06f"
+    },
+    {
+      "path": "verification/native/OperatorTupleCoding.log",
+      "sha256": "1452ba2965b59af5daa830d40e6b0917c8231d05ec6aa18d74df936a352db1dd"
+    },
+    {
+      "path": "verification/native/OperatorUnitaryBorel.log",
+      "sha256": "73f89b92cf6b784db5b57bda79fdfe9b614f1e77bb2ae13792049639d026b2bd"
+    },
+    {
+      "path": "verification/native/OrbitMarkov.log",
+      "sha256": "ca769e1af517a08adb11d62fe0bf18dc657a022b923bf2e4234b3c4f1047f204"
+    },
+    {
+      "path": "verification/native/PiecewiseMeasureTransport.log",
+      "sha256": "5b2bf05620df3ddeaccb1fedde919735f0575aaefbe55365d27210518a14ca47"
+    },
+    {
+      "path": "verification/native/PoincareNonreduction.log",
+      "sha256": "7872b6c45c9e718915247ce27c224544af48a1e3bbbe5c6957d6dd868afeadf8"
+    },
+    {
+      "path": "verification/native/PoincareRadial.log",
+      "sha256": "90e3f29dba5f4ffaea34dac8182f959591614f450e77ccdd924adc3c466baee8"
+    },
+    {
+      "path": "verification/native/PolishGroupTopology.log",
+      "sha256": "d14006751b82b6157935b5185d6999c311a79c33856799dad2aaf273646aebaa"
+    },
+    {
+      "path": "verification/native/PositiveContinuousSections.log",
+      "sha256": "ecf0915fb6c7faa730f3001451558d8a6d3ab4692b11bd138d0d2116dd484dee"
+    },
+    {
+      "path": "verification/native/PositiveConvexNeighborhoods.log",
+      "sha256": "79bfb916e11eed6fe5d70b43c8fb79ed1cb6760fc4c3676e79b8976a4e7bce34"
+    },
+    {
+      "path": "verification/native/PositiveDensityGdelta.log",
+      "sha256": "79a81f16a979699ba6ce6049a4a1b7bd13e75fcaf821bb8f7f82b1e7a258a22e"
+    },
+    {
+      "path": "verification/native/PositiveProbabilityMix.log",
+      "sha256": "78bbe47d6f53a890db7f063d7dec16f433816e1742ffb6a5bf27b3d56cdea342"
+    },
+    {
+      "path": "verification/native/PositiveReweightNeighborhood.log",
+      "sha256": "bc76552b4f83679c44cb6d153143d74b5157a91b0efe70795a553e3d9ef9a8fb"
+    },
+    {
+      "path": "verification/native/PositiveSectionDensity.log",
+      "sha256": "a1cb1c44f910ae3ab973197a2d4c6a06cb904ff1bf46f9d4817f7b65a21e858f"
+    },
+    {
+      "path": "verification/native/PowerDifference.log",
+      "sha256": "f88fe8566fc38acbb4d4321081fd1e1b1e0ab86cd0e29b94c3bf169bd0b2b922"
+    },
+    {
+      "path": "verification/native/PrefixTruncatedEnergy.log",
+      "sha256": "cad052898efbca608bc2dae4799bf78ec9c71146392ac36d22699efc8e797510"
+    },
+    {
+      "path": "verification/native/ProductAffinity.log",
+      "sha256": "0d381bbdd96d16f44aab7861a08299fa1d39fd06fb011d9343e7093b7d455ab0"
+    },
+    {
+      "path": "verification/native/ProjectionMassGap.log",
+      "sha256": "8589a753429a277cf589a704c80acc8e2cb12ec470029441382e02ee51a17ca1"
+    },
+    {
+      "path": "verification/native/RadialEnergy.log",
+      "sha256": "06038fcfe1ece17f7344efb0d9da0aa97b54039a48ebc95af3be320836e2b24b"
+    },
+    {
+      "path": "verification/native/RadialRetraction.log",
+      "sha256": "9da4614bdd508e1e5296f1c1e586e8bd0c5bba9f2c85a9778873878e4cd54a9c"
+    },
+    {
+      "path": "verification/native/RationalFiberErgodic.log",
+      "sha256": "d53279afe546cb35bfbbda2f3dfaf3642a4b6854c0ee377951659aedccf9f2e3"
+    },
+    {
+      "path": "verification/native/RealMedians.log",
+      "sha256": "aaf2360053a2fab2acac300a736f360c9348f1685eec5bbd9e180f2dacbaf2da"
+    },
+    {
+      "path": "verification/native/RefiningFinitePartitions.log",
+      "sha256": "8e3f2c6d69e02dd7ae2d14ed946f70e9f06e1beff5d7cf9ff052c01edab2370a"
+    },
+    {
+      "path": "verification/native/RegularFreeGroupGap.log",
+      "sha256": "5622dbfcba1644e49af1428ac53e99f8c92a16163fce06491364693a03c0dd6b"
+    },
+    {
+      "path": "verification/native/RestrictedAction.log",
+      "sha256": "2b8f064e2995ac2b0e9290163a999b3685044cd6901d0fdcd563d5ef70443ea2"
+    },
+    {
+      "path": "verification/native/RestrictedBoxMass.log",
+      "sha256": "c7ab117c178e643010cd37b53b93c81e2faab7a70b5dafa84cddea1ab4d4f4b3"
+    },
+    {
+      "path": "verification/native/RestrictedCompactAction.log",
+      "sha256": "e6911d8ffff6134851c42687f82cd61dbd594485ddef065e01badf58cf589afa"
+    },
+    {
+      "path": "verification/native/RestrictedCompactMeasure.log",
+      "sha256": "7d142ccb1434f97fa8f1034355ac37c7f01aa2bee78c674795d1b323fd2a381f"
+    },
+    {
+      "path": "verification/native/RestrictedCompatibility.log",
+      "sha256": "6a4d88649d19b41fefdb1fcd3f7cb61e81d831655f8db814cb90075d0abd656e"
+    },
+    {
+      "path": "verification/native/RestrictedCornerCharacterMass.log",
+      "sha256": "14cd292e02b4ea28d71f7c1a566684830ec29c1744c7b41facbdadc82951c1b6"
+    },
+    {
+      "path": "verification/native/RestrictedCorrection.log",
+      "sha256": "b1afc060ac07818884b8e74c1380b0ecece064257e3f10508009a0d90bc0af3c"
+    },
+    {
+      "path": "verification/native/RestrictedDensity.log",
+      "sha256": "6ee9a8b6153006fdb8465c1a8ea8a80f23cabc5e3a8e134c911552f323cb994d"
+    },
+    {
+      "path": "verification/native/RestrictedDeparture.log",
+      "sha256": "eb74a33a13372761067fdf20b59dc6d01d8e5d517f53a4cacf953266137d9887"
+    },
+    {
+      "path": "verification/native/RestrictedErgodic.log",
+      "sha256": "b7e4a0e10f5bd61fd21a9c7035fc1a43393ecacdbf065f106a117e55a0242cac"
+    },
+    {
+      "path": "verification/native/RestrictedFiniteCornerReflection.log",
+      "sha256": "f074b1f63898680da807d89938a7d6e89c58ce11df74e9e47eb5091306f7c410"
+    },
+    {
+      "path": "verification/native/RestrictedFiniteEvent.log",
+      "sha256": "aea29f635feebae26f39cbe7d8ea1cba38a2bfee3059dab40e60f5332832a79a"
+    },
+    {
+      "path": "verification/native/RestrictedFiniteModulus.log",
+      "sha256": "8df6644cdc9d4c7830aa67ca023d373e8f8c675e1fa58985203158c9aa5f6bb3"
+    },
+    {
+      "path": "verification/native/RestrictedFiniteNull.log",
+      "sha256": "fd1556a424a56667a5d54ab584d7b6259c5e50853cd7ab672048abacb3bd6b92"
+    },
+    {
+      "path": "verification/native/RestrictedFullReflection.log",
+      "sha256": "96b62f239429b78bfae1141e06e69484a1f3ec4430a29370c42f144c97ee2e02"
+    },
+    {
+      "path": "verification/native/RestrictedInducedFamily.log",
+      "sha256": "42d611605a30231fd1957c383d15d2b5a1764b55de34abbd55dde7ad0afe031e"
+    },
+    {
+      "path": "verification/native/RestrictedInducedReflection.log",
+      "sha256": "eb5d10f23d6f88d53cbee623eeb03cc0128af612f2be344ab6faf0655a8ebd95"
+    },
+    {
+      "path": "verification/native/RestrictedInducedSpectral.log",
+      "sha256": "b7d3dd383375a66f555f06c46b0220797199a0531d1be46e45318ca9716ad182"
+    },
+    {
+      "path": "verification/native/RestrictedInducedTuple.log",
+      "sha256": "13dc8a53c9e275fe45d2e3f12212afdbf7ba1298c0007815ed8a18d68f77a6ce"
+    },
+    {
+      "path": "verification/native/RestrictedMass.log",
+      "sha256": "58cb902fc02811ccfae11bc630e7f3a110dbcda594e22c28e743572ee81286ab"
+    },
+    {
+      "path": "verification/native/RestrictedModulus.log",
+      "sha256": "29fd948ebd69156a159531fdf34ffe6cdeae89ade03b3d49f6784516132da335"
+    },
+    {
+      "path": "verification/native/RestrictedPermutation.log",
+      "sha256": "8678cfb5c35996f1bc885831d880233b3cdf574e9038d60dbee3d9d66cc47ca5"
+    },
+    {
+      "path": "verification/native/RestrictedPhaseFamily.log",
+      "sha256": "9a13b8fe5649561317dd0b8eeac9d22efbc6051fa7c4ffcbd846e044199851e6"
+    },
+    {
+      "path": "verification/native/RestrictedPhaseReflection.log",
+      "sha256": "5ad6fb5bf29c187021263d52c1e127344cc129ce7c97330e3ee82b82fe20f4da"
+    },
+    {
+      "path": "verification/native/RestrictedProduct.log",
+      "sha256": "617f216cbfe9b8e89eced954fe230facb8e74258f8c3b6174864c32bb954a2f4"
+    },
+    {
+      "path": "verification/native/RestrictedPropagation.log",
+      "sha256": "487fea1acd04fa14d2f937c2704f35078a1795188136384ea416d29614662010"
+    },
+    {
+      "path": "verification/native/RestrictedRoots.log",
+      "sha256": "ffffceda2de0390260a07648070d8c157f3545f976a191433680b132441a069f"
+    },
+    {
+      "path": "verification/native/RestrictedSaturation.log",
+      "sha256": "a7a87acfe1381cb8012d656c9a74c50756fd1e288a5347d0fc50ecef982fc0ae"
+    },
+    {
+      "path": "verification/native/RestrictedSpectralClass.log",
+      "sha256": "9ea93de064e5c0213eeba5dd379a26118f96969b3f52aeef06313705ef413b80"
+    },
+    {
+      "path": "verification/native/RestrictedStages.log",
+      "sha256": "686d9a36f8a9718e1161be27a74b3f76455cc484045966079ac4950a0277c7eb"
+    },
+    {
+      "path": "verification/native/RestrictedSupport.log",
+      "sha256": "2d9cfdb85a66f2e39f78c4a972f93883bb0636e43cb737b3db09db443a17c84e"
+    },
+    {
+      "path": "verification/native/RestrictedTail.log",
+      "sha256": "01e4784adce672135ca70e5cff1180ec56d39ff1228255101271eadead39a163"
+    },
+    {
+      "path": "verification/native/RestrictedTranslatedCorner.log",
+      "sha256": "4cf94bd192693afca8e089d8240614e56260575bd344a9cf80a6c1e14f93cdbd"
+    },
+    {
+      "path": "verification/native/RestrictedTranslationIntertwining.log",
+      "sha256": "3cf67a6d91bd014800538c78abb1d8bf5232bcf3e51d1aac44eb0243531a0c6a"
+    },
+    {
+      "path": "verification/native/RestrictedZeroOne.log",
+      "sha256": "aa54a89b7fa2cf86a0f4c00a62d0559da8c769fa02711b5b1a793dcf4520a472"
+    },
+    {
+      "path": "verification/native/RigidityRoots.log",
+      "sha256": "5e4a10ea29babbc35d427313377d3b187a8aa3aa811e0604d67fac5b5b14dec8"
+    },
+    {
+      "path": "verification/native/RNGraph.log",
+      "sha256": "b70d34f4cff47d619c594056b959fb3d183428ce26c486e194e4c4403e1d9a32"
+    },
+    {
+      "path": "verification/native/RNPresentation.log",
+      "sha256": "37d8634e60352377eed321f917c63f69ac750fa09db486ae736b58908c472cac"
+    },
+    {
+      "path": "verification/native/RootContinuity.log",
+      "sha256": "a68fce0a705200f03a8b989b022a479ead1d9ae8be71d70dfccd0dce692ae3eb"
+    },
+    {
+      "path": "verification/native/SampleSpaceTransport.log",
+      "sha256": "bba756fae9645b754fc38f5bbce9d2835817157b1917e9cf9fd452c0dfbb0d7e"
+    },
+    {
+      "path": "verification/native/ScalarMeasureNormalization.log",
+      "sha256": "dacab3cf574bbd75496eab646755ddaabfd978b332959a1b35818bdc7dbb11ba"
+    },
+    {
+      "path": "verification/native/ScalarMultiplier.log",
+      "sha256": "61f8d3ec85920c74f3a054b761701912eaca410d0086cbe6b82472142cb7d946"
+    },
+    {
+      "path": "verification/native/SeparatingMultiplierIntertwining.log",
+      "sha256": "305a190bf370ef1fe8ce69b99e739e383dca8cd78eb9b63e3c7df88cb5ec815c"
+    },
+    {
+      "path": "verification/native/SequencePoincareCollapse.log",
+      "sha256": "a617491bbd8335467de32ec1ad1db2c7bd9f063ee090f2b868b1cca801a4f86b"
+    },
+    {
+      "path": "verification/native/SequenceTheorems.log",
+      "sha256": "e42b6f733ffd7454c8465fa8b988ebdff5f8c5b36d122fda040c8fa3c41794b7"
+    },
+    {
+      "path": "verification/native/SharedConditionalDensity.log",
+      "sha256": "35184da4f81a6a3167b9e56488440c4ef8349801d12f9723c230216df10f8a17"
+    },
+    {
+      "path": "verification/native/ShiftBernoulliMeasure.log",
+      "sha256": "b393ee20e593e79a5b98149f3dd4ae12aa1d50bd19453936d91ac5ae2d7518c7"
+    },
+    {
+      "path": "verification/native/ShiftFiniteBalls.log",
+      "sha256": "478bab5dca04728434a185a1f1d6676756a4ac13141d3d9180452152fa7daceb"
+    },
+    {
+      "path": "verification/native/ShiftFiniteLpObstruction.log",
+      "sha256": "10470efb150961ab70718f5912bbd0274d767844b6a6b69cbbbd3032430caef2"
+    },
+    {
+      "path": "verification/native/ShiftGraph.log",
+      "sha256": "970e3a2367aedeb1bbb76b3fbf667edc99ab3896187f1909d7e28a5477559834"
+    },
+    {
+      "path": "verification/native/ShiftLpNonreduction.log",
+      "sha256": "432638a73746920bbf6192a824498ccbb0117da63fc1ec9f0d3c872883041da4"
+    },
+    {
+      "path": "verification/native/ShiftNullReduction.log",
+      "sha256": "5712013ca74fa96adaa5f3edd25aa4a37bff3f7fb781da3e6e40c9da10361b35"
+    },
+    {
+      "path": "verification/native/ShiftWalshCharacters.log",
+      "sha256": "4b74ae5d73f8f46321df833827d2b01de546553dfe89ff456424479ba9d03839"
+    },
+    {
+      "path": "verification/native/SnowflakeIntegral.log",
+      "sha256": "41efeb35b3ecab593878720b0a21cd4ba244235322cd3a07e948ff4b0bbcf13d"
+    },
+    {
+      "path": "verification/native/SnowflakeReduction.log",
+      "sha256": "0f734917b3b1ca95e3bdfc8deb301a8242c8a04ba0c536c5d2f6d15fd12d1727"
+    },
+    {
+      "path": "verification/native/SolenoidGroups.log",
+      "sha256": "e45a7cddc5d4cc0f5c346a585020e217ffc3dcd3ad125bf5811f00d1f24b9095"
+    },
+    {
+      "path": "verification/native/SquareTestEstimate.log",
+      "sha256": "74eaf51302221da7b65301a4918a5b63f2da32a8a84b77d96cfc4d0124cb9da1"
+    },
+    {
+      "path": "verification/native/SumFiberCoordinates.log",
+      "sha256": "dd8def823ab055df21c8476ba0e37c2e53bf028c927f48209ff4127857dab695"
+    },
+    {
+      "path": "verification/native/TailGraphObstruction.log",
+      "sha256": "4de34bd48696eb25bb5d48835e489812207c1bf415b5f98187340fd95b8908fd"
+    },
+    {
+      "path": "verification/native/TestSetErgodicity.log",
+      "sha256": "2684d3af48678265b1d7fba86eb8a5b1221f9df56ee7fb4aeedab5a945c4bc98"
+    },
+    {
+      "path": "verification/native/TrigMultiplier.log",
+      "sha256": "d62fd2aef91ff3ebcf4a0c030ae5752166da2c5b7cb56e71e9a3fcfabc7d8084"
+    },
+    {
+      "path": "verification/native/TruncatedEnergy.log",
+      "sha256": "917742435cfbd66db29e5382da5e9982b109d37da0a84645f94253761030be37"
+    },
+    {
+      "path": "verification/native/UnitaryCFCStrongContinuity.log",
+      "sha256": "b0d0ea806f74c324b5785b4132df2fab6cc08044e5bb91306701db7d229a55d2"
+    },
+    {
+      "path": "verification/native/UnitaryCircleFunctionalCalculus.log",
+      "sha256": "db30f67b891e04da11005c77227e7c967f582ac051d1fcdd5912e27b88dc1621"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicFunctionalCalculus.log",
+      "sha256": "dd129d110fb1b844222e5f4e8cab91b6702d51cba5c3ccbfddf6c9ae89f478d9"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicProjectionBorel.log",
+      "sha256": "8a0e9c4add2d71c17ef10838b3b136c28b8880bd50193cf222a8d2cc7043789d"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicRiesz.log",
+      "sha256": "4ac941603773b6bf8b8c9d4dbaf293a0872210df3aa5ba515d33b4b38e3b8392"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicRieszIntertwining.log",
+      "sha256": "a830a1df2af8b6b724787dca4b5860aefb749d3fb37fc0a9192d7eee97b90868"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicRieszRange.log",
+      "sha256": "2d4d65f04fa18a3c00c51d7ad6106cfbe81e4597fca06cb3ad4a76b19bbd6d3a"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicSpectralModel.log",
+      "sha256": "40b5933d5c64220ffa96c7f3e5c75d3981273612460f1be00a61c2adadea0fd8"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicSpectralSubspace.log",
+      "sha256": "a81b535b943a6fe51826bd1e2fd4fc12df8311426f6ca5ce5689bbdc645a2d9b"
+    },
+    {
+      "path": "verification/native/UnitaryCyclicSubspace.log",
+      "sha256": "51a252096428c39b564aa2489b72dde13eb8560b5ce82c6402c2ee025ed2c829"
+    },
+    {
+      "path": "verification/native/UnitaryDominatedSpectralModel.log",
+      "sha256": "2d914a68418393b6ff0a76d968f336199df137d71fc440db7a65a4c553c1da54"
+    },
+    {
+      "path": "verification/native/UnitaryFullSpectralModel.log",
+      "sha256": "e4264d7b461308cf5dc2b6227d9a9a4cfa75bf46927d6497a4fc910ff6a0870f"
+    },
+    {
+      "path": "verification/native/UnitaryGreedyCyclicCompleteness.log",
+      "sha256": "e8d4b4bbb6991a98378e59064f02cca20da0a7f529fb9012e56cecc7daab189b"
+    },
+    {
+      "path": "verification/native/UnitaryGreedyCyclicDecomposition.log",
+      "sha256": "7a1e7444566dfe9623d73101df6593479545ed3a266423e2efdb94ccade037be"
+    },
+    {
+      "path": "verification/native/UnitaryGreedyHilbertSum.log",
+      "sha256": "3e7066e0f28cc21263a0d43feff9f195e36f995da94beec6c4f02916f888cf9a"
+    },
+    {
+      "path": "verification/native/UnitaryMeasurableSpectralSupports.log",
+      "sha256": "ded79f946345078d95bc848129a5c2090d67841ee0475998a21996789b096f06"
+    },
+    {
+      "path": "verification/native/UnitarySpectralCodeBorel.log",
+      "sha256": "68a10e0988b7bdae5067fe828ce60bd4d3195e4c06eae6a81d9ff0a842db6411"
+    },
+    {
+      "path": "verification/native/UnitarySpectralCodeNonzero.log",
+      "sha256": "22e4f18223888d3c670ff12055db032a545f45d78d17b4cca1333b82bcc34d03"
+    },
+    {
+      "path": "verification/native/UnitarySpectralMeasureBorel.log",
+      "sha256": "3754429e4f9fd47c35b04b08fbf1a527fe02c103937043061d013f2925f804b7"
+    },
+    {
+      "path": "verification/native/UnitarySpectralMeasureClassification.log",
+      "sha256": "7d765897f35ffdc97683646b190856d546f78bbf84519b11e054d72ab883b985"
+    },
+    {
+      "path": "verification/native/UnitarySpectralReduction.log",
+      "sha256": "7f13fb05a2063479d9e2fc7ad58727bba370121d1f1c7fa07024b25c802349b3"
+    },
+    {
+      "path": "verification/native/UnitaryVectorRiesz.log",
+      "sha256": "b938b851bac1362b113bab4c06684c585c4789ea05776f5a6d94dec7403d1bd2"
+    },
+    {
+      "path": "verification/native/UnitaryVectorRieszMass.log",
+      "sha256": "caa00383e2baae2a93f56d6065e960eabe44d73511d72a77e07df0da21505818"
+    },
+    {
+      "path": "verification/native/VectorContinuousState.log",
+      "sha256": "18967ac002ea588fad8f707ecb40eb6bdd9fd80dee1b0eae2ada1598f57af40c"
+    },
+    {
+      "path": "verification/native/VectorSpectralState.log",
+      "sha256": "cd0ee0893e042a07b5035559c5b49320e15beb1fae6fd9f58ae839b9323e7ae4"
+    },
+    {
+      "path": "verification/native/WalshContinuousDensity.log",
+      "sha256": "677be1128a6c32d072a631726508a641ec4d926b6b553bffb330ef377dfc8ee3"
+    },
+    {
+      "path": "verification/native/WalshKoopmanRepresentation.log",
+      "sha256": "54fe61b4641dbddcb2ebacb6a1c30cf78b4e835c11adef82a22c8209b734d7ea"
+    },
+    {
+      "path": "verification/native/WalshL2Basis.log",
+      "sha256": "df9cb194cd7b4ebfc29834d35552582829068646449f5ea28ddb831544f46675"
+    },
+    {
+      "path": "verification/native/WalshShiftAction.log",
+      "sha256": "720e8fabc0bb1d036a6064d59770e0f39902d30a1ce3f36d310d156ebf54b786"
+    },
+    {
+      "path": "verification/native/WalshSupportOrbits.log",
+      "sha256": "b54af6b9167aa36daf1a2c88997877cc202093d95e084b49731842a4a7c72ddd"
+    },
+    {
+      "path": "verification/native/WeakGiryInclusion.log",
+      "sha256": "6fc521c9ab46bcc305cc9bc5ca604ba0b6c80238a39906b12772ca62f9ae73cb"
+    },
+    {
+      "path": "verification/native/WeakIntegralContinuity.log",
+      "sha256": "0d192fbb80eb94f100cae14a5cd325441d71ddef7e22d63d713eaffa52974c2a"
+    },
+    {
+      "path": "verification/native/WeightedDominatingKernel.log",
+      "sha256": "9cf660c5889ba2d937f5620258b10f26f95821a3dc56c9936c3f863e53c2807a"
+    },
+    {
+      "path": "verification/native/WeightedRootSwitch.log",
+      "sha256": "3edc35c9d81b1460bcb000b26361f804e89a0a06de5af921fb0ace5a13475d86"
+    },
+    {
+      "path": "verification/native/ZeroSumAffinity.log",
+      "sha256": "dc158a766b21af4499b08b45890b2bc58d167d165682459cda087ba569472ef8"
+    },
+    {
+      "path": "verification/native/ZeroSumConditional.log",
+      "sha256": "32a902b1064ad986724a9e2d7e2b90c9b8815cf5425f9d0fe43ce78d2581be1d"
+    },
+    {
+      "path": "verification/native/ZeroSumDense.log",
+      "sha256": "90bfe58e6cfefe0b841e15da906a4d90b855e4a820ffc89f350daa52e043a0db"
+    },
+    {
+      "path": "verification/native/ZeroSumFiberEvent.log",
+      "sha256": "7990eee52ccf952691cf0ff19d939436ca780387cbeda8c3ff49b6f0828b05d4"
+    },
+    {
+      "path": "verification/native/ZeroSumNonreduction.log",
+      "sha256": "c8ab6203213956d675e11e25173aa7e0675bf3f75a52740b6c266770cea0be49"
+    },
+    {
+      "path": "verification/native/ZeroSumRigidity.log",
+      "sha256": "78d58d62ae91d53f954fbf03cb9fa73ad884cc97682186faf96a23993e2f30ba"
+    },
+    {
+      "path": "verification/package-build.json",
+      "sha256": "82bd23b91f52d663109f8926b95c5afa8cd837aa117fad46d419e114b1a5d522"
+    },
+    {
+      "path": "verification/source-inventory.json",
+      "sha256": "ba3732c1a93d4e61191cfd623c1278b025cf689e4b37a455939ea2d91f940607"
+    },
+    {
+      "path": "WalshContinuousDensity.lean",
+      "sha256": "0e4e81eb86d8ef07194da0681157be10315884e6eb3f2085d008daea76c6f18f"
+    },
+    {
+      "path": "WalshKoopmanRepresentation.lean",
+      "sha256": "f98df51c8c2b50f761c865a9078645c599bfab05c3ff1ed6926fd24409ae73a8"
+    },
+    {
+      "path": "WalshL2Basis.lean",
+      "sha256": "ed21fb7cf49e922b9f73740807faa499478e2ccc95c612580a7ad624981d332a"
+    },
+    {
+      "path": "WalshShiftAction.lean",
+      "sha256": "e5ec0e179420b9d5f501d3dae9c13de8992fc42b88dbbd3cd23c908fe96c7682"
+    },
+    {
+      "path": "WalshSupportOrbits.lean",
+      "sha256": "33e591d0f928d6b7127bd2693413099ec4daad2ddf9fe42dfbf0f023d891c977"
+    },
+    {
+      "path": "WeakGiryInclusion.lean",
+      "sha256": "12550dc3144d78a85756f7ff7107a8ea7d2c143f949f85a82946163914b1ce3a"
+    },
+    {
+      "path": "WeakIntegralContinuity.lean",
+      "sha256": "47bd3b0e64a5561ed24d680341976da390f7cd80e5eb9dbf1561d5735b1aed08"
+    },
+    {
+      "path": "WeightedDominatingKernel.lean",
+      "sha256": "80ec7cbc4b8d27d12cf190d32773efda8015d7600879f4ab19e2e564b7ed6e57"
+    },
+    {
+      "path": "WeightedRootSwitch.lean",
+      "sha256": "809fef02a889fa65982cf1c98806198810425d2654f088de982a85dd3dd43870"
+    },
+    {
+      "path": "ZeroSumAffinity.lean",
+      "sha256": "11da36aa9ec5cf784e2e348d5f899fa7061b8aff6dda3753e75778f20ae94a97"
+    },
+    {
+      "path": "ZeroSumConditional.lean",
+      "sha256": "6aee509cbc53b50fe3e0040bd3c9b4ed7dcc500a12ddb093f3d10b4005854a06"
+    },
+    {
+      "path": "ZeroSumDense.lean",
+      "sha256": "d72675ffb6bdcc27e6d2a28465564ed378b5728467709a67f040d6d91b87695c"
+    },
+    {
+      "path": "ZeroSumFiberEvent.lean",
+      "sha256": "89d983e0b737b4677496a10b06caeff190c6a2bcb49f1af390a227d398677353"
+    },
+    {
+      "path": "ZeroSumNonreduction.lean",
+      "sha256": "8333d70cf178c90a9b08a0d237d3d68bac8d098399a72e59f784b5b60b5395a3"
+    },
+    {
+      "path": "ZeroSumRigidity.lean",
+      "sha256": "5293d3b423842c54d97d137a2f69f5e422dfbde0e7f1c5f8a45b30c824a7f76f"
+    }
+  ]
+}
